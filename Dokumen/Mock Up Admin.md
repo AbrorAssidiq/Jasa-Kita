@@ -355,7 +355,7 @@ dapat ditelusuri.
 
 #### 12.1 Rating dan Ulasan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/23.png?raw=true)
 
 ****Deskripsi****: Halaman untuk 
 melihat rating dan komentar 
@@ -369,7 +369,7 @@ atau ditandai.
 
 #### 12.2 Pusat Notifikasi
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/24.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 memantau notifikasi yang 
