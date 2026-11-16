@@ -107,13 +107,25 @@ pendaftaran, dan status akun.
 Data contoh pada mockup bukan 
 data pengguna sebenarnya.
 
+**Tujuan:** Memudahkan Admin 
+mencari dan mengawasi akun 
+Customer secara terstruktur.
+
 #### 4.2 Detail Pelanggan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/8.png?raw=true)
 
-**Tujuan:** Memudahkan Admin 
-mencari dan mengawasi akun 
-Customer secara terstruktur.
+****Deskripsi****: Halaman profil 
+pelanggan yang memuat 
+informasi akun dan ringkasan 
+aktivitas, termasuk pesanan atau 
+laporan yang terkait. 
+
+****Tujuan****: Membantu Admin 
+memeriksa informasi pelanggan 
+ketika menangani pertanyaan, 
+pengaduan, atau kebutuhan 
+pembaruan data.
 
 #### 4.3 Detail Pelanggan
 
