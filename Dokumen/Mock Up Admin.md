@@ -4,7 +4,7 @@
 
 #### 1.1 Halaman Awal Website Admin
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/1.png?raw=true)
 
 **Deskripsi:** Halaman pembuka website 
 khusus pengelola. Admin dapat 
@@ -19,7 +19,7 @@ bagi petugas yang berwenang.
 
 #### 1.2 Login Admin
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/2.png?raw=true)
 
 **Deskripsi:** Halaman autentikasi khusus 
 Admin. Admin memasukkan 
@@ -34,7 +34,7 @@ umum.
 
 #### 2.1 Verifikasi Admin
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/3.png?raw=true)
 
 **Deskripsi:** Halaman pemeriksaan 
 tambahan setelah login, apabila sistem 
@@ -49,7 +49,7 @@ diputuskan.
 
 #### 2.2 Dashboard Admin
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/4.png?raw=true)
 
 **Deskripsi:** Halaman utama setelah 
 Admin berhasil masuk. 
@@ -65,7 +65,7 @@ paling sering digunakan.
 
 #### 3.1 Daftar Pesanan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/5.png?raw=true)
 
 **Deskripsi:** Halaman untuk melihat 
 seluruh pesanan beserta ID, 
@@ -81,7 +81,7 @@ membutuhkan tindak lanjut.
 
 #### 3.2 Detail Pesanan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/6.png?raw=true)
 
 **Deskripsi:** Halaman detail yang 
 memperlihatkan pihak terkait, 
@@ -98,7 +98,7 @@ atau laporan terkait suatu pesanan.
 
 #### 4.1 Daftar Pelanggan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/7.png?raw=true)
 
 **Deskripsi:** Halaman daftar 
 pelanggan yang menampilkan 
@@ -109,13 +109,15 @@ data pengguna sebenarnya.
 
 #### 4.2 Detail Pelanggan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/8.png?raw=true)
 
 **Tujuan:** Memudahkan Admin 
 mencari dan mengawasi akun 
 Customer secara terstruktur.
 
 #### 4.3 Detail Pelanggan
+
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/9.png?raw=true)
 
 **Deskripsi:** Halaman profil 
 pelanggan yang memuat 
@@ -131,7 +133,7 @@ pembaruan data.
 
 #### 5.1 Daftar Provider
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/10.png?raw=true)
 
 **Deskripsi:** Halaman yang 
 menampilkan seluruh Provider 
@@ -149,7 +151,7 @@ ditindaklanjuti.
 
 #### 5.2 Detail Provider
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/11.png?raw=true)
 
 **Deskripsi:** Halaman detail 
 Provider untuk melihat identitas 
@@ -164,7 +166,7 @@ Provider lebih tertib.
 
 #### 6.1 Antrean Verifikasi Provider
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/12.png?raw=true)
 
 **Deskripsi:** Halaman antrean 
 pendaftaran Provider yang 
@@ -178,7 +180,7 @@ proses verifikasi tetap terpantau.
 
 #### 6.2 Pemeriksaan Dokumen Provide
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/13.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 meninjau berkas Provider, 
@@ -194,7 +196,7 @@ alasan dan jejak audit.
 
 #### 7.1 Daftar Layanan Jasa
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/14.png?raw=true)
 
 **Deskripsi:** Halaman daftar 
 layanan berdasarkan nama jasa, 
@@ -208,7 +210,7 @@ Kita.
 
 #### 7.2 Detail dan Moderasi Layanan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/15.png?raw=true)
 
 **Deskripsi:** Halaman detail untuk 
 memeriksa isi layanan, harga, 
@@ -223,7 +225,7 @@ sembarangan.
 
 #### 8.1 Daftar Kategori Jasa
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/16.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 melihat dan mengelola daftar 
@@ -242,7 +244,7 @@ digunakan.
 
 #### 8.2 Tambah / Ubah Kategori
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/17.png?raw=true)
 
 **Deskripsi:** Formulir untuk 
 menambahkan atau mengubah 
@@ -251,7 +253,7 @@ kategori jasa.
 
 ##### 9.1 Riwayat Transaksi
 
-9.1  Riwayat Transaksi
+![alt text](?raw=true)
 
 **Deskripsi:** Halaman daftar transaksi yang menghubungkan catatan pembayaran dengan ID pesanan, metode, nominal, waktu, dan status.
 
@@ -260,49 +262,7 @@ kategori tetap rapi serta
 mengurangi kategori ganda atau 
 membingungkan.
 
-Jasa Kita Admin
-
-MENU UTAMA
-Dashboard
-Data Pesanan
-Data Pelanggan
-Data Provider
-Layanan Jasa
-Transaksi
-Pembatalan
-Pengaduan
-Rating & Ulasan
-Laporan
-Pengaturan
-Jasa Kita Admin
-
-Riwayat Transaksi
-Admin
-Pantau catatan pembayaran yang terkait dengan pesanan.
-
-Transaksi Tercatat
-2.180
-Berhasil
-2.040
-Menunggu
-92
-Gagal
-48
-
-Daftar Transaksi
-Gunakan pencarian dan filter untuk menemukan data.
-Cari data...
-Filter
-Ekspor Data
-
-ID Transaksi ID Pesanan Metode Nominal Status
-TRX-501 ORD-2401 Belum dipilih Rp100.000 Menunggu
-TRX-502 ORD-2402 Transfer Rp75.000 Berhasil
-TRX-503 ORD-2403 Tunai Rp80.000 Berhasil
-TRX-504 ORD-2404 Belum dipilih Rp150.000 Gagal
-Menampilkan contah data • tsi dan jumlah data mengikuti database apikasi
-
-JASA KITA • Rancangan konseptual dashboard Admin
+![alt text](?raw=true)
 
 **Deskripsi:** Halaman daftar 
 transaksi yang menghubungkan 
