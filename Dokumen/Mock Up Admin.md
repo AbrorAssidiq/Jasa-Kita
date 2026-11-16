@@ -244,7 +244,7 @@ digunakan.
 
 #### 8.2 Tambah / Ubah Kategori
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/17.png?raw=true)
+![alt text](?raw=true)
 
 **Deskripsi:** Formulir untuk 
 menambahkan atau mengubah 
