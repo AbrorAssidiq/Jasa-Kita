@@ -316,6 +316,11 @@ yang berlaku.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/20.png?raw=true)
 
+****Deskripsi****: Halaman untuk 
+melihat kronologi pembatalan, 
+status terakhir pesanan, alasan, 
+serta bukti pendukung jika ada.
+
 **Tujuan:** Membantu Admin 
 menilai permintaan secara 
 konsisten dan memberikan 
