@@ -32,7 +32,7 @@ menu Daftar Akun. Tersedia pula pilihan Lupa Password
 
 ### 3. Halaman Pendaftaran Akun
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/03.jpg?raw=true)
 
 **Deskripsi :** Halaman untuk masuk menggunakan akun yang sudah 
 dimiliki atau melakukan pendaftaran akun baru sebagai Customer 
@@ -48,7 +48,7 @@ disediakan aplikasi.
 
 ### 4. Verifikasi Akun
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/04.jpg?raw=true)
 
 **Tujuan :** Memastikan bahwa akun didaftarkan menggunakan 
 informasi kontak yang valid serta membantu menjaga keamanan akun 
@@ -58,7 +58,7 @@ pengguna.
 
 ### 5. Pengisian data diri
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/05.jpg?raw=true)
 
 **Deskripsi :** Halaman untuk melengkapi informasi pribadi Customer, 
 seperti nama lengkap, nomor telepon, alamat, dan informasi 
@@ -70,7 +70,7 @@ ketika menerima pesanan.
 
 ### 6. Fitur Beranda Customer
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/06.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer melihat berbagai 
 kategori layanan jasa yang tersedia, seperti servis AC, teknisi 
@@ -88,7 +88,7 @@ penyedia jasa yang ditampilkan.
 
 ### 7. Tampilan Fitur Melihat Daftar Ktegori Jasa
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/07.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Guest melihat berbagai 
 kategori layanan jasa yang tersedia, seperti servis AC, bengkel, 
@@ -99,7 +99,7 @@ dapat ditemukan melalui aplikasi.
 
 ### 8. Fitur Mencari Penyedia Jasa Berdasarkan Nama atau Kategori
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/08.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer mencari penyedia 
 jasa menggunakan nama mitra atau kategori layanan tertentu 
@@ -116,7 +116,7 @@ lokasi dan kategori agar daftar penyedia jasa lebih relevan.
 
 ### 9. Tampilan Fitur Memfilter Penyedia Jasa Berdasarkan Lokasi
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/09.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer menyaring daftar 
 penyedia jasa berdasarkan lokasi untuk menemukan mitra yang 
@@ -127,7 +127,7 @@ lokasinya sesuai dengan kebutuhan pekerjaan.
 
 ### 10. Tampilan Fitur Memasukkan Detail Kebutuhan dan Lokasi Pekerjaan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/10.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer memasukkan 
 informasi mengenai kebutuhan pekerjaan serta lokasi tempat 
@@ -140,7 +140,7 @@ mengetahui lokasi pekerjaan sebelum menerima pesanan.
 
 ### 11. Fitur Melihat Profil dan Informasi Layanan Mitra
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/11.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer melihat informasi 
 profil Provider seperti Lokasi  Jam operasinal beserta layanan jasa 
@@ -151,7 +151,7 @@ mempertimbangkan mitra sebelum melakukan pemesanan.
 
 ### 12. Fitur Membuat Pemesanan Jasa
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/12.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer mengirimkan 
 permintaan pemesanan layanan kepada Provider yang telah 
@@ -167,11 +167,11 @@ mohon dicek.
 
 ### 13. Tampilan Pesanan dibuat
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/13.jpg?raw=true)
 
 ### 14. Tampilan Pesanan di proses
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/14.jpg?raw=true)
 
 **Deskripsi :** Menampilkan konfirmasi bahwa pesanan 
 layanan berhasil dibuat oleh pelanggan, beserta informasi 
@@ -186,7 +186,7 @@ selesai.
 
 ### 15.Fitur Mengirim Pesan kepada Mitra melalui Chat
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/15.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer 
 berkomunikasi secara langsung dengan Provider 
@@ -199,7 +199,7 @@ disampaikan dengan jelas.
 
 ## 16.Fitur Membatalkan Pesanan Sesuai Ketentuan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/16.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer 
 membatalkan permintaan pemesanan apabila tidak 
@@ -214,7 +214,7 @@ layanan yang telah dipesan.
 
 ### 17. Tampilan Pesanan Di Terima Oleh Pprovider
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/17.jpg?raw=true)
 
 **Deskripsi :** Halaman yang menampilkan informasi 
 bahwa permintaan pemesanan telah diterima oleh
@@ -224,7 +224,7 @@ Provider.
 
 ### 18. Fitur Melihat Status Pemesanan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/18.jpg?raw=true)
 
 **Deskripsi :** Halaman yang menampilkan informasi 
 bahwa Provider sedang melaksanakan pekerjaan sesuai 
@@ -237,7 +237,7 @@ sedang di kerjakan
 
 ### 19. Fitur Melihat Riwayat Pemesanan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/19.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer melihat 
 daftar pemesanan yang pernah dilakukan sebelumnya 
@@ -248,7 +248,7 @@ memeriksa kembali riwayat penggunaan layanan jasa.
 
 ### 20. Tampilan halaman Penilaian/Rating
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/20.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer memberikan 
 penilaian berupa rating dan ulasan terhadap layanan yang 
