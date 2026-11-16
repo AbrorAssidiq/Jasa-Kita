@@ -8,7 +8,7 @@ serta memberikan penilaian.
 
 ### 1. Halaman Slpash Screen
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halamansplash.jpg?raw=true)
 
 **Deskripsi :** Memberikan kesan awal Aplikasi.
 
@@ -16,7 +16,7 @@ serta memberikan penilaian.
 
 ### 2. Fitur Mendaftar dan Login
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halaman%20%20profile%20guest.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Customer membuat akun baru 
 dan masuk ke aplikasi menggunakan akun yang telah terdaftar.
