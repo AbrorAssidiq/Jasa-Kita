@@ -7,13 +7,17 @@ Guest dapat mengakses informasi umum dan melihat layanan yang tersedia sebelum m
 untuk mendaftar.
 
 ### 1. Halaman Splash Screen
+
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halamansplash.jpg?raw=true)
+
 **Deskripsi :** Memberikan kesan awal Aplikasi.
 
 **Tujuan :** Menampilkan Logo dan nama Aplikasi
 
 ### 2. Halaman Akses Tanpa Akun
+
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/aksestanpa%20akun.jpg?raw=true)
+
 **Deskripsi :** Memberikan akses informasi meski belum login.
 
 **Tujuan :** Pengguna bisa melihat layanan sebelum membuat akun.
@@ -75,7 +79,9 @@ Kita.
 penyedia jasa yang tersedia sebelum melakukan pendaftaran.
 
 ### 8. Fitur Melihat Detail Informasi Penyedia Jasa
+
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/melihat%20detail%20informasi%20penyedia%20jasa%20guest.jpg?raw=true)
+
 **Deskripsi:** Fitur ini memungkinkan Guest melihat informasi lebih 
 lanjut mengenai penyedia jasa, termasuk identitas dan layanan 
 yang ditawarkan.
@@ -84,7 +90,9 @@ yang ditawarkan.
 jasa yang sesuai dengan kebutuhan sebelum membuat akun.
 
 ### 9. Tampilan Wajib Login
+
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/tampilan%20wajib%20login.jpg?raw=true)
+
 **Deskripsi:** Fitur ini mewajibkan Customer membuat akun baru 
 dan masuk ke aplikasi menggunakan akun yang telah terdaftar
 agar dapat melakukan pemeasnan.
