@@ -83,8 +83,6 @@ yang ditawarkan.
 **Tujuan:** Membantu pengunjung mempertimbangkan penyedia 
 jasa yang sesuai dengan kebutuhan sebelum membuat akun.
 
----
-
 ### 9. Tampilan Wajib Login
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/tampilan%20wajib%20login.jpg?raw=true)
 **Deskripsi:** Fitur ini mewajibkan Customer membuat akun baru 
