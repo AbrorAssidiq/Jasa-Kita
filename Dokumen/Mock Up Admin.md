@@ -341,7 +341,7 @@ terlewat.
 
 #### 11.2 Detail dan Tindak Lanjut Pengaduan
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/23.png?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/22.png?raw=true)
 
 ****Deskripsi****: Halaman detail yang 
 memuat kronologi, pihak terkait, 
