@@ -151,7 +151,7 @@ ditindaklanjuti.
 
 #### 5.2 Detail Provider
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/11.png?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/10.png?raw=true)
 
 **Deskripsi:** Halaman detail 
 Provider untuk melihat identitas 
@@ -166,7 +166,7 @@ Provider lebih tertib.
 
 #### 6.1 Antrean Verifikasi Provider
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/12.png?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/11.png?raw=true)
 
 **Deskripsi:** Halaman antrean 
 pendaftaran Provider yang 
@@ -180,7 +180,7 @@ proses verifikasi tetap terpantau.
 
 #### 6.2 Pemeriksaan Dokumen Provide
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/13.png?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/12.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 meninjau berkas Provider, 
@@ -196,7 +196,7 @@ alasan dan jejak audit.
 
 #### 7.1 Daftar Layanan Jasa
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/14.png?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/13.png?raw=true)
 
 **Deskripsi:** Halaman daftar 
 layanan berdasarkan nama jasa, 
@@ -210,7 +210,7 @@ Kita.
 
 #### 7.2 Detail dan Moderasi Layanan
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/15.png?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/14.png?raw=true)
 
 **Deskripsi:** Halaman detail untuk 
 memeriksa isi layanan, harga, 
@@ -225,7 +225,7 @@ sembarangan.
 
 #### 8.1 Daftar Kategori Jasa
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/16.png?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/15.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 melihat dan mengelola daftar 
@@ -244,7 +244,7 @@ digunakan.
 
 #### 8.2 Tambah / Ubah Kategori
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/16.png?raw=true)
 
 **Deskripsi:** Formulir untuk 
 menambahkan atau mengubah 
@@ -258,22 +258,9 @@ membingungkan.
 
 ##### 9.1 Riwayat Transaksi
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/17.png?raw=true)
 
 **Deskripsi:** Halaman daftar transaksi yang menghubungkan catatan pembayaran dengan ID pesanan, metode, nominal, waktu, dan status.
-
-**Tujuan:** Menjaga struktur 
-kategori tetap rapi serta 
-mengurangi kategori ganda atau 
-membingungkan.
-
-![alt text](?raw=true)
-
-**Deskripsi:** Halaman daftar 
-transaksi yang menghubungkan 
-catatan pembayaran dengan ID 
-pesanan, metode, nominal, 
-waktu, dan status.
 
 **Tujuan:** Memudahkan Admin 
 menelusuri status transaksi dan 
@@ -282,7 +269,7 @@ pembayaran dengan pesanan.
 
 #### 9.2 Detail Transaksi
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/18.png?raw=true)
 
 **Deskripsi:** Halaman detail 
 transaksi untuk meninjau 
@@ -299,7 +286,7 @@ pertanyaan pembayaran.
 
 #### 10.1 Daftar Pembatalan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/19.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 memantau permintaan dan 
@@ -315,7 +302,7 @@ yang berlaku.
 
 #### 10.2 Detail Pembatalan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/20.png?raw=true)
 
 **Tujuan:** Membantu Admin 
 menilai permintaan secara 
@@ -325,7 +312,7 @@ ditelusuri.
 
 #### 11.1 Daftar Pengaduan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/21.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 melihat laporan dari pengguna, 
@@ -342,25 +329,35 @@ terlewat.
 
 #### 11.2 Detail dan Tindak Lanjut Pengaduan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/23.png?raw=true)
+
+****Deskripsi****: Halaman detail yang 
+memuat kronologi, pihak terkait, 
+bukti, serta catatan tindak lanjut 
+pengaduan. 
+
+****Tujuan****: Menyediakan proses 
+penanganan komplain yang 
+transparan, terdokumentasi, dan 
+dapat ditelusuri. 
 
 #### 12.1 Rating dan Ulasan
 
 ![alt text](?raw=true)
 
-#### 12.2 Pusat Notifikasi
-
-![alt text](?raw=true)
-
-**Deskripsi:** Halaman untuk 
+****Deskripsi****: Halaman untuk 
 melihat rating dan komentar 
 yang diberikan Customer 
-terhadap layanan atau Provider.
+terhadap layanan atau Provider. 
 
-**Tujuan:** Membantu Admin
+****Tujuan****: Membantu Admin 
 memantau kualitas layanan dan 
 meninjau ulasan yang dilaporkan 
 atau ditandai.
+
+#### 12.2 Pusat Notifikasi
+
+![alt text](?raw=true)
 
 **Deskripsi:** Halaman untuk 
 memantau notifikasi yang 
@@ -377,7 +374,7 @@ ditelusuri.
 
 #### 13.1 Laporan Pengguna dan Pesanan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/25.png?raw=true)
 
 **Deskripsi:** Halaman laporan 
 yang merangkum jumlah 
@@ -395,7 +392,7 @@ perubahan dari waktu ke waktu.
 
 13.2  Laporan Transaksi
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/26.png?raw=true)
 
 **Deskripsi:** Halaman laporan 
 untuk merangkum jumlah dan 
@@ -413,7 +410,7 @@ sudah ditetapkan.
 
 #### 14.1 Pengaturan Sistem
 
-![alt text](?raw=true).
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/27.png?raw=true).
 
 **Deskripsi:** Halaman untuk 
 mengatur informasi umum 
@@ -435,7 +432,7 @@ kebijakan pengelola platform.
 
 #### 14.2 Manajemen Akun Admin
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/28.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 melihat akun petugas Admin, 
@@ -449,7 +446,7 @@ akses perlu disepakati.
 
 #### 15.1 Log Aktivitas Admin
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/29.png?raw=true)
 
 **Deskripsi:** Halaman catatan 
 aktivitas yang merekam siapa 
@@ -464,7 +461,7 @@ jika terjadi perubahan data.
 
 #### 15.2 Profil Admin
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/30.png?raw=true)
 
 **Deskripsi:** Halaman untuk 
 melihat dan memperbarui 
@@ -481,7 +478,7 @@ keamanan aksesnya.
 
 #### 16.1 Konfirmasi Logout
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/31.png?raw=true)
 
 **Deskripsi:** Dialog konfirmasi 
 yang muncul ketika Admin 
@@ -500,7 +497,7 @@ perubahan.
 
 #### 16.2 Kembali ke Halaman Login
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/32.png?raw=true)
 
 **Deskripsi:** Halaman 
 pemberitahuan bahwa sesi 
