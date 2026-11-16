@@ -402,8 +402,6 @@ perubahan dari waktu ke waktu.
 
 #### 13.2 Laporan Transaksi
 
-13.2  Laporan Transaksi
-
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/26.png?raw=true)
 
 **Deskripsi:** Halaman laporan 
