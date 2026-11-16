@@ -50,6 +50,7 @@ fungsi dan layanan yang ditawarkan oleh aplikasi Jasa Kita.
 **Deskripsi:** Fitur ini memungkinkan Guest melihat berbagai 
 kategori layanan jasa yang tersedia, seperti servis AC, bengkel, 
 teknisi listrik, tukang bangunan, dan perbaikan rumah.
+
 **Tujuan:** Membantu pengunjung mengetahui jenis layanan 
 yang dapat ditemukan melalui aplikasi.
 
@@ -96,5 +97,6 @@ jasa yang sesuai dengan kebutuhan sebelum membuat akun.
 **Deskripsi:** Fitur ini mewajibkan Customer membuat akun baru 
 dan masuk ke aplikasi menggunakan akun yang telah terdaftar
 agar dapat melakukan pemeasnan.
+
 **Tujuan:** Memberikan akses kepada pengguna untuk 
 menggunakan fitur-fitur aplikasi yang memerlukan autentikasi.
