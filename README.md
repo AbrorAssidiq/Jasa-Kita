@@ -59,8 +59,4 @@ jasa-kita/
 | Backend Development | Belum dimulai |
 | Testing | Belum dimulai |
 
-## Developer
 
-**Jasa Kita Development Team**
-
-Repository ini digunakan sebagai tempat penyimpanan dokumentasi dan perkembangan proyek Jasa Kita.
