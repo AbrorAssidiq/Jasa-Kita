@@ -116,7 +116,7 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 ---
 
 
-### 12.Fitur Mengirim Pesan kepada Pelanggan melalui Chat
+### 12. Fitur Mengirim Pesan kepada Pelanggan melalui Chat
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/12.jpg?raw=true)
 
@@ -126,7 +126,7 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 
 ---
 
-### 13.Fitur Melihat Riwayat Pesanan
+### 13. Fitur Melihat Riwayat Pesanan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/13.jpg?raw=true)
 
