@@ -15,7 +15,7 @@ pemesanan, dan memperbarui perkembangan pekerjaan.
 **Tujuan:** Memudahkan pengguna mengakses akun dan memulai proses pendaftaran sebagai Provider di aplikasi Jasa Kita.
 
 
-### 2. Halaman mengisi data profil sebagai Provider
+### 2. Halaman Mengisi Data Profil Sebagai Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/2.jpg?raw=true)
 
@@ -51,7 +51,7 @@ pemesanan, dan memperbarui perkembangan pekerjaan.
 
 **Tujuan:** Memastikan identitas dan kelayakan Provider melalui pemeriksaan dokumen oleh Admin sebelum Provider dapat menawarkan layanan jasa kepada Customer.
 
-### 6. Menunggu Verifikasi sebagai Provider
+### 6. Menunggu Verifikasi Sebagai Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/6.jpg?raw=true)
 
@@ -61,8 +61,7 @@ pemesanan, dan memperbarui perkembangan pekerjaan.
 
 ---
 
-**Jika Sudah di Verifikasi data dan di setujui,**
-**Masuk ke tahap Mengatur ketersedian layanan, lokasi, dan lainnya**
+**Setelah data Provider diverifikasi dan disetujui oleh Admin, Provider dapat melanjutkan ke tahap pengaturan informasi layanan, lokasi, dan jam operasional.**
 
 ### 7. Fitur Mengatur dan menambah Ketersediaan Layanan
 
@@ -94,7 +93,15 @@ Customer melalui aplikasi Jasa Kita.
 permintaan layanan yang masuk dan menentukan 
 pesanan yang akan ditangani.
 
-### 10. Fitur Menerima atau Menolak Pesanan
+### 10. Fitur Melihat Detail Pemesanan
+
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/11.jpg?raw=true)
+
+**Deskripsi:** Fitur ini memungkinkan Provider melihat informasi secara lengkap mengenai permintaan pesanan dari Customer, seperti identitas Customer, jenis layanan, detail kebutuhan pekerjaan, lokasi, jadwal, serta informasi harga apabila telah tersedia.
+
+**Tujuan:** Membantu Provider memahami kebutuhan dan kondisi pekerjaan sebelum menentukan apakah pesanan dapat diterima atau ditolak.
+
+### 11. Fitur Menerima atau Menolak Pesanan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/10.png?raw=true)
 
@@ -108,13 +115,6 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 
 ---
 
-### 11. Fitur Melihat Detail Pemesanan
-
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/11.jpg?raw=true)
-
-**Deskripsi:** Fitur ini memungkinkan Provider melihat informasi secara lengkap mengenai permintaan pesanan dari Customer, seperti identitas Customer, jenis layanan, detail kebutuhan pekerjaan, lokasi, jadwal, serta informasi harga apabila telah tersedia.
-
-**Tujuan:** Membantu Provider memahami kebutuhan dan kondisi pekerjaan sebelum menentukan apakah pesanan dapat diterima atau ditolak.
 
 ### 12.Fitur Mengirim Pesan kepada Pelanggan melalui Chat
 
