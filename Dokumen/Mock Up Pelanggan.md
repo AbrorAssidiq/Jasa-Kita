@@ -252,6 +252,14 @@ layanan yang telah dipesan.
 
 **Tujuan:** Memudahkan Customer mengajukan pengembalian dana melalui sistem Jasa Kita serta memberikan informasi dan bukti yang diperlukan Admin untuk melakukan pemeriksaan.
 
+### 21.2 Halaman Status Pengajuan Refund
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan perkembangan pengajuan refund yang telah dikirimkan Customer kepada Admin. Informasi yang ditampilkan meliputi nomor pengajuan, ID pesanan, nominal refund yang diajukan, alasan pengajuan, tanggal pengajuan, serta status pemeriksaan. Status dapat berupa menunggu pemeriksaan, disetujui, ditolak, sedang diproses, berhasil, atau gagal. Apabila pengajuan ditolak, Customer dapat melihat alasan atau catatan dari Admin.
+
+**Tujuan:** Memudahkan Customer memantau perkembangan pengajuan refund serta mengetahui hasil keputusan dan proses pengembalian dana melalui aplikasi Jasa Kita.
+
 ### 22. Fitur Melihat Riwayat Pemesanan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/19.jpg?raw=true)
