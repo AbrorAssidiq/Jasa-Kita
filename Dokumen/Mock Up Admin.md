@@ -32,19 +32,13 @@ hanya kepada akun Admin yang sah;
 pendaftaran Admin tidak dibuka untuk 
 umum.
 
-#### 2.1 Verifikasi Admin
+#### 2.1 Verifikasi Keamanan Admin
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/3.png?raw=true)
 
-**Deskripsi:** Halaman pemeriksaan 
-tambahan setelah login, apabila sistem 
-menerapkan OTP melalui Email.
+**Deskripsi:** Halaman ini menampilkan proses pemeriksaan identitas Admin setelah berhasil melakukan login. Sistem menampilkan informasi akun, metode verifikasi, tujuan pengiriman kode, status verifikasi, serta masa berlaku kode untuk memastikan bahwa akses dilakukan oleh pemilik akun yang sah.
 
-**Tujuan:** Menambah perlindungan 
-akun Admin. Metode, kanal 
-pengiriman, masa berlaku, dan 
-pemulihan akses masih perlu 
-diputuskan.
+**Tujuan:** Memberikan lapisan keamanan tambahan pada akun Admin dengan memastikan identitas pengguna sebelum memperoleh akses ke dashboard dan fitur pengelolaan website Jasa Kita.
 
 #### 2.2 Dashboard Admin
 
