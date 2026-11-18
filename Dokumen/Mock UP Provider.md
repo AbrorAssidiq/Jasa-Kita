@@ -94,7 +94,7 @@ Customer melalui aplikasi Jasa Kita.
 permintaan layanan yang masuk dan menentukan 
 pesanan yang akan ditangani.
 
-#### 10. Fitur Menerima atau Menolak Pesanan
+### 10. Fitur Menerima atau Menolak Pesanan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/10.png?raw=true)
 
