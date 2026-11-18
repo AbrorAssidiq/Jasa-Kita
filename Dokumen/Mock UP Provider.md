@@ -157,3 +157,43 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 **Deskripsi:** Fitur ini memungkinkan Provider menandai pekerjaan sebagai selesai setelah seluruh layanan yang dipesan oleh Customer telah dikerjakan. Setelah Provider mengonfirmasi penyelesaian pekerjaan, sistem akan memperbarui status pesanan menjadi menunggu konfirmasi Customer.
 
 **Tujuan:** Memberikan informasi kepada Customer bahwa pekerjaan telah selesai dilakukan serta menjadi tahapan sebelum Customer melakukan konfirmasi penyelesaian pekerjaan dan melanjutkan proses pembayaran.
+
+### 17. Fitur Mengajukan Biaya Tambahan Material
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Fitur ini memungkinkan Provider mengajukan biaya tambahan apabila pekerjaan membutuhkan material atau suku cadang yang tidak termasuk dalam biaya jasa awal. Provider dapat mengisi nama material, jumlah, harga satuan, total biaya, alasan pembelian, serta mengunggah foto pendukung apabila diperlukan. Pengajuan biaya tambahan akan dikirimkan kepada Customer untuk diperiksa dan disetujui sebelum proses pembelian dilakukan.
+
+**Tujuan:** Memberikan transparansi mengenai kebutuhan biaya tambahan serta memastikan Customer mengetahui dan menyetujui biaya material sebelum Provider melakukan pembelian.
+
+### 18. Fitur Melihat Status Persetujuan dan Peringatan Pembelian Material
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Fitur ini memungkinkan Provider melihat status pengajuan biaya tambahan material, baik menunggu persetujuan Customer, disetujui, maupun ditolak. Setelah Customer menyetujui dan pembayaran biaya material berhasil dikonfirmasi oleh payment gateway, Provider dapat melanjutkan proses pembelian. Sebelum pembelian dilakukan, sistem menampilkan peringatan agar Provider memastikan material atau suku cadang yang akan dibeli sesuai dengan jenis, merek, model, dan kebutuhan perangkat yang diperbaiki.
+
+**Tujuan:** Memastikan proses pembelian material dilakukan setelah mendapatkan persetujuan dan pembayaran dari Customer serta mengurangi risiko kesalahan pembelian barang yang tidak sesuai dengan kebutuhan perbaikan.
+
+### 19. Fitur Mengunggah Bukti Pembelian Material
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Fitur ini memungkinkan Provider mengunggah bukti pembelian material atau suku cadang yang telah dibeli, seperti foto nota, struk, atau bukti transaksi dari toko. Informasi tersebut digunakan sebagai dokumentasi pembelian serta bahan pemeriksaan apabila terjadi kendala atau pengaduan terkait penggunaan material.
+
+**Tujuan:** Memberikan bukti pembelian yang jelas dan transparan serta membantu Admin melakukan pemeriksaan apabila terdapat perbedaan biaya atau permasalahan terkait material.
+
+### 20. Fitur Melihat Informasi Penghasilan dan Pencairan Dana
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Fitur ini memungkinkan Provider melihat rincian penghasilan dari pekerjaan yang telah diselesaikan dan pembayaran yang telah berhasil diproses. Informasi yang ditampilkan meliputi total pembayaran Customer, biaya jasa, biaya material, potongan komisi Jasa Kita, penghasilan bersih Provider, serta status pencairan dana. Penghasilan bersih Provider dapat disalurkan ke rekening yang telah didaftarkan sesuai mekanisme dan ketentuan payment gateway.
+
+**Tujuan:** Memudahkan Provider memantau penghasilan, mengetahui rincian potongan komisi, serta memeriksa status penyaluran pendapatan dari setiap pesanan.
+
+### 21. Fitur Melihat Status Pengajuan Refund dan Pembatalan
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Fitur ini memungkinkan Provider melihat status pengajuan pembatalan pesanan dan refund yang berkaitan dengan pekerjaan yang ditangani. Provider dapat melihat alasan pembatalan, nominal pengembalian dana, catatan pemeriksaan Admin, serta hasil keputusan pengajuan. Apabila diperlukan, Provider juga dapat memberikan keterangan atau bukti pendukung untuk membantu proses pemeriksaan Admin.
+
+**Tujuan:** Memberikan informasi kepada Provider mengenai perkembangan penanganan pembatalan dan refund serta membantu proses penyelesaian permasalahan secara transparan.
