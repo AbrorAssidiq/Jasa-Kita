@@ -36,9 +36,9 @@ umum.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/3.png?raw=true)
 
-**Deskripsi:** Halaman ini menampilkan proses pemeriksaan identitas Admin setelah berhasil melakukan login. Sistem menampilkan informasi akun, metode verifikasi, tujuan pengiriman kode, status verifikasi, serta masa berlaku kode untuk memastikan bahwa akses dilakukan oleh pemilik akun yang sah.
+**Deskripsi:** Halaman ini menampilkan proses verifikasi identitas Admin setelah berhasil melakukan login. Sistem mengirimkan kode OTP (One-Time Password) ke alamat email yang terdaftar pada akun Admin. Halaman ini juga menampilkan informasi akun, alamat email tujuan, status verifikasi, dan masa berlaku kode OTP.
 
-**Tujuan:** Memberikan lapisan keamanan tambahan pada akun Admin dengan memastikan identitas pengguna sebelum memperoleh akses ke dashboard dan fitur pengelolaan website Jasa Kita.
+**Tujuan:** Memastikan bahwa pengguna yang melakukan login merupakan pemilik akun Admin yang sah melalui verifikasi kode OTP menggunakan email, sehingga keamanan akses menuju dashboard dan fitur pengelolaan website Jasa Kita lebih terjaga.
 
 #### 2.2 Dashboard Admin
 
