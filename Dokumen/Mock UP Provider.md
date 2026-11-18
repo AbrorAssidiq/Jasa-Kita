@@ -1,6 +1,6 @@
 ## Provider (Mitra / Penyedia Jasa)
 
-**16 fitur**
+**21 fitur**
 
 Provider merupakan pengguna yang berperan sebagai penyedia atau mitra layanan jasa di dalam 
 aplikasi Jasa Kita. Provider dapat menawarkan layanan, mengelola profil, menerima permintaan 
