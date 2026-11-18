@@ -156,29 +156,17 @@ ditindaklanjuti.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/11.png?raw=true)
 
-**Deskripsi:** Halaman antrean 
-pendaftaran Provider yang 
-menampilkan status dokumen 
-dan waktu pengajuan.
+**Deskripsi:** Halaman ini menampilkan daftar pengajuan verifikasi Provider yang belum diperiksa oleh Admin, termasuk informasi identitas Provider, status dokumen, dan waktu pengajuan verifikasi.
 
-**Tujuan:** Membantu Admin 
-memprioritaskan pengajuan yang 
-belum diperiksa dan menjaga 
-proses verifikasi tetap terpantau.
+**Tujuan:** Memudahkan Admin memantau dan mengelola antrean pengajuan verifikasi Provider serta menentukan pengajuan yang perlu diperiksa lebih lanjut.
 
-#### 6.2 Pemeriksaan Dokumen Provide
+#### 6.2 Pemeriksaan Dokumen Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/12.png?raw=true)
 
-**Deskripsi:** Halaman untuk 
-meninjau berkas Provider, 
-mencatat hasil pemeriksaan, dan 
-memilih keputusan verifikasi.
+**Deskripsi:** Halaman ini memungkinkan Admin memeriksa dokumen identitas dan dokumen pendukung yang telah diunggah oleh Provider. Setelah melakukan pemeriksaan, Admin dapat menentukan salah satu dari tiga keputusan, yaitu menyetujui dokumen, menolak pengajuan verifikasi, atau meminta Provider melakukan perbaikan dokumen. Setiap keputusan disertai catatan atau alasan sebagai informasi bagi Provider.
 
-**Tujuan:** Memastikan akun 
-mitra diperiksa secara konsisten 
-serta setiap keputusan memiliki 
-alasan dan jejak audit.
+**Tujuan:** Memastikan proses verifikasi dokumen Provider berjalan secara teliti, transparan, dan terstruktur sehingga hanya Provider yang memenuhi persyaratan yang dapat disetujui untuk menawarkan layanan jasa di aplikasi Jasa Kita.
 
 ---
 
@@ -200,74 +188,41 @@ Kita.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/14.png?raw=true)
 
-**Deskripsi:** Halaman detail untuk 
-memeriksa isi layanan, harga, 
-kategori, deskripsi, dan alasan 
-layanan masuk antrean moderasi.
+**Deskripsi:** Halaman ini memungkinkan Admin memeriksa informasi layanan yang dibuat oleh Provider, meliputi nama layanan, kategori, harga, deskripsi, dan informasi pendukung lainnya. Setelah melakukan pemeriksaan, Admin dapat menentukan salah satu dari tiga keputusan, yaitu menyetujui layanan agar dapat ditampilkan kepada Customer, meminta Provider melakukan perbaikan, atau menolak layanan yang tidak memenuhi ketentuan. Setiap keputusan disertai catatan atau alasan sebagai informasi bagi Provider.
 
-**Tujuan:** Menjaga informasi 
-layanan tetap jelas dan sesuai 
-ketentuan platform tanpa 
-mengubah data secara 
-sembarangan.
+**Tujuan:** Memastikan setiap layanan yang ditampilkan di platform Jasa Kita memiliki informasi yang jelas, sesuai ketentuan, dan layak ditawarkan kepada Customer.
 
 #### 8.1 Daftar Kategori Jasa
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/15.png?raw=true)
 
-**Deskripsi:** Halaman untuk 
-melihat dan mengelola daftar 
-kategori layanan seperti servis 
-AC, kelistrikan, kebersihan, 
-dan bangunan.
+**Deskripsi:** Halaman ini menampilkan daftar kategori layanan yang tersedia di platform Jasa Kita, seperti servis AC, kelistrikan, kebersihan, dan bangunan. Admin dapat melihat serta mengelola kategori yang digunakan untuk mengelompokkan layanan.
 
-#### Tujuan: Membuat
-pengelompokan layanan lebih 
-konsisten sehingga pencarian 
-dan filter Customer mudah 
-digunakan.
-
----
+***Tujuan:** Memudahkan Admin mengelola kategori jasa agar pengelompokan layanan tetap konsisten sehingga fitur pencarian dan filter oleh Customer dapat digunakan dengan lebih mudah.
 
 #### 8.2 Tambah / Ubah Kategori
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/16.png?raw=true)
 
-**Deskripsi:** Formulir untuk 
-menambahkan atau mengubah 
-nama, deskripsi, ikon, dan status 
-kategori jasa.
+**Deskripsi:** Formulir yang digunakan Admin untuk menambahkan kategori baru atau mengubah informasi kategori yang sudah tersedia, seperti nama, deskripsi, ikon, dan status kategori.
 
-*****Tujuan****: Menjaga struktur 
-kategori tetap rapi serta 
-mengurangi kategori ganda atau 
-membingungkan. 
+**Tujuan:** Memudahkan Admin mengelola struktur kategori jasa agar tetap rapi, konsisten, dan mengurangi kemungkinan adanya kategori ganda atau membingungkan.
 
-##### 9.1 Riwayat Transaksi
+#### 9.1 Riwayat Transaksi
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/17.png?raw=true)
 
-**Deskripsi:** Halaman daftar transaksi yang menghubungkan catatan pembayaran dengan ID pesanan, metode, nominal, waktu, dan status.
+**Deskripsi:** Halaman ini menampilkan daftar seluruh transaksi pembayaran yang terjadi di platform Jasa Kita, meliputi ID transaksi, ID pesanan, nama Customer, nama Provider, tanggal transaksi, metode pembayaran, nominal, dan status pembayaran. Admin dapat mencari, menyaring, serta membuka detail transaksi.
 
-**Tujuan:** Memudahkan Admin 
-menelusuri status transaksi dan 
-mencocokkan catatan 
-pembayaran dengan pesanan.
+**Tujuan:** Memudahkan Admin memantau seluruh aktivitas transaksi pembayaran dan menemukan transaksi yang membutuhkan pemeriksaan atau tindak lanjut.
 
 #### 9.2 Detail Transaksi
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/18.png?raw=true)
 
-**Deskripsi:** Halaman detail 
-transaksi untuk meninjau 
-nominal, metode, waktu, status, 
-dan referensi pembayaran yang 
-terhubung ke pesanan.
+**Deskripsi:** Halaman ini menampilkan informasi lengkap mengenai transaksi yang dipilih, meliputi ID transaksi, ID pesanan, informasi Customer dan Provider, nominal pembayaran, metode pembayaran, waktu transaksi, status pembayaran, serta nomor referensi dari penyedia layanan pembayaran.
 
-**Tujuan:** Membantu 
-pemeriksaan transaksi dan 
-penelusuran selisih atau 
-pertanyaan pembayaran.
+**Tujuan:** Membantu Admin memeriksa keabsahan informasi transaksi, menelusuri status pembayaran, dan menangani kendala atau pertanyaan terkait pembayaran.
 
 ---
 
@@ -275,47 +230,25 @@ pertanyaan pembayaran.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/19.png?raw=true)
 
-**Deskripsi:** Halaman untuk 
-memantau permintaan dan 
-riwayat pembatalan, termasuk 
-pihak yang mengajukan, 
-alasan, waktu, serta status 
-penanganan.
+**Deskripsi:** Halaman ini menampilkan daftar permintaan dan riwayat pembatalan pesanan, meliputi ID pembatalan, ID pesanan, nama Customer, nama Provider, pihak yang mengajukan pembatalan, alasan, tanggal pengajuan, serta status penanganan. Admin dapat mencari, menyaring, dan membuka detail pembatalan.
 
-**Tujuan:** Memastikan setiap 
-pembatalan tercatat dan 
-ditangani sesuai ketentuan 
-yang berlaku.
+**Tujuan:** Memudahkan Admin memantau seluruh aktivitas pembatalan pesanan serta menemukan permintaan yang membutuhkan pemeriksaan atau tindak lanjut.
 
 #### 10.2 Detail Pembatalan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/20.png?raw=true)
 
-****Deskripsi****: Halaman untuk 
-melihat kronologi pembatalan, 
-status terakhir pesanan, alasan, 
-serta bukti pendukung jika ada.
+**Deskripsi:** Halaman ini menampilkan informasi lengkap mengenai permintaan pembatalan pesanan, meliputi identitas Customer dan Provider, detail pesanan, pihak yang mengajukan pembatalan, alasan pembatalan, kronologi pesanan, serta bukti pendukung jika tersedia. Admin dapat memeriksa alasan pembatalan dan menentukan apakah pengajuan tersebut layak disetujui atau ditolak. Apabila disetujui, sistem secara otomatis memperbarui status pesanan menjadi dibatalkan.
 
-**Tujuan:** Membantu Admin 
-menilai permintaan secara 
-konsisten dan memberikan 
-catatan keputusan yang dapat 
-ditelusuri.
+**Tujuan:** Membantu Admin memastikan setiap permintaan pembatalan diperiksa berdasarkan alasan yang jelas serta memastikan proses pembatalan berjalan secara terstruktur dan tercatat dalam sistem.
 
 #### 11.1 Daftar Pengaduan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/21.png?raw=true)
 
-**Deskripsi:** Halaman untuk 
-melihat laporan dari pengguna, 
-pihak yang dilaporkan, 
-kategori masalah, tanggal, dan 
-status penanganan.
+**Deskripsi:** Halaman ini menampilkan seluruh pengaduan yang dikirimkan oleh pengguna Jasa Kita, baik Customer maupun Provider. Informasi yang ditampilkan meliputi ID pengaduan, nama pelapor, pihak yang dilaporkan, kategori pengaduan, tanggal laporan, dan status penanganan. Admin dapat mencari, menyaring, serta membuka detail pengaduan.
 
-**Tujuan:** Membantu Admin 
-mengatur antrean komplain 
-dan memastikan laporan tidak 
-terlewat.
+**Tujuan:** Memudahkan Admin memantau seluruh pengaduan yang masuk, mengelompokkan laporan berdasarkan kategori, dan menemukan pengaduan yang membutuhkan tindak lanjut.
 
 ---
 
@@ -323,44 +256,25 @@ terlewat.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/22.png?raw=true)
 
-****Deskripsi****: Halaman detail yang 
-memuat kronologi, pihak terkait, 
-bukti, serta catatan tindak lanjut 
-pengaduan. 
+**Deskripsi:** Halaman ini menampilkan informasi lengkap mengenai pengaduan, meliputi identitas pelapor, pihak yang dilaporkan, kategori pengaduan, kronologi kejadian, bukti pendukung, serta riwayat penanganan. Admin dapat memeriksa laporan, memberikan catatan hasil pemeriksaan, memperbarui status penanganan, serta menentukan tindakan terhadap pengguna yang terbukti melakukan pelanggaran, seperti memberikan peringatan, pembatasan sementara, penangguhan, atau pemblokiran akun.
 
-****Tujuan****: Menyediakan proses 
-penanganan komplain yang 
-transparan, terdokumentasi, dan 
-dapat ditelusuri. 
+**Tujuan:** Membantu Admin menangani pengaduan Customer maupun Provider secara terstruktur, transparan, dan terdokumentasi serta menjaga keamanan dan kepercayaan pengguna melalui pemberian sanksi sesuai tingkat pelanggaran.
 
 #### 12.1 Rating dan Ulasan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/23.png?raw=true)
 
-****Deskripsi****: Halaman untuk 
-melihat rating dan komentar 
-yang diberikan Customer 
-terhadap layanan atau Provider. 
+**Deskripsi:** Halaman ini menampilkan seluruh rating dan ulasan yang diberikan Customer terhadap Provider atau layanan setelah pesanan selesai. Informasi yang ditampilkan meliputi nama Customer, Provider, layanan yang dinilai, ID pesanan, nilai rating, komentar, tanggal ulasan, serta status ulasan. Admin dapat memantau dan menindaklanjuti ulasan yang dilaporkan atau terindikasi melanggar ketentuan platform.
 
-****Tujuan****: Membantu Admin 
-memantau kualitas layanan dan 
-meninjau ulasan yang dilaporkan 
-atau ditandai.
+**Tujuan:** Membantu Admin memantau kualitas layanan, menjaga kepercayaan pengguna, serta memastikan ulasan yang ditampilkan di platform Jasa Kita tetap sesuai dengan ketentuan yang berlaku.
 
 #### 12.2 Pusat Notifikasi
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/24.png?raw=true)
 
-**Deskripsi:** Halaman untuk 
-memantau notifikasi yang 
-tercatat, jenis pesan, penerima, 
-dan status pengiriman
+**Deskripsi:** Halaman ini menampilkan daftar notifikasi yang dikirimkan oleh sistem kepada Customer dan Provider. Informasi yang ditampilkan meliputi jenis notifikasi, penerima, isi pesan, waktu pengiriman, serta status pengiriman. Admin dapat memantau riwayat notifikasi dan memeriksa notifikasi yang mengalami kegagalan pengiriman.
 
-**Tujuan:** Membantu Admin 
-memastikan pemberitahuan 
-penting dapat dipantau dan 
-gangguan pengiriman dapat 
-ditelusuri.
+**Tujuan:** Memudahkan Admin memantau aktivitas pemberitahuan sistem, memastikan informasi penting tersampaikan kepada pengguna, serta membantu menelusuri kendala pengiriman notifikasi.
 
 ---
 
@@ -368,35 +282,37 @@ ditelusuri.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/25.png?raw=true)
 
-**Deskripsi:** Halaman laporan 
-yang merangkum jumlah 
-pengguna baru, Provider, 
-pesanan, pesanan selesai, dan 
-pembatalan dalam periode 
-tertentu.
+**Deskripsi:** Halaman ini menampilkan laporan aktivitas pengguna dan pesanan pada platform Jasa Kita dalam periode tertentu. Informasi yang disajikan meliputi jumlah Customer dan Provider, pengguna baru, total pesanan, pesanan berdasarkan status, pesanan selesai, serta pesanan yang dibatalkan. Admin dapat menyaring laporan berdasarkan rentang tanggal, melihat ringkasan data melalui grafik maupun tabel, serta mengunduh laporan dalam format PDF atau Excel.
 
-**Tujuan:** Memberikan bahan 
-evaluasi aktivitas platform dan 
-membantu pengelola melihat 
-perubahan dari waktu ke waktu.
+**Tujuan:** Memberikan informasi mengenai perkembangan jumlah pengguna dan aktivitas pesanan sebagai bahan evaluasi Admin dalam memantau perkembangan platform Jasa Kita. Fitur unduh laporan juga memudahkan penyimpanan dan penyusunan dokumentasi data.
 
 #### 13.2 Laporan Transaksi
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/26.png?raw=true)
 
-**Deskripsi:** Halaman ini menampilkan laporan transaksi pembayaran dalam periode tertentu, meliputi jumlah transaksi, total pembayaran Customer, metode pembayaran, waktu transaksi, dan status pembayaran. Laporan juga menampilkan komisi platform yang menggunakan tarif promo sebesar 3% selama tiga bulan pertama sejak platform resmi diluncurkan, dihitung dari total pembayaran Customer termasuk biaya tambahan, serta pendapatan bersih Provider setelah dikurangi komisi. Setelah masa promo tiga bulan berakhir, tarif normal sebesar 5% mulai diterapkan. Admin dapat menyaring laporan berdasarkan rentang tanggal dan status transaksi serta mengunduh laporan dalam format PDF atau Excel.
+**Deskripsi:** Halaman ini menampilkan laporan transaksi pembayaran yang terjadi di platform Jasa Kita dalam periode tertentu. Informasi yang disajikan meliputi jumlah transaksi, total nominal transaksi, metode pembayaran, waktu transaksi, serta status pembayaran seperti menunggu, berhasil, gagal, atau dikembalikan. Halaman ini juga menampilkan perhitungan komisi yang diperoleh platform dan pendapatan bersih Provider setelah dikurangi komisi. Admin dapat menyaring laporan berdasarkan rentang tanggal dan status transaksi serta mengunduh laporan dalam format PDF atau Excel.
 
-**Tujuan:** Memudahkan Admin memantau aktivitas pembayaran, mengetahui pendapatan komisi platform, melihat pendapatan bersih Provider, serta mengevaluasi transaksi yang membutuhkan pemeriksaan atau tindak lanjut.
+**Tujuan:** Memudahkan Admin memantau aktivitas pembayaran, mengetahui pendapatan komisi platform, memantau pendapatan Provider, serta mengevaluasi transaksi yang membutuhkan pemeriksaan atau tindak lanjut.
 
 #### 14.1 Pengaturan Sistem
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/27.png?raw=true).
 
-**Deskripsi:** Halaman ini digunakan Admin untuk mengelola konfigurasi umum platform Jasa Kita, termasuk pengaturan komisi transaksi. Pada tiga bulan pertama sejak platform resmi diluncurkan, sistem menerapkan tarif komisi promo sebesar 3% dari total pembayaran Customer untuk setiap transaksi yang berhasil, dengan dasar perhitungan mencakup biaya tambahan yang dibayarkan Customer. Setelah masa promo tiga bulan berakhir, tarif normal sebesar 5% mulai diterapkan. Persentase komisi dan periode penerapannya dapat diatur melalui konfigurasi sistem. Provider perlu menerima pemberitahuan sebelum perubahan tarif diberlakukan. Sisa pembayaran setelah dikurangi komisi menjadi pendapatan Provider dan disalurkan secara otomatis oleh sistem sesuai mekanisme pembayaran yang terintegrasi.
+**Deskripsi:** Halaman untuk 
+mengatur informasi umum 
+aplikasi dan konfigurasi yang 
+memang disediakan untuk 
+Admin.
 
-**Tujuan:** Memudahkan Admin mengelola konfigurasi platform secara terpusat, menyesuaikan tarif komisi sesuai kebijakan yang berlaku, serta memastikan pembagian pendapatan antara platform dan Provider tercatat dengan jelas.
+**Tujuan:** Menjaga konfigurasi 
+platform tetap terpusat dan 
+perubahan penting dapat 
+ditelusuri.
 
-**Catatan:** Penyaluran otomatis memerlukan integrasi dengan penyedia layanan pembayaran dan data rekening atau akun pencairan Provider yang valid. Detail teknis integrasi, jadwal penyelesaian dana, serta penanganan transaksi gagal atau pengembalian dana mengikuti kebijakan dan kemampuan penyedia layanan pembayaran.
+**Catatan keputusan:** Daftar 
+pengaturan final bergantung 
+pada keputusan teknis dan 
+kebijakan pengelola platform.
 
 ---
 
