@@ -328,7 +328,6 @@ Kita.
 **Tujuan:** Memudahkan Admin melihat dan memperbarui informasi pribadi serta menjaga keamanan akun agar data profil tetap akurat dan akses ke dashboard Jasa Kita terlindungi.
 
 **Catatan:** Perubahan alamat email atau password perlu melalui proses verifikasi untuk memastikan keamanan akun. Informasi peran dan hak akses Admin hanya dapat diubah oleh petugas yang memiliki kewenangan khusus.
----
 
 #### 16.1 Konfirmasi Logout
 
