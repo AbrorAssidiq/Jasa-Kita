@@ -94,15 +94,7 @@ Customer melalui aplikasi Jasa Kita.
 permintaan layanan yang masuk dan menentukan 
 pesanan yang akan ditangani.
 
-### 10. Fitur Melihat Detail Pemesanan
-
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/11.jpg?raw=true)
-
-**Deskripsi:** Fitur ini memungkinkan Provider melihat informasi secara lengkap mengenai permintaan pesanan dari Customer, seperti identitas Customer, jenis layanan, detail kebutuhan pekerjaan, lokasi, jadwal, serta informasi harga apabila telah tersedia.
-
-**Tujuan:** Membantu Provider memahami kebutuhan dan kondisi pekerjaan sebelum menentukan apakah pesanan dapat diterima atau ditolak.
-
-### 11. Fitur Menerima atau Menolak Pesanan
+### 10. Fitur Menerima atau Menolak Pesanan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/10.png?raw=true)
 
@@ -115,6 +107,14 @@ kemampuan dan ketersediaan layanan.
 untuk memilih pekerjaan yang sanggup dikerjakan.
 
 ---
+
+### 11. Fitur Melihat Detail Pemesanan
+
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/11.jpg?raw=true)
+
+**Deskripsi:** Fitur ini memungkinkan Provider melihat informasi secara lengkap mengenai permintaan pesanan dari Customer, seperti identitas Customer, jenis layanan, detail kebutuhan pekerjaan, lokasi, jadwal, serta informasi harga apabila telah tersedia.
+
+**Tujuan:** Membantu Provider memahami kebutuhan dan kondisi pekerjaan sebelum menentukan apakah pesanan dapat diterima atau ditolak.
 
 ### 12.Fitur Mengirim Pesan kepada Pelanggan melalui Chat
 
@@ -141,3 +141,19 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 **Deskripsi:** Fitur ini memungkinkan Provider menyaring dan melihat daftar riwayat pesanan berdasarkan tanggal atau rentang waktu tertentu.
 
 **Tujuan:** Memudahkan Provider mencari dan memeriksa kembali informasi pekerjaan berdasarkan waktu pelaksanaan sehingga riwayat pesanan lebih mudah dikelola.
+
+### 15. Fitur Memperbarui Status Pekerjaan
+
+![alt text](?raw=true)
+
+**Deskripsi:** Fitur ini memungkinkan Provider memperbarui status pekerjaan setelah menerima pesanan dari Customer. Provider dapat mengubah status pesanan menjadi sedang dikerjakan ketika mulai melaksanakan pekerjaan, sehingga Customer dapat mengetahui perkembangan proses pengerjaan melalui aplikasi Jasa Kita.
+
+**Tujuan:** Memberikan informasi mengenai perkembangan pekerjaan kepada Customer serta membantu Provider memperbarui status pesanan agar proses pemesanan dapat dipantau dengan jelas.
+
+### 16. Fitur Menyelesaikan Pekerjaan
+
+![alt text](?raw=true)
+
+**Deskripsi:** Fitur ini memungkinkan Provider menandai pekerjaan sebagai selesai setelah seluruh layanan yang dipesan oleh Customer telah dikerjakan. Setelah Provider mengonfirmasi penyelesaian pekerjaan, sistem akan memperbarui status pesanan menjadi menunggu konfirmasi Customer.
+
+**Tujuan:** Memberikan informasi kepada Customer bahwa pekerjaan telah selesai dilakukan serta menjadi tahapan sebelum Customer melakukan konfirmasi penyelesaian pekerjaan dan melanjutkan proses pembayaran.
