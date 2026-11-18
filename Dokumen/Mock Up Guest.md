@@ -43,7 +43,7 @@ fungsi dan layanan yang ditawarkan oleh aplikasi Jasa Kita.
 
 ---
 
-###5. Fitur Melihat Daftar Kategori Jasa
+### 5. Fitur Melihat Daftar Kategori Jasa
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/melihat%20daftar%20kategori%20jasa.jpg?raw=true)
 
