@@ -184,7 +184,9 @@ Apabila harga aktual material lebih tinggi daripada nominal yang telah disetujui
 
 ![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
 
-**Deskripsi:** Fitur ini memungkinkan Provider mengunggah bukti pembelian material atau suku cadang yang telah dibeli, seperti foto nota, struk, atau bukti transaksi dari toko. Informasi tersebut digunakan sebagai dokumentasi pembelian serta bahan pemeriksaan apabila terjadi kendala atau pengaduan terkait penggunaan material.
+**Deskripsi:** Fitur ini memungkinkan Provider mengunggah bukti pembelian material atau suku cadang yang telah dibeli, seperti foto nota, struk, atau bukti transaksi dari toko. Bukti pembelian harus mencantumkan informasi yang dapat diperiksa, seperti nama material, jumlah, harga, dan total pembayaran. Informasi tersebut digunakan untuk memastikan kesesuaian pembelian dengan pengajuan biaya yang telah disetujui Customer.
+
+Apabila terdapat perbedaan antara nominal pembelian dan biaya yang telah disetujui, Provider wajib memberikan keterangan serta mengikuti proses pengajuan perubahan biaya apabila terdapat tambahan biaya yang harus ditanggung Customer.
 
 **Tujuan:** Memberikan bukti pembelian yang jelas dan transparan serta membantu Admin melakukan pemeriksaan apabila terdapat perbedaan biaya atau permasalahan terkait material.
 
@@ -192,14 +194,20 @@ Apabila harga aktual material lebih tinggi daripada nominal yang telah disetujui
 
 ![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
 
-**Deskripsi:** Fitur ini memungkinkan Provider melihat rincian penghasilan dari pekerjaan yang telah diselesaikan dan pembayaran yang telah berhasil diproses. Informasi yang ditampilkan meliputi total pembayaran Customer, biaya jasa, biaya material, potongan komisi Jasa Kita, penghasilan bersih Provider, serta status pencairan dana. Penghasilan bersih Provider dapat disalurkan ke rekening yang telah didaftarkan sesuai mekanisme dan ketentuan payment gateway.
+**Deskripsi:** Fitur ini memungkinkan Provider melihat rincian transaksi, penghasilan, dan status pencairan dana dari pekerjaan yang telah diselesaikan. Informasi yang ditampilkan meliputi total pembayaran Customer, biaya jasa, biaya material, potongan komisi Jasa Kita, serta jumlah dana bersih yang menjadi hak Provider setelah perhitungan transaksi.
 
-**Tujuan:** Memudahkan Provider memantau penghasilan, mengetahui rincian potongan komisi, serta memeriksa status penyaluran pendapatan dari setiap pesanan.
+Sistem juga menampilkan riwayat transaksi dan status pencairan dana ke rekening Provider yang telah terdaftar. Status pencairan dapat berupa menunggu pencairan, sedang diproses, berhasil, atau gagal sesuai informasi yang diterima dari payment gateway.
+
+**Tujuan:** Memudahkan Provider memantau rincian transaksi, mengetahui perhitungan komisi Jasa Kita, serta memeriksa jumlah dan status pencairan dana yang diterima.
 
 ### 21. Fitur Melihat Status Pengajuan Refund dan Pembatalan
 
 ![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
 
-**Deskripsi:** Fitur ini memungkinkan Provider melihat status pengajuan pembatalan pesanan dan refund yang berkaitan dengan pekerjaan yang ditangani. Provider dapat melihat alasan pembatalan, nominal pengembalian dana, catatan pemeriksaan Admin, serta hasil keputusan pengajuan. Apabila diperlukan, Provider juga dapat memberikan keterangan atau bukti pendukung untuk membantu proses pemeriksaan Admin.
+**Deskripsi:** Fitur ini memungkinkan Provider melihat informasi dan perkembangan pengajuan pembatalan pesanan maupun refund yang berkaitan dengan pekerjaan yang ditangani. Informasi yang ditampilkan meliputi ID pesanan, alasan pengajuan, nominal refund, tanggal pengajuan, serta status pemeriksaan oleh Admin.
 
-**Tujuan:** Memberikan informasi kepada Provider mengenai perkembangan penanganan pembatalan dan refund serta membantu proses penyelesaian permasalahan secara transparan.
+Status pengajuan dapat berupa menunggu pemeriksaan, disetujui, ditolak, sedang diproses, berhasil, atau gagal. Provider juga dapat memberikan keterangan dan mengunggah bukti pendukung apabila diperlukan untuk membantu Admin melakukan pemeriksaan.
+
+Keputusan persetujuan atau penolakan refund sepenuhnya dilakukan oleh Admin berdasarkan informasi, bukti pembelian material, kondisi pekerjaan, dan alasan pengajuan. Apabila refund disetujui, proses pengembalian dana dilakukan melalui mekanisme payment gateway yang digunakan oleh Jasa Kita.
+
+**Tujuan:** Memberikan informasi kepada Provider mengenai perkembangan penanganan pembatalan dan refund serta membantu proses penyelesaian permasalahan secara transparan dan adil.
