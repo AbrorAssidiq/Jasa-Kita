@@ -148,16 +148,9 @@ ditindaklanjuti.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/10.png?raw=true)
 
-**Deskripsi:** Halaman detail 
-Provider untuk melihat identitas 
-pemilik, informasi usaha, 
-kategori, lokasi, dokumen, dan 
-ringkasan layanan.
+**Deskripsi:** Halaman detail Provider yang menampilkan informasi lengkap mengenai identitas pemilik, informasi usaha, kategori jasa, lokasi, status akun, dokumen, serta layanan yang ditawarkan.
 
-**Tujuan:** Menyediakan dasar 
-pemeriksaan dan pemantauan 
-mitra agar pengelolaan akun 
-Provider lebih tertib.
+**Tujuan:** Membantu Admin memeriksa dan memperoleh informasi lengkap mengenai Provider sebagai dasar pemantauan serta pengelolaan akun penyedia jasa di platform Jasa Kita.
 
 #### 6.1 Antrean Verifikasi Provider
 
