@@ -228,7 +228,7 @@ layanan yang telah dipesan.
 daftar pemesanan yang pernah dilakukan sebelumnya 
 melalui aplikasi Jasa Kita.
 
-**Tujuan:** Memudahkan Customer mengetahui dan memeriksa kembali riwayat penggunaan layanan jasa, termasuk status pesanan dan pembayaran..
+**Tujuan:** Memudahkan Customer mengetahui dan memeriksa kembali riwayat penggunaan layanan jasa, termasuk status pesanan dan pembayaran.
 
 ### 23. Halaman Penilaian dan Rating
 
