@@ -90,13 +90,11 @@ yang ditawarkan.
 **Tujuan:** Membantu pengunjung mempertimbangkan penyedia 
 jasa yang sesuai dengan kebutuhan sebelum membuat akun.
 
-### 9. Tampilan Wajib Login
+### 9. Tampilan Login
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/tampilan%20wajib%20login.jpg?raw=true)
 
-**Deskripsi:** Fitur ini mewajibkan Customer membuat akun baru 
-dan masuk ke aplikasi menggunakan akun yang telah terdaftar
-agar dapat melakukan pemeasnan.
+**Deskripsi:** Fitur Login hanya diwajibkan saat Guest ingin melakukan aktivitas yang membutuhkan akun
 
 **Tujuan:** Memberikan akses kepada pengguna untuk 
-menggunakan fitur-fitur aplikasi yang memerlukan autentikasi.
+menggunakan fitur-fitur aplikasi dan jika ingin melakukan pemesanan.
