@@ -144,7 +144,7 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 
 ### 15. Fitur Memperbarui Status Pekerjaan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/Detail%20Pesanan.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Provider memperbarui status pekerjaan setelah menerima pesanan dari Customer. Provider dapat mengubah status pesanan menjadi sedang dikerjakan ketika mulai melaksanakan pekerjaan, sehingga Customer dapat mengetahui perkembangan proses pengerjaan melalui aplikasi Jasa Kita.
 
@@ -152,7 +152,7 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 
 ### 16. Fitur Menyelesaikan Pekerjaan
 
-![alt text](?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/Menyelesaikan%20pekerjaan.jpg?raw=true)
 
 **Deskripsi:** Fitur ini memungkinkan Provider menandai pekerjaan sebagai selesai setelah seluruh layanan yang dipesan oleh Customer telah dikerjakan. Setelah Provider mengonfirmasi penyelesaian pekerjaan, sistem akan memperbarui status pesanan menjadi menunggu konfirmasi Customer.
 
