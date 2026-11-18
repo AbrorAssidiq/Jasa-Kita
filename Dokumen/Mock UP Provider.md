@@ -170,9 +170,15 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 
 ![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
 
-**Deskripsi:** Fitur ini memungkinkan Provider melihat status pengajuan biaya tambahan material, baik menunggu persetujuan Customer, disetujui, maupun ditolak. Setelah Customer menyetujui dan pembayaran biaya material berhasil dikonfirmasi oleh payment gateway, Provider dapat melanjutkan proses pembelian. Sebelum pembelian dilakukan, sistem menampilkan peringatan agar Provider memastikan material atau suku cadang yang akan dibeli sesuai dengan jenis, merek, model, dan kebutuhan perangkat yang diperbaiki.
+**Deskripsi:** Fitur ini memungkinkan Provider melihat status pengajuan biaya tambahan material, baik menunggu persetujuan Customer, disetujui, maupun ditolak. Setelah Customer menyetujui pengajuan dan pembayaran biaya material berhasil dikonfirmasi oleh payment gateway, Provider dapat melanjutkan proses pembelian material.
 
-**Tujuan:** Memastikan proses pembelian material dilakukan setelah mendapatkan persetujuan dan pembayaran dari Customer serta mengurangi risiko kesalahan pembelian barang yang tidak sesuai dengan kebutuhan perbaikan.
+Sebelum melakukan pembelian, sistem menampilkan peringatan agar Provider memastikan material atau suku cadang yang akan dibeli sesuai dengan jenis, merek, model, spesifikasi, dan kebutuhan perangkat yang diperbaiki. Provider juga harus memastikan kebijakan pengembalian barang dari toko serta melakukan konfirmasi kepada Customer apabila terdapat informasi yang belum jelas.
+
+Provider wajib mencentang kotak konfirmasi sebagai tanda bahwa pemeriksaan kesesuaian material telah dilakukan sebelum melanjutkan pembelian.
+
+Apabila harga aktual material lebih tinggi daripada nominal yang telah disetujui Customer, Provider wajib mengajukan perubahan biaya disertai rincian harga terbaru dan menunggu persetujuan Customer sebelum melakukan pembelian. Sistem tidak diperbolehkan membebankan selisih biaya secara otomatis tanpa persetujuan Customer.
+
+**Tujuan:** Memastikan proses pembelian material dilakukan setelah mendapatkan persetujuan dan pembayaran dari Customer, mengurangi risiko kesalahan pembelian barang, serta mencegah terjadinya perubahan biaya tanpa persetujuan Customer.
 
 ### 19. Fitur Mengunggah Bukti Pembelian Material
 
