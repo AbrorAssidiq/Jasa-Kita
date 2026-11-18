@@ -10,9 +10,9 @@ untuk mendaftar.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halamansplash.jpg?raw=true)
 
-**Deskripsi :** Memberikan kesan awal Aplikasi.
+**Deskripsi :** Halaman awal yang ditampilkan ketika pengguna membuka aplikasi Jasa Kita, sebelum diarahkan ke halaman utama.
 
-**Tujuan :** Menampilkan Logo dan nama Aplikasi
+**Tujuan :** Memperkenalkan identitas aplikasi melalui tampilan logo dan nama Jasa Kita
 
 ### 2. Halaman Akses Tanpa Akun
 
@@ -33,7 +33,7 @@ layanan yang tersedia.
 **Tujuan:** Memberikan gambaran awal kepada pengunjung mengenai 
 fungsi dan layanan yang ditawarkan oleh aplikasi Jasa Kita.
 
-### 4. Fitur Halaman Profile
+### 4. Fitur Halaman Profil
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halaman%20%20profile%20guest.jpg?raw=true)
 
@@ -43,7 +43,7 @@ fungsi dan layanan yang ditawarkan oleh aplikasi Jasa Kita.
 
 ---
 
-**5. Fitur Melihat Daftar Kategori Jasa**
+###5. Fitur Melihat Daftar Kategori Jasa**
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/melihat%20daftar%20kategori%20jasa.jpg?raw=true)
 
