@@ -20,7 +20,7 @@ untuk mendaftar.
 
 **Deskripsi :** Memberikan akses informasi meski belum login.
 
-**Tujuan :** Pengguna bisa melihat layanan sebelum membuat akun.
+**Tujuan :** tampilkan status sebagai Pengunjung serta pilihan Masuk dan Daftar Akun.
 
 ### 3. Fitur Melihat Halaman Utama Aplikasi
 
