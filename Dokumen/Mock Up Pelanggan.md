@@ -206,19 +206,51 @@ layanan yang telah dipesan.
 
 ### 20. Halaman Pembayaran Pesanan
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/Pembayaran%20Pesanan.jpg?raw=true)
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
 
-**Deskripsi:** Halaman yang menampilkan rincian tagihan layanan setelah Customer mengonfirmasi bahwa pekerjaan telah selesai. Customer dapat melihat total biaya dan memilih metode pembayaran online yang tersedia.
+**Deskripsi:** Halaman ini menampilkan rincian biaya pesanan Customer, termasuk biaya jasa dan biaya tambahan material apabila terdapat pengajuan biaya tambahan yang telah disetujui. Sistem menyediakan dua tahap pembayaran melalui payment gateway. Tahap pertama digunakan untuk membayar biaya material sebelum Provider melakukan pembelian. Tahap kedua digunakan untuk membayar biaya jasa setelah pekerjaan selesai dan dikonfirmasi oleh Customer.
 
-**Tujuan:** Memudahkan Customer menyelesaikan pembayaran layanan melalui aplikasi Jasa Kita secara praktis dan aman.
+**Tujuan:** Memudahkan Customer melakukan pembayaran secara bertahap melalui metode pembayaran digital yang tersedia pada payment gateway, seperti QRIS, Virtual Account, dan e-wallet yang didukung.
+
+### 20.1 Halaman Pembayaran Biaya Material
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan rincian pengajuan biaya tambahan material yang diajukan oleh Provider dan telah disetujui oleh Customer. Informasi yang ditampilkan meliputi nama material, jumlah, harga, alasan pembelian, serta total biaya yang harus dibayarkan. Customer dapat memilih metode pembayaran melalui payment gateway untuk menyelesaikan pembayaran biaya material.
+
+**Tujuan:** Memberikan kemudahan kepada Customer untuk membayar biaya material sebelum Provider melakukan pembelian sehingga Provider tidak perlu menalangi biaya tersebut.
+
+### 20.2 Halaman Status Pembayaran Material
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan status pembayaran biaya material yang telah dilakukan Customer, seperti menunggu pembayaran, berhasil, atau gagal. Setelah pembayaran berhasil dikonfirmasi oleh payment gateway, sistem akan memberikan informasi kepada Provider bahwa biaya material telah dibayarkan dan pembelian dapat dilanjutkan.
+
+**Tujuan:** Memberikan informasi yang jelas mengenai status pembayaran material serta memastikan Provider hanya melakukan pembelian setelah pembayaran berhasil dikonfirmasi oleh sistem.
+
+### 20.3 Halaman Pembayaran Biaya Jasa
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan rincian biaya jasa setelah Provider menyelesaikan pekerjaan dan Customer memberikan konfirmasi penyelesaian. Informasi yang ditampilkan meliputi biaya jasa, biaya material yang telah dibayarkan sebelumnya, serta total keseluruhan transaksi. Customer dapat melakukan pembayaran biaya jasa melalui payment gateway menggunakan metode pembayaran yang tersedia.
+
+**Tujuan:** Memudahkan Customer menyelesaikan pembayaran biaya jasa setelah pekerjaan selesai serta memberikan transparansi mengenai keseluruhan biaya yang telah dikeluarkan.
 
 ### 21. Halaman Status Pembayaran
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/Status%20pembayaran.jpg?raw=true)
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
 
-**Deskripsi:** Halaman yang menampilkan informasi hasil pembayaran Customer, seperti pembayaran berhasil, menunggu konfirmasi, atau pembayaran gagal. Halaman ini juga menampilkan detail transaksi sebagai bukti pembayaran.
+**Deskripsi:** Halaman ini menampilkan informasi status pembayaran Customer, baik pembayaran biaya material maupun biaya jasa. Status yang ditampilkan meliputi menunggu pembayaran, berhasil, gagal, atau dikembalikan. Halaman ini juga menampilkan rincian transaksi, metode pembayaran, waktu pembayaran, dan nomor referensi transaksi dari payment gateway apabila tersedia.
 
-**Tujuan:** Memberikan informasi kepada Customer mengenai status transaksi serta memastikan pembayaran dapat dipantau melalui aplikasi Jasa Kita.
+**Tujuan:** Memudahkan Customer memantau seluruh aktivitas pembayaran pesanan serta memastikan setiap transaksi tercatat dan dapat diperiksa kembali melalui aplikasi Jasa Kita.
+
+### 21.1 Halaman Status Pengajuan Refund
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini memungkinkan Customer melihat perkembangan pengajuan pengembalian dana akibat pembatalan pesanan atau kondisi tertentu yang memenuhi ketentuan refund. Informasi yang ditampilkan meliputi nomor pengajuan, ID pesanan, nominal refund, alasan pengajuan, serta status pemeriksaan Admin. Status refund dapat berupa menunggu pemeriksaan, disetujui, ditolak, sedang diproses, berhasil, atau gagal.
+
+**Tujuan:** Memberikan transparansi kepada Customer mengenai proses pengembalian dana serta memudahkan Customer mengetahui perkembangan pengajuan refund melalui aplikasi Jasa Kita.
 
 ### 22. Fitur Melihat Riwayat Pemesanan
 
