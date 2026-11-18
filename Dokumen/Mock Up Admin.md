@@ -38,8 +38,7 @@ umum.
 
 **Deskripsi:** Halaman pemeriksaan 
 tambahan setelah login, apabila sistem 
-menerapkan OTP atau metode 
-autentikasi berlapis.
+menerapkan OTP melalui Email.
 
 **Tujuan:** Menambah perlindungan 
 akun Admin. Metode, kanal 
@@ -127,15 +126,13 @@ ketika menangani pertanyaan,
 pengaduan, atau kebutuhan 
 pembaruan data.
 
-#### 4.3 Detail Pelanggan
+#### 4.3 Mengubah dan Memperbarui Data Pelanggan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/9.png?raw=true)
 
-**Deskripsi:** Halaman profil 
-pelanggan yang memuat 
-informasi akun dan ringkasan 
-aktivitas, termasuk pesanan atau 
-laporan yang terkait.
+**Deskripsi:** Halaman ini memungkinkan Admin mengubah dan memperbarui informasi data pelanggan, seperti nama, alamat email, nomor telepon, dan informasi akun lainnya apabila diperlukan.
+
+**Tujuan:** Memudahkan Admin dalam memperbaiki atau memperbarui data pelanggan agar informasi akun tetap akurat, sesuai, dan terkelola dengan baik.
 
 **Tujuan:** Membantu Admin 
 memeriksa informasi pelanggan 
