@@ -10,20 +10,18 @@ pemesanan, dan memperbarui perkembangan pekerjaan.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/1.jpg?raw=true)
 
-**Deskripsi:** Fitur Provider membuka dan mengakses Profil data 
-diri Provider
+**Deskripsi:** Halaman ini memungkinkan Provider mengakses menu profil akun untuk melihat informasi akun serta memilih tindakan seperti masuk atau mendaftar sebagai penyedia jasa.
 
-**Tujuan:** Mengakses menu akun untuk masuk atau daftar
+**Tujuan:** Memudahkan pengguna mengakses akun dan memulai proses pendaftaran sebagai Provider di aplikasi Jasa Kita.
+
 
 ### 2. Halaman mengisi data profil sebagai Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/2.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Provider mengisi Data diri 
-mereka
+**Deskripsi:** Fitur ini memungkinkan Provider mengisi data diri sebagai penyedia jasa, seperti nama lengkap, alamat email, dan nomor HP.
 
-**Tujuan:** Membantu Provider mmengisi data diri sebagai 
-penyedia jasa, seperti data Nama, Email, No Hp
+**Tujuan:** Mengumpulkan informasi dasar Provider yang diperlukan untuk proses pembuatan akun dan pengelolaan profil pada aplikasi Jasa Kita.
 
 ---
 
@@ -31,24 +29,17 @@ penyedia jasa, seperti data Nama, Email, No Hp
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/3.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Provider mengelola dan 
-memperbarui informasi profil, seperti identitas serta 
-informasi lain yang berkaitan dengan dirinya sebagai 
-penyedia jasa.
+**Deskripsi:** Fitur ini memungkinkan Provider mengelola dan memperbarui informasi profil, seperti identitas serta informasi lain yang berkaitan dengan dirinya sebagai penyedia jasa.
 
-**Tujuan:** Membantu Customer mengetahui identitas dan 
-informasi penyedia jasa sebelum melakukan pemesanan.
+**Tujuan:** Membantu Customer mengetahui identitas dan informasi penyedia jasa sebelum melakukan pemesanan.
 
 ### 4. Fitur Menambahkan Informasi Lokasi Jasa
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/4.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Provider menambahkan 
-informasi mengenai lokasi jasa yang ingin ditawarkan kepada 
-Customer sesuai kemampuan dan bidang pekerjaannya.
+**Deskripsi:** Fitur ini memungkinkan Provider menambahkan informasi mengenai lokasi dan wilayah layanan jasa yang dapat dijangkau sesuai kemampuan serta bidang pekerjaannya.
 
-**Tujuan:** Memudahkan Provider memberitahu lokasi layanan 
-agar dapat ditemukan oleh calon pelanggan.
+**Tujuan:** Memudahkan Customer mengetahui wilayah layanan Provider dan membantu sistem menampilkan penyedia jasa berdasarkan lokasi yang sesuai dengan kebutuhan pekerjaan.
 
 ---
 
@@ -56,24 +47,17 @@ agar dapat ditemukan oleh calon pelanggan.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/5.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Provider untuk 
-mengunggah data diri mereka yang nantinya akan di validasi 
-oleh admin
+**Deskripsi:** Fitur ini memungkinkan Provider mengunggah dokumen identitas dan dokumen pendukung usaha, seperti KTP, Surat Izin Usaha, serta dokumen lain yang diperlukan untuk proses verifikasi oleh Admin.
 
-**Tujuan:** Mewajibkan Provider untuk mengunggah 
-dokumen seperti KTP, Surat Izin Usaha dan dokumen 
-lainnya
+**Tujuan:** Memastikan identitas dan kelayakan Provider melalui pemeriksaan dokumen oleh Admin sebelum Provider dapat menawarkan layanan jasa kepada Customer.
 
 ### 6. Menunggu Verifikasi sebagai Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/6.jpg?raw=true)
 
-**Deskripsi:** Fitur ini ditujukan untuk Provider bahwa data 
-sedang di verifikasi oleh admin
+**Deskripsi:** Halaman ini menampilkan informasi bahwa data dan dokumen yang telah dikirimkan Provider sedang dalam proses pemeriksaan oleh Admin. Provider juga dapat melihat status verifikasi, baik menunggu pemeriksaan, disetujui, maupun ditolak atau perlu perbaikan dokumen.
 
-**Tujuan:** Untuk memberi tahu Provider bahwa data sedang di 
-cocokan oleh Admin, apakah foto ktp, Surat Usaha dan wajah 
-cocok dengan yang ada di lokasi/ benar adanya usaha tersebut
+**Tujuan:** Memberikan informasi kepada Provider mengenai perkembangan proses verifikasi serta membantu Provider mengetahui tindakan yang perlu dilakukan apabila terdapat dokumen yang harus diperbaiki.
 
 ---
 
@@ -84,23 +68,17 @@ cocok dengan yang ada di lokasi/ benar adanya usaha tersebut
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/7.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Provider mengatur 
-ketersediaan layanan untuk menentukan jasa appa saya yang 
-bisa diberikan.
+**Deskripsi:** Fitur ini memungkinkan Provider memilih, menambahkan, dan mengelola jenis layanan jasa yang dapat ditawarkan kepada Customer sesuai dengan keahlian dan kemampuan masing-masing.
 
-**Tujuan:** Memberikan kendali kepada Provider dalam 
-mengatur ketersediaan layanan sesuai keahlian masing 
-masing
+**Tujuan:** Memberikan kemudahan kepada Provider dalam mengatur layanan yang tersedia serta membantu Customer menemukan jasa sesuai kebutuhan pekerjaan.
 
 ### 8. Halaman fitur ketersediaan Jam Operasional
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/8.jpg?raw=true)
 
-**Deskripsi:** Fitur ini bertujuan untuk memberi tahu 
-Pelangan jam berapa saja pihak provider berkerja
+**Deskripsi:** Fitur ini memungkinkan Provider mengatur dan memperbarui jadwal serta jam operasional layanan, termasuk hari dan waktu ketika Provider dapat menerima pesanan.
 
-**Tujuan:** Memudahkan Pelanggan mengetahui Jam 
-operasional pihak Penyedia Jasa
+**Tujuan:** Memudahkan Customer mengetahui waktu operasional Provider sehingga dapat menyesuaikan jadwal pemesanan dengan ketersediaan layanan.
 
 ---
 
@@ -134,25 +112,17 @@ untuk memilih pekerjaan yang sanggup dikerjakan.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/11.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Provider melihat 
-informasi pesanan, termasuk detail kebutuhan pekerjaan 
-dan lokasi yang telah dimasukkan oleh Customer.
+**Deskripsi:** Fitur ini memungkinkan Provider melihat informasi secara lengkap mengenai permintaan pesanan dari Customer, seperti identitas Customer, jenis layanan, detail kebutuhan pekerjaan, lokasi, jadwal, serta informasi harga apabila telah tersedia.
 
-**Tujuan:** Membantu Provider memahami kebutuhan 
-pelanggan sebelum melaksanakan pekerjaan.
+**Tujuan:** Membantu Provider memahami kebutuhan dan kondisi pekerjaan sebelum menentukan apakah pesanan dapat diterima atau ditolak.
 
 ### 12.Fitur Mengirim Pesan kepada Pelanggan melalui Chat
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/12.jpg?raw=true)
 
-**Deskripsi :** Fitur ini memungkinkan Provider 
-berkomunikasi secara langsung dengan Customer 
-untuk membahas kebutuhan, detail pekerjaan, dan 
-informasi lain yang berkaitan dengan pesanan.
+**Deskripsi:** Fitur ini memungkinkan Provider berkomunikasi secara langsung dengan Customer melalui fitur chat untuk membahas kebutuhan, detail pekerjaan, jadwal, dan informasi lain yang berkaitan dengan pesanan.
 
-**Tujuan:** Mempermudah komunikasi agar pekerjaan 
-dapat dipahami dan dilaksanakan sesuai kebutuhan 
-pelanggan.
+**Tujuan:** Mempermudah komunikasi antara Provider dan Customer agar informasi pekerjaan dapat disampaikan dengan jelas serta mengurangi kesalahpahaman sebelum maupun selama pekerjaan berlangsung.
 
 ---
 
@@ -160,22 +130,14 @@ pelanggan.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/13.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Provider melihat 
-daftar pekerjaan atau pesanan yang pernah diterima 
-dan ditangani sebelumnya.
+**Deskripsi:** Fitur ini memungkinkan Provider melihat daftar pesanan yang pernah diterima, ditangani, maupun diselesaikan melalui aplikasi Jasa Kita.
 
-**Tujuan:** Memudahkan Provider memeriksa kembali 
-riwayat pekerjaan yang telah dilakukan melalui 
-aplikasi.
+**Tujuan:** Memudahkan Provider memeriksa kembali riwayat pekerjaan serta mengetahui aktivitas pemesanan yang pernah dilakukan melalui aplikasi.
 
 ### 14.Fitur Melihat Riwayat Pesanan berdasarkan tanggal
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/14.png?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Provider melihat 
-daftar pekerjaan atau pesanan yang pernah diterima 
-dan ditangani sebelumnya berdasarkan tanggal
+**Deskripsi:** Fitur ini memungkinkan Provider menyaring dan melihat daftar riwayat pesanan berdasarkan tanggal atau rentang waktu tertentu.
 
-**Tujuan:** Memudahkan Provider memeriksa kembali 
-riwayat pekerjaan yang telah dilakukan melalui 
-aplikasi.
+**Tujuan:** Memudahkan Provider mencari dan memeriksa kembali informasi pekerjaan berdasarkan waktu pelaksanaan sehingga riwayat pesanan lebih mudah dikelola.
