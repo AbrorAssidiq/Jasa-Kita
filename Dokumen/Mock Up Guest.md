@@ -18,9 +18,9 @@ untuk mendaftar.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/aksestanpa%20akun.jpg?raw=true)
 
-**Deskripsi :** Memberikan akses informasi meski belum login.
+**Deskripsi :** Fitur ini memberikan akses kepada pengunjung untuk menjelajahi aplikasi Jasa Kita tanpa harus memiliki akun atau melakukan login terlebih dahulu.
 
-**Tujuan :** tampilkan status sebagai Pengunjung serta pilihan Masuk dan Daftar Akun.
+**Tujuan :** Memudahkan pengunjung untuk mengenal aplikasi, melihat kategori layanan, dan mencari informasi penyedia jasa sebelum memutuskan untuk mendaftar.
 
 ### 3. Fitur Melihat Halaman Utama Aplikasi
 
@@ -37,9 +37,9 @@ fungsi dan layanan yang ditawarkan oleh aplikasi Jasa Kita.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halaman%20%20profile%20guest.jpg?raw=true)
 
-**Deskripsi:** Fitur ini untuk mengakses menu akun dan daftar akun
+**Deskripsi:** Fitur ini memungkinkan Guest mengakses halaman profil yang menampilkan status pengguna sebagai pengunjung serta menyediakan pilihan untuk masuk atau mendaftarkan akun sebagai Customer maupun Provider
 
-**Tujuan:** Membantu pengunjung untuk melihat profil
+**Tujuan:** Memudahkan pengunjung mengakses menu akun dan memberikan pilihan untuk melakukan login atau pendaftaran agar dapat menggunakan fitur aplikasi secara lengkap
 
 ---
 
@@ -58,13 +58,9 @@ yang dapat ditemukan melalui aplikasi.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/tampilan%20fitur%20pencarian.jpg?raw=true)
 
-**Deskripsi:** Halaman Filter bertujuan membantu Guest 
-mempersempit hasil pencarian penyedia jasa berdasarkan 
-kriteria tertentu, sehingga pengunjung dapat menemukan 
-Provider yang lebih sesuai dengan kebutuhan dan lokasi 
-pekerjaan.
+**Deskripsi:** Fitur ini memungkinkan Guest mencari penyedia jasa berdasarkan nama atau jenis layanan serta mempersempit hasil pencarian menggunakan filter kategori, lokasi, dan rating
 
-**Tujuan:** Filter berdasarkan kategori, lokasi, dan rating
+**Tujuan:** Memudahkan pengunjung menemukan penyedia jasa yang sesuai dengan kebutuhan, lokasi pekerjaan, dan kualitas layanan berdasarkan rating yang diberikan pengguna lain.
 
 ---
 
