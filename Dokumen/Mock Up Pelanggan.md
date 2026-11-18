@@ -1,6 +1,6 @@
 ## Customer (Pelanggan)
 
-**20 fitur**
+**23 fitur**
 
 Customer merupakan pengguna yang telah memiliki akun dan melakukan login ke aplikasi Jasa 
 Kita. Customer dapat mencari layanan, melakukan pemesanan, berkomunikasi dengan Provider, 
@@ -10,9 +10,9 @@ serta memberikan penilaian.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halamansplash.jpg?raw=true)
 
-**Deskripsi :** Memberikan kesan awal Aplikasi.
+**Deskripsi:** Halaman awal yang ditampilkan ketika Customer membuka aplikasi Jasa Kita sebelum diarahkan ke halaman utama.
 
-**Tujuan :** Menampilkan Logo dan nama Aplikasi
+**Tujuan:** Memperkenalkan identitas aplikasi melalui tampilan logo dan nama Jasa Kita.
 
 ### 2. Fitur Mendaftar dan Login
 
@@ -44,7 +44,7 @@ serta memberikan penilaian.
 
 ---
 
-### 5. Pengisian data diri
+### 5. Pengisian Data Diri
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/05.jpg?raw=true)
 
@@ -67,7 +67,7 @@ sesuai kebutuhan.
 
 ---
 
-### 7. Tampilan Fitur Melihat Daftar Ktegori Jasa
+### 7. Daftar Kategori Jasa
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/07.jpg?raw=true)
 
@@ -134,7 +134,7 @@ mengetahui lokasi pekerjaan sebelum menerima pesanan.
 
 ---
 
-### 13. Tampilan Pesanan dibuat
+### 13. Konfirmasi Pesanan Berhasil Dibuat
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/13.jpg?raw=true)
 
@@ -142,7 +142,7 @@ mengetahui lokasi pekerjaan sebelum menerima pesanan.
 
 **Tujuan:** Memberikan kepastian kepada Customer bahwa permintaan pemesanan telah berhasil dicatat oleh sistem dan sedang menunggu tanggapan dari Provider.
 
-### 14. Tampilan Pesanan di proses
+### 14. Status Pesanan Menunggu Proses Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/14.jpg?raw=true)
 
@@ -165,7 +165,7 @@ detail pekerjaan.
 dan Provider agar informasi pekerjaan dapat 
 disampaikan dengan jelas.
 
-## 16.Fitur Membatalkan Pesanan Sesuai Ketentuan
+### 16.Fitur Membatalkan Pesanan Sesuai Ketentuan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/16.jpg?raw=true)
 
@@ -180,7 +180,7 @@ layanan yang telah dipesan.
 
 ---
 
-### 17. Tampilan Pesanan Di Terima Oleh Pprovider
+### 17. Pesanan Diterima Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/17.jpg?raw=true)
 
@@ -231,7 +231,7 @@ melalui aplikasi Jasa Kita.
 **Tujuan:** Memudahkan Customer mengetahui dan 
 memeriksa kembali riwayat penggunaan layanan jasa.
 
-### 23. Tampilan halaman Penilaian/Rating
+### 23. Halaman Penilaian dan Rating
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/20.jpg?raw=true)
 
