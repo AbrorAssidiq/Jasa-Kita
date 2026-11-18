@@ -211,7 +211,6 @@ layanan yang telah dipesan.
 **Deskripsi:** Halaman yang menampilkan informasi hasil pembayaran Customer, seperti pembayaran berhasil, menunggu konfirmasi, atau pembayaran gagal. Halaman ini juga menampilkan detail transaksi sebagai bukti pembayaran.
 
 **Tujuan:** Memberikan informasi kepada Customer mengenai status transaksi serta memastikan pembayaran dapat dipantau melalui aplikasi Jasa Kita.
----
 
 ### 22. Fitur Melihat Riwayat Pemesanan
 
