@@ -120,12 +120,6 @@ Customer secara terstruktur.
 
 **Tujuan:** Memudahkan Admin dalam memperbaiki atau memperbarui data pelanggan agar informasi akun tetap akurat, sesuai, dan terkelola dengan baik.
 
-**Tujuan:** Membantu Admin 
-memeriksa informasi pelanggan 
-ketika menangani pertanyaan, 
-pengaduan, atau kebutuhan 
-pembaruan data.
-
 #### 5.1 Daftar Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/10.png?raw=true)
@@ -198,7 +192,7 @@ Kita.
 
 **Deskripsi:** Halaman ini menampilkan daftar kategori layanan yang tersedia di platform Jasa Kita, seperti servis AC, kelistrikan, kebersihan, dan bangunan. Admin dapat melihat serta mengelola kategori yang digunakan untuk mengelompokkan layanan.
 
-***Tujuan:** Memudahkan Admin mengelola kategori jasa agar pengelompokan layanan tetap konsisten sehingga fitur pencarian dan filter oleh Customer dapat digunakan dengan lebih mudah.
+**Tujuan:** Memudahkan Admin mengelola kategori jasa agar pengelompokan layanan tetap konsisten sehingga fitur pencarian dan filter oleh Customer dapat digunakan dengan lebih mudah.
 
 #### 8.2 Tambah / Ubah Kategori
 
@@ -290,29 +284,19 @@ Kita.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/26.png?raw=true)
 
-**Deskripsi:** Halaman ini menampilkan laporan transaksi pembayaran yang terjadi di platform Jasa Kita dalam periode tertentu. Informasi yang disajikan meliputi jumlah transaksi, total nominal transaksi, metode pembayaran, waktu transaksi, serta status pembayaran seperti menunggu, berhasil, gagal, atau dikembalikan. Halaman ini juga menampilkan perhitungan komisi yang diperoleh platform dan pendapatan bersih Provider setelah dikurangi komisi. Admin dapat menyaring laporan berdasarkan rentang tanggal dan status transaksi serta mengunduh laporan dalam format PDF atau Excel.
+**Deskripsi:** Halaman ini menampilkan laporan seluruh transaksi pembayaran yang terjadi di platform Jasa Kita dalam periode tertentu. Informasi yang disajikan meliputi ID transaksi, ID pesanan, nama Customer, nama Provider, total pembayaran Customer, metode pembayaran, waktu transaksi, serta status pembayaran seperti menunggu, berhasil, gagal, atau dikembalikan. Halaman ini juga menampilkan rincian perhitungan komisi platform dan pendapatan bersih Provider setelah dikurangi komisi. Pada tiga bulan pertama sejak platform resmi diluncurkan, sistem menerapkan tarif komisi promo sebesar 3% dari total pembayaran Customer, termasuk seluruh biaya tambahan seperti biaya material. Setelah periode promo berakhir, tarif komisi normal sebesar 5% mulai diterapkan. Admin dapat menyaring laporan berdasarkan rentang tanggal dan status transaksi serta mengunduh laporan dalam format PDF atau Excel.
 
-**Tujuan:** Memudahkan Admin memantau aktivitas pembayaran, mengetahui pendapatan komisi platform, memantau pendapatan Provider, serta mengevaluasi transaksi yang membutuhkan pemeriksaan atau tindak lanjut.
+**Tujuan:** Memudahkan Admin memantau aktivitas pembayaran, mengetahui pendapatan komisi platform, memantau pendapatan bersih Provider, serta mengevaluasi transaksi yang membutuhkan pemeriksaan atau tindak lanjut.
 
 #### 14.1 Pengaturan Sistem
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/27.png?raw=true).
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/27.png?raw=true)
 
-**Deskripsi:** Halaman untuk 
-mengatur informasi umum 
-aplikasi dan konfigurasi yang 
-memang disediakan untuk 
-Admin.
+**Deskripsi:** Halaman ini digunakan Admin untuk mengelola konfigurasi umum platform Jasa Kita, termasuk pengaturan persentase komisi transaksi dan periode penerapannya. Pada tiga bulan pertama sejak platform resmi diluncurkan, sistem menerapkan tarif komisi promo sebesar 3% dari total pembayaran Customer, termasuk seluruh biaya tambahan seperti biaya material. Setelah masa promo berakhir, tarif komisi normal sebesar 5% mulai diterapkan. Admin dapat mengatur persentase komisi dan periode berlakunya sesuai kebijakan platform. Sebelum perubahan tarif diberlakukan, Provider harus menerima pemberitahuan terlebih dahulu. Halaman ini juga digunakan untuk memantau pengaturan penyaluran pendapatan bersih Provider setelah dikurangi komisi, yang direncanakan dilakukan secara otomatis untuk setiap transaksi berhasil sesuai kemampuan payment gateway yang digunakan.
 
-**Tujuan:** Menjaga konfigurasi 
-platform tetap terpusat dan 
-perubahan penting dapat 
-ditelusuri.
+**Tujuan:** Memudahkan Admin mengelola konfigurasi platform secara terpusat, mengatur kebijakan komisi, serta memastikan perhitungan dan penyaluran pendapatan antara platform dan Provider berjalan secara jelas dan terpantau.
 
-**Catatan keputusan:** Daftar 
-pengaturan final bergantung 
-pada keputusan teknis dan 
-kebijakan pengelola platform.
+**Catatan:** Penyaluran pendapatan secara otomatis memerlukan integrasi dengan payment gateway yang mendukung mekanisme tersebut serta data rekening atau akun pencairan Provider yang valid. Jadwal pencairan, biaya layanan, dan penanganan transaksi gagal atau pengembalian dana mengikuti kebijakan serta kemampuan penyedia layanan pembayaran.
 
 ---
 
@@ -320,78 +304,48 @@ kebijakan pengelola platform.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/28.png?raw=true)
 
-**Deskripsi:** Halaman untuk 
-melihat akun petugas Admin, 
-peran, dan status aksesnya.
+**Deskripsi:** Halaman ini digunakan untuk melihat dan mengelola akun petugas Admin yang memiliki akses ke dashboard pengelolaan Jasa Kita. Informasi yang ditampilkan meliputi nama Admin, alamat email, peran atau hak akses, tanggal pembuatan akun, serta status akun. Admin yang memiliki wewenang dapat menambahkan akun Admin baru, memperbarui informasi akun, mengatur hak akses sesuai tanggung jawab, serta mengaktifkan atau menonaktifkan akun apabila diperlukan.
 
-**Tujuan:** Membatasi setiap 
-petugas pada menu dan 
-tindakan yang sesuai tanggung 
-jawab. Rincian role dan izin 
-akses perlu disepakati.
+**Tujuan:** Memudahkan pengelola dalam mengatur akun dan hak akses setiap petugas Admin agar penggunaan dashboard lebih terkontrol, keamanan sistem terjaga, serta setiap petugas hanya dapat mengakses fitur sesuai tanggung jawabnya.
+
+**Catatan:** Pengelolaan akun dan hak akses Admin harus dibatasi berdasarkan tingkat kewenangan. Setiap perubahan penting, seperti penambahan akun, perubahan hak akses, dan penonaktifan akun, perlu dicatat dalam log aktivitas Admin.
 
 #### 15.1 Log Aktivitas Admin
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/29.png?raw=true)
 
-**Deskripsi:** Halaman catatan 
-aktivitas yang merekam siapa 
-melakukan tindakan, kapan 
-dilakukan, objek yang diubah, 
-dan hasilnya.
+**Deskripsi:** Halaman ini menampilkan riwayat aktivitas yang dilakukan oleh seluruh petugas Admin selama mengelola platform Jasa Kita. Informasi yang dicatat meliputi nama Admin, jenis aktivitas atau tindakan yang dilakukan, waktu aktivitas, data atau objek yang mengalami perubahan, serta hasil tindakan tersebut. Aktivitas yang tercatat dapat mencakup perubahan data pengguna, verifikasi Provider, moderasi layanan, pengelolaan kategori jasa, penanganan pengaduan, perubahan pengaturan sistem, dan pengelolaan akun Admin. Admin dapat mencari, menyaring, serta melihat detail riwayat aktivitas berdasarkan nama petugas, jenis tindakan, atau rentang tanggal.
 
-**Tujuan:** Meningkatkan 
-akuntabilitas, membantu audit, 
-dan memudahkan penelusuran 
-jika terjadi perubahan data.
+**Tujuan:** Membantu pengelola memantau aktivitas petugas Admin, meningkatkan transparansi dan akuntabilitas dalam pengelolaan platform, serta memudahkan proses pemeriksaan apabila terjadi kesalahan, perubahan data, atau aktivitas yang mencurigakan.
 
+**Catatan:** Log aktivitas digunakan sebagai catatan audit dan sebaiknya tidak dapat diubah atau dihapus secara sembarangan oleh petugas Admin biasa agar riwayat tindakan tetap dapat dipercaya.
 #### 15.2 Profil Admin
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/30.png?raw=true)
 
-**Deskripsi:** Halaman untuk 
-melihat dan memperbarui 
-informasi dasar akun Admin 
-serta mengakses pengaturan 
-keamanan akun.
+**Deskripsi:** Halaman ini menampilkan informasi profil petugas Admin yang sedang masuk ke dashboard Jasa Kita. Informasi yang ditampilkan meliputi nama, alamat email, nomor telepon, peran atau hak akses, serta informasi akun lainnya. Admin dapat memperbarui informasi profil seperti nama dan nomor telepon, serta mengubah password melalui pengaturan keamanan akun apabila diperlukan.
 
-**Tujuan:** Memungkinkan 
-Admin menjaga data akun 
-tetap benar dan mengelola 
-keamanan aksesnya.
+**Tujuan:** Memudahkan Admin melihat dan memperbarui informasi pribadi serta menjaga keamanan akun agar data profil tetap akurat dan akses ke dashboard Jasa Kita terlindungi.
 
+**Catatan:** Perubahan alamat email atau password perlu melalui proses verifikasi untuk memastikan keamanan akun. Informasi peran dan hak akses Admin hanya dapat diubah oleh petugas yang memiliki kewenangan khusus.
 ---
 
 #### 16.1 Konfirmasi Logout
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/31.png?raw=true)
 
-**Deskripsi:** Dialog konfirmasi 
-yang muncul ketika Admin 
-memilih menu Logout.
+**Deskripsi:** Dialog konfirmasi yang muncul ketika Admin memilih menu Logout. Dialog ini memberikan pilihan kepada Admin untuk melanjutkan proses logout atau membatalkannya. Jika Admin memilih untuk melanjutkan, sistem akan mengakhiri sesi login dan mengarahkan Admin ke halaman pemberitahuan logout. Jika Admin memilih batal, sistem akan menutup dialog dan Admin tetap berada di dashboard.
 
-**Tujuan:** Mengurangi risiko 
-sesi terputus tanpa sengaja 
-dan mengingatkan Admin 
-untuk menyimpan pekerjaan.
+**Tujuan:** Mencegah Admin keluar dari dashboard secara tidak sengaja serta memberikan kesempatan untuk memastikan kembali tindakan logout sebelum sesi berakhir.
 
-**Catatan keputusan:** Dialog 
-konfirmasi mencegah Admin 
-keluar tanpa sengaja saat 
-masih mengerjakan 
-perubahan.
+**Catatan:** Setelah logout berhasil, sesi login Admin harus diakhiri agar halaman dashboard tidak dapat diakses kembali tanpa melakukan login.
 
 #### 16.2 Kembali ke Halaman Login
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/32.png?raw=true)
 
-**Deskripsi:** Halaman 
-pemberitahuan bahwa sesi 
-Admin telah ditutup dan 
-akses dashboard tidak lagi 
-aktif.
+**Deskripsi:** Halaman yang ditampilkan setelah Admin berhasil melakukan logout dari dashboard Jasa Kita. Halaman ini memberikan pemberitahuan bahwa sesi login telah berakhir dan Admin sudah tidak memiliki akses ke dashboard. Sistem menyediakan tombol atau tautan untuk kembali ke halaman Login Admin apabila Admin ingin masuk kembali ke dalam sistem.
 
-**Tujuan:** Memastikan proses 
-logout jelas bagi pengguna 
-serta mengakhiri sesi akses 
-secara aman.
+**Tujuan:** Memberikan informasi yang jelas bahwa proses logout telah berhasil, memastikan sesi Admin telah berakhir, serta memudahkan Admin untuk kembali melakukan login apabila diperlukan.
+
+**Catatan:** Setelah logout, sistem harus menghapus atau mengakhiri sesi autentikasi Admin. Apabila Admin mencoba mengakses kembali halaman dashboard melalui URL sebelumnya, sistem harus mengarahkannya ke halaman Login Admin.
