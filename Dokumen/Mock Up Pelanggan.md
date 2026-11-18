@@ -165,7 +165,7 @@ detail pekerjaan.
 dan Provider agar informasi pekerjaan dapat 
 disampaikan dengan jelas.
 
-### 16.Fitur Membatalkan Pesanan Sesuai Ketentuan
+### 16. Fitur Membatalkan Pesanan Sesuai Ketentuan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/16.jpg?raw=true)
 
@@ -228,17 +228,12 @@ layanan yang telah dipesan.
 daftar pemesanan yang pernah dilakukan sebelumnya 
 melalui aplikasi Jasa Kita.
 
-**Tujuan:** Memudahkan Customer mengetahui dan 
-memeriksa kembali riwayat penggunaan layanan jasa.
+**Tujuan:** Memudahkan Customer mengetahui dan memeriksa kembali riwayat penggunaan layanan jasa, termasuk status pesanan dan pembayaran..
 
 ### 23. Halaman Penilaian dan Rating
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/20.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Customer memberikan 
-penilaian berupa rating dan ulasan terhadap layanan yang 
-telah diterima.
+**Deskripsi:** Fitur ini memungkinkan Customer memberikan penilaian berupa rating dan ulasan terhadap layanan yang telah diselesaikan dan pembayarannya telah dikonfirmasi berhasil.
 
-**Tujuan:** Memberikan evaluasi terhadap kualitas layanan 
-serta membantu calon pelanggan lain mempertimbangkan 
-penyedia jasa.
+**Tujuan:** Memberikan evaluasi terhadap kualitas layanan serta membantu calon Customer lain dalam mempertimbangkan penyedia jasa.
