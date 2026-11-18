@@ -12,7 +12,7 @@ untuk mendaftar.
 
 **Deskripsi :** Halaman awal yang ditampilkan ketika pengguna membuka aplikasi Jasa Kita, sebelum diarahkan ke halaman utama.
 
-**Tujuan :** Memperkenalkan identitas aplikasi melalui tampilan logo dan nama Jasa Kita
+**Tujuan :** Memperkenalkan identitas aplikasi melalui tampilan logo dan nama Jasa Kita.
 
 ### 2. Halaman Akses Tanpa Akun
 
@@ -37,13 +37,13 @@ fungsi dan layanan yang ditawarkan oleh aplikasi Jasa Kita.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halaman%20%20profile%20guest.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Guest mengakses halaman profil yang menampilkan status pengguna sebagai pengunjung serta menyediakan pilihan untuk masuk atau mendaftarkan akun sebagai Customer maupun Provider
+**Deskripsi:** Fitur ini memungkinkan Guest mengakses halaman profil yang menampilkan status pengguna sebagai pengunjung serta menyediakan pilihan untuk masuk atau mendaftarkan akun sebagai Customer maupun Provider.
 
-**Tujuan:** Memudahkan pengunjung mengakses menu akun dan memberikan pilihan untuk melakukan login atau pendaftaran agar dapat menggunakan fitur aplikasi secara lengkap
+**Tujuan:** Memudahkan pengunjung mengakses menu akun dan memberikan pilihan untuk melakukan login atau pendaftaran agar dapat menggunakan fitur aplikasi secara lengkap.
 
 ---
 
-###5. Fitur Melihat Daftar Kategori Jasa**
+###5. Fitur Melihat Daftar Kategori Jasa
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/melihat%20daftar%20kategori%20jasa.jpg?raw=true)
 
@@ -58,7 +58,7 @@ yang dapat ditemukan melalui aplikasi.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/tampilan%20fitur%20pencarian.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Guest mencari penyedia jasa berdasarkan nama atau jenis layanan serta mempersempit hasil pencarian menggunakan filter kategori, lokasi, dan rating
+**Deskripsi:** Fitur ini memungkinkan Guest mencari penyedia jasa berdasarkan nama atau jenis layanan serta mempersempit hasil pencarian menggunakan filter kategori, lokasi, dan rating.
 
 **Tujuan:** Memudahkan pengunjung menemukan penyedia jasa yang sesuai dengan kebutuhan, lokasi pekerjaan, dan kualitas layanan berdasarkan rating yang diberikan pengguna lain.
 
