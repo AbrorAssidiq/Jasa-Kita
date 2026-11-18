@@ -94,7 +94,15 @@ Customer melalui aplikasi Jasa Kita.
 permintaan layanan yang masuk dan menentukan 
 pesanan yang akan ditangani.
 
-### 10. Fitur Menerima atau Menolak Pesanan
+### 10. Fitur Melihat Detail Pemesanan
+
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/11.jpg?raw=true)
+
+**Deskripsi:** Fitur ini memungkinkan Provider melihat informasi secara lengkap mengenai permintaan pesanan dari Customer, seperti identitas Customer, jenis layanan, detail kebutuhan pekerjaan, lokasi, jadwal, serta informasi harga apabila telah tersedia.
+
+**Tujuan:** Membantu Provider memahami kebutuhan dan kondisi pekerjaan sebelum menentukan apakah pesanan dapat diterima atau ditolak.
+
+### 11. Fitur Menerima atau Menolak Pesanan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/10.png?raw=true)
 
@@ -107,14 +115,6 @@ kemampuan dan ketersediaan layanan.
 untuk memilih pekerjaan yang sanggup dikerjakan.
 
 ---
-
-### 11. Fitur Melihat Detail Pemesanan
-
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20provider/11.jpg?raw=true)
-
-**Deskripsi:** Fitur ini memungkinkan Provider melihat informasi secara lengkap mengenai permintaan pesanan dari Customer, seperti identitas Customer, jenis layanan, detail kebutuhan pekerjaan, lokasi, jadwal, serta informasi harga apabila telah tersedia.
-
-**Tujuan:** Membantu Provider memahami kebutuhan dan kondisi pekerjaan sebelum menentukan apakah pesanan dapat diterima atau ditolak.
 
 ### 12.Fitur Mengirim Pesan kepada Pelanggan melalui Chat
 
