@@ -17,8 +17,8 @@ Teknologi basis data yang direncanakan: MySQL.
 5. Setelah pekerjaan ditandai selesai, Customer mengonfirmasi penyelesaian sebelum melanjutkan pembayaran.
 6. Pembayaran dilakukan melalui payment gateway. Status pembayaran harus diperbarui berdasarkan konfirmasi yang tervalidasi dari penyedia pembayaran.
 7. Komisi promo platform adalah 3% selama tiga bulan pertama sejak peluncuran resmi. Setelah periode promo berakhir, tarif normal yang direncanakan adalah 5%.
-8. Dasar perhitungan komisi mengikuti kebijakan saat ini, yaitu total pembayaran Customer termasuk biaya tambahan.
-9. Sisa pembayaran setelah komisi merupakan pendapatan Provider dan direncanakan disalurkan otomatis melalui mekanisme payment gateway.
+8. Dasar perhitungan komisi adalah total pembayaran Customer, termasuk seluruh biaya tambahan, seperti biaya material yang dibebankan dalam pesanan.
+9. Penyaluran pendapatan Provider direncanakan dilakukan otomatis untuk setiap transaksi yang berhasil, setelah komisi dihitung, sepanjang didukung oleh mekanisme payment gateway yang dipilih.
 10. Customer hanya dapat memberikan rating dan ulasan setelah pekerjaan selesai dan pembayaran berhasil dikonfirmasi.
 
 ## 3. Rancangan tabel inti
@@ -113,7 +113,22 @@ Status pesanan yang diusulkan:
 - completed
 - cancelled
 
-### 3.6 transactions
+### 3.6 booking_additional_costs
+
+Mencatat rincian biaya tambahan pada pesanan, termasuk biaya material. Seluruh biaya tambahan yang dibebankan kepada Customer masuk ke dasar perhitungan komisi sesuai keputusan saat ini.
+
+| Kolom | Tipe data (usulan) | Keterangan |
+|---|---|---|
+| additional_cost_id | BIGINT, PK | ID rincian biaya |
+| booking_id | BIGINT, FK | Pesanan terkait |
+| cost_name | VARCHAR(150) | Nama biaya, misalnya material atau transportasi |
+| description | TEXT, NULL | Penjelasan biaya |
+| amount | DECIMAL(12,2) | Nominal biaya |
+| created_at | DATETIME | Waktu pencatatan |
+
+Rincian ini membantu sistem menampilkan transparansi biaya kepada Customer. Total biaya tambahan pesanan merupakan penjumlahan seluruh rincian yang disetujui.
+
+### 3.7 transactions
 
 Menyimpan catatan pembayaran untuk pesanan. Satu pesanan dapat memiliki lebih dari satu percobaan transaksi pembayaran, tetapi hanya satu pembayaran berhasil yang boleh menjadi pembayaran final untuk pesanan tersebut.
 
@@ -130,7 +145,7 @@ Menyimpan catatan pembayaran untuk pesanan. Satu pesanan dapat memiliki lebih da
 
 Status pembayaran yang diusulkan: pending, paid, failed, expired, refunded.
 
-### 3.7 commission_settings
+### 3.8 commission_settings
 
 Menyimpan kebijakan tarif komisi platform berdasarkan periode berlakunya.
 
@@ -149,9 +164,9 @@ Data awal yang direncanakan:
 
 Tanggal peluncuran resmi belum ditentukan, sehingga tanggal efektif belum diisi.
 
-### 3.8 provider_payouts
+### 3.9 provider_payouts
 
-Mencatat penyaluran pendapatan bersih kepada Provider.
+Mencatat penyaluran pendapatan bersih kepada Provider untuk setiap transaksi pembayaran berhasil. Rancangan awal menggunakan satu pencatatan payout untuk satu transaksi berhasil.
 
 | Kolom | Tipe data (usulan) | Keterangan |
 |---|---|---|
@@ -169,7 +184,30 @@ Mencatat penyaluran pendapatan bersih kepada Provider.
 
 Status pencairan yang diusulkan: pending, processing, paid, failed, reversed.
 
-Tarif komisi dan nominal komisi disimpan sebagai snapshot pada pencatatan transaksi/pencairan agar perubahan tarif di masa depan tidak mengubah perhitungan transaksi lama.
+Tarif komisi dan nominal komisi disimpan sebagai snapshot pada pencatatan transaksi/pencairan agar perubahan tarif di masa depan tidak mengubah perhitungan transaksi lama. Payout per transaksi tetap bergantung pada dukungan payment gateway; jika gateway tidak mendukung penyaluran otomatis per transaksi, sistem perlu menggunakan mekanisme pencairan alternatif tanpa mengubah catatan komisi.
+
+### 3.10 refund_requests
+
+Mencatat permintaan pengembalian dana yang diperiksa dan diputuskan oleh Admin.
+
+| Kolom | Tipe data (usulan) | Keterangan |
+|---|---|---|
+| refund_id | BIGINT, PK | ID permintaan refund |
+| transaction_id | BIGINT, FK | Transaksi yang dimintakan refund |
+| booking_id | BIGINT, FK | Pesanan terkait |
+| requested_by | BIGINT, FK | ID pengguna yang mengajukan |
+| reason | TEXT | Alasan permintaan refund |
+| requested_amount | DECIMAL(12,2) | Nominal yang diminta |
+| approved_amount | DECIMAL(12,2), NULL | Nominal yang disetujui Admin |
+| refund_status | VARCHAR(30) | pending_review, approved, rejected, processing, refunded, failed |
+| reviewed_by | BIGINT, FK, NULL | Admin yang memeriksa |
+| admin_note | TEXT, NULL | Catatan atau alasan keputusan Admin |
+| gateway_refund_reference | VARCHAR(150), NULL | Referensi refund dari payment gateway |
+| requested_at | DATETIME | Waktu pengajuan |
+| reviewed_at | DATETIME, NULL | Waktu keputusan Admin |
+| refunded_at | DATETIME, NULL | Waktu refund berhasil |
+
+Admin memeriksa alasan dan bukti yang tersedia sebelum menyetujui atau menolak permintaan. Persetujuan Admin belum berarti dana sudah kembali; status refunded baru dicatat setelah penyedia pembayaran mengonfirmasi refund berhasil.
 
 ## 4. Contoh perhitungan komisi
 
@@ -196,8 +234,11 @@ Perhitungan ini belum memasukkan biaya payment gateway atau biaya operasional pl
 - users (Provider) 1 : N bookings.
 - services 1 : N bookings.
 - bookings 1 : N transactions untuk mendukung percobaan pembayaran.
-- transactions 1 : 0..1 provider_payouts pada rancangan awal ini.
+- bookings 1 : N booking_additional_costs.
+- transactions 1 : 0..1 provider_payouts pada rancangan awal ini (satu payout untuk setiap transaksi berhasil).
 - users (Provider) 1 : N provider_payouts.
+- transactions 1 : N refund_requests untuk mencatat permintaan dan percobaan refund.
+- users (Admin) 1 : N refund_requests melalui kolom reviewed_by.
 - commission_settings digunakan untuk menentukan tarif yang berlaku ketika transaksi diproses.
 
 ## 6. Aturan teknis dan keamanan
@@ -211,15 +252,22 @@ Perhitungan ini belum memasukkan biaya payment gateway atau biaya operasional pl
 7. Pisahkan status pesanan, status pembayaran, dan status pencairan karena ketiganya menggambarkan proses yang berbeda.
 8. Jika terjadi refund atau pembalikan pembayaran, catat sebagai proses tersendiri dan sesuaikan pencatatan pencairan/komisi. Jangan menghapus riwayat transaksi.
 
-## 7. Hal yang masih perlu diputuskan bersama tim
+## 7. Keputusan yang sudah ditetapkan
 
-1. Apakah biaya tambahan selalu menjadi bagian dari dasar perhitungan komisi, termasuk biaya material atau pembelian barang?
-2. Apakah pencairan Provider dilakukan setiap transaksi atau dikumpulkan dalam pencairan berkala? Kemampuan ini bergantung pada payment gateway yang dipilih.
-3. Bagaimana alur refund jika pesanan yang sudah dibayar kemudian dibatalkan?
-4. Apakah satu Provider dapat memiliki beberapa rekening/akun pencairan, dan bagaimana proses verifikasinya?
-5. Payment gateway apa yang akan digunakan?
-6. Apakah tarif promo 3% berlaku untuk seluruh Provider selama tiga bulan pertama sejak peluncuran resmi? Rancangan ini menggunakan asumsi tersebut.
+1. **Biaya material dan biaya tambahan:** seluruh biaya tambahan yang dibebankan kepada Customer, termasuk material, masuk ke dasar perhitungan komisi.
+2. **Penyaluran Provider:** direncanakan otomatis per transaksi berhasil. Implementasinya harus disesuaikan dengan kemampuan payment gateway.
+3. **Refund:** setiap permintaan refund diperiksa dan diputuskan Admin. Dana baru dianggap berhasil dikembalikan setelah ada konfirmasi dari penyedia pembayaran.
+4. **Payment gateway:** belum ditentukan. Nama gateway dan detail integrasinya tidak dikunci dalam rancangan ini.
+5. **Komisi:** tarif promo 3% berlaku selama tiga bulan pertama sejak peluncuran resmi, kemudian tarif normal 5% diterapkan.
 
-## 8. Tahap selanjutnya
+## 8. Hal yang masih perlu diputuskan bersama tim
+
+1. Apakah Provider dapat mendaftarkan lebih dari satu rekening atau akun pencairan, dan bagaimana proses verifikasinya?
+2. Apakah refund dapat diajukan oleh Customer saja, atau Provider juga dapat mengajukannya?
+3. Bagaimana batas waktu pengajuan refund dan ketentuan nominal refund untuk tiap kondisi pembatalan?
+4. Kapan tanggal peluncuran resmi ditetapkan agar tanggal efektif tarif komisi dapat diisi?
+5. Payment gateway apa yang akan dipilih dan apakah mendukung penyaluran dana otomatis per transaksi ke Provider?
+
+## 9. Tahap selanjutnya
 
 Setelah rancangan awal ini ditinjau dan disepakati, langkah berikutnya adalah membuat Entity Relationship Diagram (ERD), kemudian menyusun data dictionary dan SQL DDL MySQL. Struktur ini belum merupakan skema final atau database yang sudah diimplementasikan.
