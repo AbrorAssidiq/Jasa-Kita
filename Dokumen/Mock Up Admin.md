@@ -108,17 +108,9 @@ Customer secara terstruktur.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/8.png?raw=true)
 
-****Deskripsi****: Halaman profil 
-pelanggan yang memuat 
-informasi akun dan ringkasan 
-aktivitas, termasuk pesanan atau 
-laporan yang terkait. 
+**Deskripsi:** Halaman profil pelanggan yang memuat informasi akun dan ringkasan aktivitas, termasuk pesanan atau laporan yang terkait.
 
-****Tujuan****: Membantu Admin 
-memeriksa informasi pelanggan 
-ketika menangani pertanyaan, 
-pengaduan, atau kebutuhan 
-pembaruan data.
+**Tujuan:** Membantu Admin memeriksa informasi pelanggan ketika menangani pertanyaan, pengaduan, atau kebutuhan pembaruan data.
 
 #### 4.3 Mengubah dan Memperbarui Data Pelanggan
 
