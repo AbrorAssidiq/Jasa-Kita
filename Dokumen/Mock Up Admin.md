@@ -384,7 +384,7 @@ perubahan dari waktu ke waktu.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/26.png?raw=true)
 
-**Deskripsi:** Halaman ini menampilkan laporan transaksi pembayaran dalam periode tertentu, meliputi jumlah transaksi, total pembayaran Customer, metode pembayaran, waktu transaksi, dan status pembayaran. Laporan juga menampilkan komisi platform yang saat ini menggunakan tarif promo sebesar 3% dari total pembayaran Customer, termasuk biaya tambahan, serta pendapatan bersih Provider setelah dikurangi komisi. Setelah masa promo berakhir, tarif normal yang direncanakan adalah 5%. Admin dapat menyaring laporan berdasarkan rentang tanggal dan status transaksi serta mengunduh laporan dalam format PDF atau Excel.
+**Deskripsi:** Halaman ini menampilkan laporan transaksi pembayaran dalam periode tertentu, meliputi jumlah transaksi, total pembayaran Customer, metode pembayaran, waktu transaksi, dan status pembayaran. Laporan juga menampilkan komisi platform yang menggunakan tarif promo sebesar 3% selama tiga bulan pertama sejak platform resmi diluncurkan, dihitung dari total pembayaran Customer termasuk biaya tambahan, serta pendapatan bersih Provider setelah dikurangi komisi. Setelah masa promo tiga bulan berakhir, tarif normal sebesar 5% mulai diterapkan. Admin dapat menyaring laporan berdasarkan rentang tanggal dan status transaksi serta mengunduh laporan dalam format PDF atau Excel.
 
 **Tujuan:** Memudahkan Admin memantau aktivitas pembayaran, mengetahui pendapatan komisi platform, melihat pendapatan bersih Provider, serta mengevaluasi transaksi yang membutuhkan pemeriksaan atau tindak lanjut.
 
@@ -392,7 +392,7 @@ perubahan dari waktu ke waktu.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/27.png?raw=true).
 
-**Deskripsi:** Halaman ini digunakan Admin untuk mengelola konfigurasi umum platform Jasa Kita, termasuk pengaturan komisi transaksi. Pada tahap awal, sistem menerapkan tarif komisi promo sebesar 3% dari total pembayaran Customer untuk setiap transaksi yang berhasil, dengan dasar perhitungan mencakup biaya tambahan yang dibayarkan Customer. Setelah masa promo berakhir, tarif normal yang direncanakan adalah 5%. Persentase komisi dapat diatur melalui konfigurasi sistem. Sisa pembayaran setelah dikurangi komisi menjadi pendapatan Provider dan disalurkan secara otomatis oleh sistem sesuai mekanisme pembayaran yang terintegrasi.
+**Deskripsi:** Halaman ini digunakan Admin untuk mengelola konfigurasi umum platform Jasa Kita, termasuk pengaturan komisi transaksi. Pada tiga bulan pertama sejak platform resmi diluncurkan, sistem menerapkan tarif komisi promo sebesar 3% dari total pembayaran Customer untuk setiap transaksi yang berhasil, dengan dasar perhitungan mencakup biaya tambahan yang dibayarkan Customer. Setelah masa promo tiga bulan berakhir, tarif normal sebesar 5% mulai diterapkan. Persentase komisi dan periode penerapannya dapat diatur melalui konfigurasi sistem. Provider perlu menerima pemberitahuan sebelum perubahan tarif diberlakukan. Sisa pembayaran setelah dikurangi komisi menjadi pendapatan Provider dan disalurkan secara otomatis oleh sistem sesuai mekanisme pembayaran yang terintegrasi.
 
 **Tujuan:** Memudahkan Admin mengelola konfigurasi platform secara terpusat, menyesuaikan tarif komisi sesuai kebijakan yang berlaku, serta memastikan pembagian pendapatan antara platform dan Provider tercatat dengan jelas.
 
