@@ -384,39 +384,19 @@ perubahan dari waktu ke waktu.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/26.png?raw=true)
 
-**Deskripsi:** Halaman laporan 
-untuk merangkum jumlah dan 
-nilai transaksi berdasarkan 
-rentang tanggal, metode, serta 
-status.
+**Deskripsi:** Halaman ini menampilkan laporan transaksi pembayaran dalam periode tertentu, meliputi jumlah transaksi, total pembayaran Customer, metode pembayaran, waktu transaksi, dan status pembayaran. Laporan juga menampilkan komisi platform sebesar 5% yang dihitung dari total pembayaran Customer, termasuk biaya tambahan, serta pendapatan bersih Provider setelah dikurangi komisi. Admin dapat menyaring laporan berdasarkan rentang tanggal dan status transaksi serta mengunduh laporan dalam format PDF atau Excel.
 
-**Tujuan:** Mendukung 
-pemeriksaan keuangan dan 
-evaluasi transaksi. Perhitungan 
-komisi, pendapatan platform, 
-dan pencairan Provider hanya 
-ditambahkan jika model bisnis 
-sudah ditetapkan.
+**Tujuan:** Memudahkan Admin memantau aktivitas pembayaran, mengetahui pendapatan komisi platform, melihat pendapatan bersih Provider, serta mengevaluasi transaksi yang membutuhkan pemeriksaan atau tindak lanjut.
 
 #### 14.1 Pengaturan Sistem
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/image%20admin/27.png?raw=true).
 
-**Deskripsi:** Halaman untuk 
-mengatur informasi umum 
-aplikasi dan konfigurasi yang 
-memang disediakan untuk 
-Admin.
+**Deskripsi:** Halaman ini digunakan Admin untuk mengelola konfigurasi umum platform Jasa Kita, termasuk pengaturan komisi transaksi. Sistem menerapkan komisi platform sebesar 5% dari total pembayaran Customer untuk setiap transaksi yang berhasil, dengan dasar perhitungan mencakup biaya tambahan yang dibayarkan Customer. Sisa pembayaran setelah dikurangi komisi menjadi pendapatan Provider dan disalurkan secara otomatis oleh sistem sesuai mekanisme pembayaran yang terintegrasi.
 
-**Tujuan:** Menjaga konfigurasi 
-platform tetap terpusat dan 
-perubahan penting dapat 
-ditelusuri.
+**Tujuan:** Memudahkan Admin mengelola konfigurasi platform secara terpusat, menjaga penerapan persentase komisi tetap konsisten, serta memastikan pembagian pendapatan antara platform dan Provider tercatat dengan jelas.
 
-**Catatan keputusan:** Daftar 
-pengaturan final bergantung 
-pada keputusan teknis dan 
-kebijakan pengelola platform.
+**Catatan:** Penyaluran otomatis memerlukan integrasi dengan penyedia layanan pembayaran dan data rekening atau akun pencairan Provider yang valid. Detail teknis integrasi, jadwal penyelesaian dana, serta penanganan transaksi gagal atau pengembalian dana mengikuti kebijakan dan kemampuan penyedia layanan pembayaran.
 
 ---
 
