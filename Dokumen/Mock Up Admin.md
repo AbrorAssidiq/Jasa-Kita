@@ -218,6 +218,14 @@ Kita.
 
 **Tujuan:** Membantu Admin memeriksa keabsahan informasi transaksi, menelusuri status pembayaran, dan menangani kendala atau pertanyaan terkait pembayaran.
 
+#### 9.3 Detail Pembayaran Dua Tahap
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan rincian pembayaran pesanan yang dilakukan Customer melalui dua tahap, yaitu pembayaran biaya material dan pembayaran biaya jasa. Informasi yang ditampilkan meliputi ID pesanan, identitas Customer dan Provider, nominal pembayaran material, nominal pembayaran jasa, total transaksi, metode pembayaran, waktu pembayaran, status masing-masing pembayaran, serta nomor referensi transaksi dari payment gateway apabila tersedia.
+
+**Tujuan:** Memudahkan Admin memantau pembayaran yang dilakukan secara bertahap, memeriksa status transaksi, serta memastikan seluruh pembayaran tercatat dengan benar dalam sistem Jasa Kita.
+
 ---
 
 #### 10.1 Daftar Pembatalan
@@ -235,6 +243,30 @@ Kita.
 **Deskripsi:** Halaman ini menampilkan informasi lengkap mengenai permintaan pembatalan pesanan, meliputi identitas Customer dan Provider, detail pesanan, pihak yang mengajukan pembatalan, alasan pembatalan, kronologi pesanan, serta bukti pendukung jika tersedia. Admin dapat memeriksa alasan pembatalan dan menentukan apakah pengajuan tersebut layak disetujui atau ditolak. Apabila disetujui, sistem secara otomatis memperbarui status pesanan menjadi dibatalkan.
 
 **Tujuan:** Membantu Admin memastikan setiap permintaan pembatalan diperiksa berdasarkan alasan yang jelas serta memastikan proses pembatalan berjalan secara terstruktur dan tercatat dalam sistem.
+
+#### 10.3 Daftar Pengajuan Refund
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan daftar seluruh pengajuan pengembalian dana yang dikirimkan oleh Customer maupun yang berkaitan dengan pembatalan pesanan. Informasi yang ditampilkan meliputi nomor pengajuan refund, ID pesanan, nama Customer, nama Provider, nominal pengembalian dana, alasan pengajuan, tanggal pengajuan, serta status pemeriksaan. Admin dapat mencari, menyaring, dan membuka detail pengajuan refund untuk melakukan pemeriksaan lebih lanjut.
+
+**Tujuan:** Memudahkan Admin memantau seluruh permintaan pengembalian dana serta mengelola pengajuan yang membutuhkan pemeriksaan dan keputusan.
+
+#### 10.4 Detail dan Persetujuan Refund
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan informasi lengkap mengenai pengajuan refund, meliputi identitas Customer dan Provider, detail pesanan, nominal pembayaran, rincian biaya material, alasan pembatalan, bukti pembelian, nota atau struk toko, serta kronologi permasalahan. Admin dapat memeriksa seluruh informasi dan menentukan keputusan untuk menyetujui atau menolak pengajuan refund. Setiap keputusan harus disertai catatan atau alasan yang jelas sebagai informasi bagi pihak terkait.
+
+**Tujuan:** Memastikan setiap pengajuan refund diperiksa secara teliti berdasarkan bukti dan kondisi yang terjadi serta membantu Admin menentukan pengembalian dana secara adil bagi Customer maupun Provider.
+
+#### 10.5 Status Proses Pengembalian Dana
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini memungkinkan Admin memantau proses pengembalian dana setelah pengajuan refund disetujui. Informasi yang ditampilkan meliputi nomor pengajuan, nominal refund, metode pengembalian dana, nomor referensi transaksi, tanggal pemrosesan, serta status pengembalian dana. Status dapat berupa menunggu proses, sedang diproses, berhasil, atau gagal sesuai informasi yang diterima dari payment gateway.
+
+**Tujuan:** Memudahkan Admin memantau pelaksanaan pengembalian dana serta memastikan status refund diperbarui berdasarkan konfirmasi dari penyedia layanan pembayaran.
 
 #### 11.1 Daftar Pengaduan
 
