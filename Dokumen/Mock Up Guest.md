@@ -10,17 +10,17 @@ untuk mendaftar.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halamansplash.jpg?raw=true)
 
-**Deskripsi :** Memberikan kesan awal Aplikasi.
+**Deskripsi :** Halaman awal yang ditampilkan ketika pengguna membuka aplikasi Jasa Kita, sebelum diarahkan ke halaman utama.
 
-**Tujuan :** Menampilkan Logo dan nama Aplikasi
+**Tujuan :** Memperkenalkan identitas aplikasi melalui tampilan logo dan nama Jasa Kita.
 
 ### 2. Halaman Akses Tanpa Akun
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/aksestanpa%20akun.jpg?raw=true)
 
-**Deskripsi :** Memberikan akses informasi meski belum login.
+**Deskripsi :** Fitur ini memberikan akses kepada pengunjung untuk menjelajahi aplikasi Jasa Kita tanpa harus memiliki akun atau melakukan login terlebih dahulu.
 
-**Tujuan :** Pengguna bisa melihat layanan sebelum membuat akun.
+**Tujuan :** Memudahkan pengunjung untuk mengenal aplikasi, melihat kategori layanan, dan mencari informasi penyedia jasa sebelum memutuskan untuk mendaftar.
 
 ### 3. Fitur Melihat Halaman Utama Aplikasi
 
@@ -33,17 +33,17 @@ layanan yang tersedia.
 **Tujuan:** Memberikan gambaran awal kepada pengunjung mengenai 
 fungsi dan layanan yang ditawarkan oleh aplikasi Jasa Kita.
 
-### 4. Fitur Halaman Profile
+### 4. Fitur Halaman Profil
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halaman%20%20profile%20guest.jpg?raw=true)
 
-**Deskripsi:** Fitur ini untuk mengakses menu akun dan daftar akun
+**Deskripsi:** Fitur ini memungkinkan Guest mengakses halaman profil yang menampilkan status pengguna sebagai pengunjung serta menyediakan pilihan untuk masuk atau mendaftarkan akun sebagai Customer maupun Provider.
 
-**Tujuan:** Membantu pengunjung untuk melihat profil
+**Tujuan:** Memudahkan pengunjung mengakses menu akun dan memberikan pilihan untuk melakukan login atau pendaftaran agar dapat menggunakan fitur aplikasi secara lengkap.
 
 ---
 
-**5. Fitur Melihat Daftar Kategori Jasa**
+### 5. Fitur Melihat Daftar Kategori Jasa
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/melihat%20daftar%20kategori%20jasa.jpg?raw=true)
 
@@ -58,13 +58,9 @@ yang dapat ditemukan melalui aplikasi.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/tampilan%20fitur%20pencarian.jpg?raw=true)
 
-**Deskripsi:** Halaman Filter bertujuan membantu Guest 
-mempersempit hasil pencarian penyedia jasa berdasarkan 
-kriteria tertentu, sehingga pengunjung dapat menemukan 
-Provider yang lebih sesuai dengan kebutuhan dan lokasi 
-pekerjaan.
+**Deskripsi:** Fitur ini memungkinkan Guest mencari penyedia jasa berdasarkan nama atau jenis layanan serta mempersempit hasil pencarian menggunakan filter kategori, lokasi, dan rating.
 
-**Tujuan:** Filter berdasarkan kategori, lokasi, dan rating
+**Tujuan:** Memudahkan pengunjung menemukan penyedia jasa yang sesuai dengan kebutuhan, lokasi pekerjaan, dan kualitas layanan berdasarkan rating yang diberikan pengguna lain.
 
 ---
 
@@ -92,11 +88,8 @@ jasa yang sesuai dengan kebutuhan sebelum membuat akun.
 
 ### 9. Tampilan Wajib Login
 
-![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/tampilan%20wajib%20login.jpg?raw=true)
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halaman%20wajib%20login%20guest.jpg?raw=true)
 
-**Deskripsi:** Fitur ini mewajibkan Customer membuat akun baru 
-dan masuk ke aplikasi menggunakan akun yang telah terdaftar
-agar dapat melakukan pemeasnan.
+**Deskripsi:** Fitur ini menampilkan halaman pemberitahuan kepada Guest bahwa pengguna harus masuk menggunakan akun yang telah terdaftar atau membuat akun baru sebelum dapat melakukan pemesanan jasa melalui aplikasi Jasa Kita.
 
-**Tujuan:** Memberikan akses kepada pengguna untuk 
-menggunakan fitur-fitur aplikasi yang memerlukan autentikasi.
+**Tujuan:** Membatasi akses terhadap fitur pemesanan agar hanya pengguna yang telah memiliki akun dan terautentikasi yang dapat melakukan pemesanan, serta memastikan data Customer dapat tercatat dan dikelola dengan baik oleh sistem.

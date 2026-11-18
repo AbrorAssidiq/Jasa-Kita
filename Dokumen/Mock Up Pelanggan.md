@@ -1,32 +1,28 @@
 ## Customer (Pelanggan)
 
-**20 fitur**
+**23 fitur**
 
 Customer merupakan pengguna yang telah memiliki akun dan melakukan login ke aplikasi Jasa 
 Kita. Customer dapat mencari layanan, melakukan pemesanan, berkomunikasi dengan Provider, 
 serta memberikan penilaian.
 
-### 1. Halaman Slpash Screen
+### 1. Halaman Splash Screen
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halamansplash.jpg?raw=true)
 
-**Deskripsi :** Memberikan kesan awal Aplikasi.
+**Deskripsi:** Halaman awal yang ditampilkan ketika Customer membuka aplikasi Jasa Kita sebelum diarahkan ke halaman utama.
 
-**Tujuan :** Menampilkan Logo dan nama Aplikasi
+**Tujuan:** Memperkenalkan identitas aplikasi melalui tampilan logo dan nama Jasa Kita.
 
 ### 2. Fitur Mendaftar dan Login
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/ImageJK/halaman%20%20profile%20guest.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Customer membuat akun baru 
-dan masuk ke aplikasi menggunakan akun yang telah terdaftar.
+**Deskripsi:** Fitur ini memungkinkan Customer membuat akun baru atau masuk ke aplikasi menggunakan akun yang telah terdaftar.
 
-**Tujuan:** Memberikan akses kepada pengguna untuk menggunakan 
-fitur-fitur aplikasi yang memerlukan autentikasi.
+**Tujuan:** Memberikan akses kepada Customer untuk menggunakan fitur aplikasi yang memerlukan autentikasi.
 
-**Note :** Pelanggan dapat masuk menggunakan email atau nomor HP 
-dan kata sandi. Pengguna yang belum memiliki akun dapat memilih 
-menu Daftar Akun. Tersedia pula pilihan Lupa Password
+**Catatan:** Customer dapat masuk menggunakan alamat email atau nomor HP dan kata sandi. Pengguna yang belum memiliki akun dapat memilih menu Daftar Akun. Selain itu, tersedia pilihan Lupa Password untuk membantu pengguna yang lupa kata sandi.
 
 ---
 
@@ -34,39 +30,27 @@ menu Daftar Akun. Tersedia pula pilihan Lupa Password
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/03.jpg?raw=true)
 
-**Deskripsi :** Halaman untuk masuk menggunakan akun yang sudah 
-dimiliki atau melakukan pendaftaran akun baru sebagai Customer 
-dengan mengisi informasi yang diperlukan.
+**Deskripsi:** Halaman yang memungkinkan pengguna melakukan pendaftaran akun baru sebagai Customer dengan mengisi informasi yang diperlukan, seperti nama lengkap, alamat email atau nomor HP, dan kata sandi.
 
-**Tujuan :** Memberikan akses kepada pembeli agar dapat menggunakan 
-fitur transaksi, pemesanan jasa, komunikasi, serta pengelolaan 
-aktivitas akun.
-
-**Deskripsi :** Tahapan pemeriksaan identitas atau kode verifikasi yang 
-dikirimkan kepada pengguna melalui metode verifikasi yang 
-disediakan aplikasi.
+**Tujuan:** Memfasilitasi pengguna untuk membuat akun Customer agar dapat mengakses fitur pemesanan jasa, komunikasi dengan Provider, dan pengelolaan aktivitas akun.
 
 ### 4. Verifikasi Akun
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/04.jpg?raw=true)
 
-**Tujuan :** Memastikan bahwa akun didaftarkan menggunakan 
-informasi kontak yang valid serta membantu menjaga keamanan akun 
-pengguna.
+**Deskripsi:** Halaman yang menampilkan tahapan verifikasi identitas atau kode verifikasi yang dikirimkan kepada pengguna melalui metode verifikasi yang disediakan aplikasi.
+
+**Tujuan:** Memastikan bahwa akun didaftarkan menggunakan informasi kontak yang valid serta membantu menjaga keamanan akun pengguna.
 
 ---
 
-### 5. Pengisian data diri
+### 5. Pengisian Data Diri
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/05.jpg?raw=true)
 
-**Deskripsi :** Halaman untuk melengkapi informasi pribadi Customer, 
-seperti nama lengkap, nomor telepon, alamat, dan informasi 
-pendukung lainnya.
+**Deskripsi:** Halaman untuk melengkapi informasi pribadi Customer, seperti nama lengkap, nomor telepon, alamat, dan informasi pendukung lainnya.
 
-**Tujuan :** Melengkapi profil pembeli agar penyedia jasa dapat 
-mengenali pelanggan dan mengetahui informasi yang diperlukan 
-ketika menerima pesanan.
+**Tujuan:** Melengkapi profil Customer agar Provider dapat mengenali pelanggan dan mengetahui informasi yang diperlukan ketika menerima pesanan.
 
 ### 6. Fitur Beranda Customer
 
@@ -79,23 +63,17 @@ listrik, bengkel, dan perbaikan rumah.
 **Tujuan:** Memudahkan Customer menemukan kategori layanan 
 sesuai kebutuhan.
 
-**Note** : Beranda menampilkan kolom pencarian, kategori jasa, 
-serta rekomendasi penyedia jasa. Pelanggan dapat mulai 
-mencari layanan dari kategori yang tersedia atau melihat 
-penyedia jasa yang ditampilkan.
+**Catatan:** Halaman beranda menampilkan kolom pencarian, kategori jasa, serta rekomendasi penyedia jasa. Customer dapat mencari layanan melalui kategori yang tersedia atau melihat penyedia jasa yang direkomendasikan.
 
 ---
 
-### 7. Tampilan Fitur Melihat Daftar Ktegori Jasa
+### 7. Daftar Kategori Jasa
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/07.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Guest melihat berbagai 
-kategori layanan jasa yang tersedia, seperti servis AC, bengkel, 
-teknisi listrik, tukang bangunan, dan perbaikan rumah.
+**Deskripsi:** Fitur ini memungkinkan Customer melihat berbagai kategori layanan jasa yang tersedia, seperti servis AC, bengkel, teknisi listrik, tukang bangunan, dan perbaikan rumah.
 
-**Tujuan:** Membantu pengunjung mengetahui jenis layanan yang 
-dapat ditemukan melalui aplikasi.
+**Tujuan:** Membantu Customer mengetahui jenis layanan yang dapat ditemukan melalui aplikasi Jasa Kita.
 
 ### 8. Fitur Mencari Penyedia Jasa Berdasarkan Nama atau Kategori
 
@@ -108,9 +86,7 @@ melalui fitur pencarian.
 **Tujuan:** Mempermudah Customer menemukan penyedia jasa 
 yang sesuai tanpa harus mencari satu per satu secara manual.
 
-**Note :** Pelanggan dapat mencari layanan atau nama mitra melalui 
-kolom pencarian. Hasil pencarian dapat disaring berdasarkan 
-lokasi dan kategori agar daftar penyedia jasa lebih relevan.
+**Catatan:** Customer dapat mencari layanan atau nama Provider melalui kolom pencarian. Hasil pencarian dapat disaring berdasarkan kategori dan lokasi agar daftar penyedia jasa yang ditampilkan lebih relevan dengan kebutuhan Customer.
 
 ---
 
@@ -142,49 +118,41 @@ mengetahui lokasi pekerjaan sebelum menerima pesanan.
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/11.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Customer melihat informasi 
-profil Provider seperti Lokasi  Jam operasinal beserta layanan jasa 
-yang ditawarkan.
+**Deskripsi:** Fitur ini memungkinkan Customer melihat informasi profil Provider, seperti identitas mitra, lokasi layanan, jam operasional, serta jenis layanan jasa yang ditawarkan.
 
-**Tujuan:** Memberikan informasi kepada Customer agar dapat 
-mempertimbangkan mitra sebelum melakukan pemesanan.
+**Tujuan:** Memberikan informasi yang cukup kepada Customer agar dapat mempertimbangkan dan memilih Provider yang sesuai sebelum melakukan pemesanan.
 
 ### 12. Fitur Membuat Pemesanan Jasa
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/12.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Customer mengirimkan 
-permintaan pemesanan layanan kepada Provider yang telah 
-dipilih melalui aplikasi.
+**Deskripsi:** Fitur ini memungkinkan Customer mengirimkan permintaan pemesanan layanan kepada Provider yang telah dipilih melalui aplikasi dengan mengisi detail kebutuhan pekerjaan, lokasi, dan jadwal layanan.
 
-**Tujuan:** Mempermudah proses pemesanan jasa tanpa harus 
-mencari penyedia jasa secara langsung
+**Tujuan:** Mempermudah Customer melakukan pemesanan jasa serta membantu Provider memahami kebutuhan pekerjaan sebelum menerima pesanan.
 
-Contoh: AC tidak dingin,
-mohon dicek.
+**Contoh kebutuhan pekerjaan:** AC tidak dingin, mohon dicek.
 
 ---
 
-### 13. Tampilan Pesanan dibuat
+### 13. Konfirmasi Pesanan Berhasil Dibuat
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/13.jpg?raw=true)
 
-### 14. Tampilan Pesanan di proses
+**Deskripsi:** Halaman yang menampilkan konfirmasi bahwa permintaan pemesanan jasa berhasil dikirim oleh Customer. Halaman ini menampilkan informasi layanan, detail kebutuhan pekerjaan, jadwal, lokasi, Provider yang dipilih, dan status pesanan.
+
+**Tujuan:** Memberikan kepastian kepada Customer bahwa permintaan pemesanan telah berhasil dicatat oleh sistem dan sedang menunggu tanggapan dari Provider.
+
+### 14. Status Pesanan Menunggu Proses Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/14.jpg?raw=true)
 
-**Deskripsi :** Menampilkan konfirmasi bahwa pesanan 
-layanan berhasil dibuat oleh pelanggan, beserta informasi 
-layanan, jadwal, lokasi, Provider, dan status pesanan.
+**Deskripsi:** Halaman yang menampilkan informasi status pesanan Customer yang masih menunggu pemeriksaan dan tanggapan dari Provider.
 
-**Tujuan:** Memberikan kepastian kepada pelanggan bahwa 
-pesanan telah tercatat dalam sistem serta memudahkan 
-pelanggan memantau status pesanan hingga layanan 
-selesai.
+**Tujuan:** Memudahkan Customer mengetahui perkembangan permintaan pemesanan sebelum Provider menerima atau menolak pesanan.
 
 ---
 
-### 15.Fitur Mengirim Pesan kepada Mitra melalui Chat
+### 15. Fitur Mengirim Pesan kepada Mitra melalui Chat
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/15.jpg?raw=true)
 
@@ -197,7 +165,7 @@ detail pekerjaan.
 dan Provider agar informasi pekerjaan dapat 
 disampaikan dengan jelas.
 
-## 16.Fitur Membatalkan Pesanan Sesuai Ketentuan
+### 16. Fitur Membatalkan Pesanan Sesuai Ketentuan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/16.jpg?raw=true)
 
@@ -212,30 +180,87 @@ layanan yang telah dipesan.
 
 ---
 
-### 17. Tampilan Pesanan Di Terima Oleh Pprovider
+### 17. Pesanan Diterima Provider
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/17.jpg?raw=true)
 
-**Deskripsi :** Halaman yang menampilkan informasi 
-bahwa permintaan pemesanan telah diterima oleh
-Provider.
+**Deskripsi:** Halaman yang menampilkan informasi bahwa permintaan pemesanan Customer telah diterima oleh Provider.
 
-**Tujuan :** Mengetahui Pesanan bahwa sudah di terima
+**Tujuan:** Memberikan informasi kepada Customer bahwa Provider telah menyetujui permintaan pemesanan dan akan melaksanakan pekerjaan sesuai detail pesanan.
 
-### 18. Fitur Melihat Status Pemesanan
+### 18. Fitur Melihat Status Pekerjaan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/18.jpg?raw=true)
 
-**Deskripsi :** Halaman yang menampilkan informasi 
-bahwa Provider sedang melaksanakan pekerjaan sesuai 
-permintaan Customer.
+**Deskripsi:** Fitur ini memungkinkan Customer melihat informasi perkembangan pekerjaan yang sedang dilakukan oleh Provider sesuai dengan permintaan pemesanan.
 
-**Tujuan :** Memberi tahu ke Pelanggan bahwa pesanan 
-sedang di kerjakan
+**Tujuan:** Memudahkan Customer memantau proses pengerjaan dan mengetahui status layanan yang sedang berlangsung.
 
----
+### 19. Halaman Konfirmasi Penyelesaian Pekerjaan
 
-### 19. Fitur Melihat Riwayat Pemesanan
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/Konfirmasi%20Pekerjaan.jpg?raw=true)
+
+**Deskripsi:** Halaman yang menampilkan informasi bahwa Provider telah menyelesaikan pekerjaan. Customer dapat memeriksa hasil pekerjaan dan memberikan konfirmasi apabila layanan telah selesai dilakukan.
+
+**Tujuan:** Memastikan bahwa pekerjaan telah diselesaikan sesuai permintaan Customer sebelum melanjutkan ke proses pembayaran.
+
+### 20. Halaman Pembayaran Pesanan
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan rincian biaya pesanan Customer, termasuk biaya jasa dan biaya tambahan material apabila terdapat pengajuan biaya tambahan yang telah disetujui. Sistem menyediakan dua tahap pembayaran melalui payment gateway. Tahap pertama digunakan untuk membayar biaya material sebelum Provider melakukan pembelian. Tahap kedua digunakan untuk membayar biaya jasa setelah pekerjaan selesai dan dikonfirmasi oleh Customer.
+
+**Tujuan:** Memudahkan Customer melakukan pembayaran secara bertahap melalui metode pembayaran digital yang tersedia pada payment gateway, seperti QRIS, Virtual Account, dan e-wallet yang didukung.
+
+### 20.1 Halaman Persetujuan Biaya Tambahan Material
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan pengajuan biaya tambahan material yang dikirimkan oleh Provider kepada Customer. Informasi yang ditampilkan meliputi nama material, jumlah, harga satuan, total biaya, alasan pembelian, serta foto pendukung apabila tersedia. Customer dapat memeriksa rincian pengajuan tersebut dan memilih untuk menyetujui atau menolak biaya tambahan sebelum proses pembayaran dilakukan.
+
+**Tujuan:** Memberikan kendali kepada Customer untuk memeriksa dan menyetujui biaya tambahan material sebelum Provider melakukan pembelian, sehingga tidak terjadi pembelian material tanpa persetujuan Customer.
+
+### 20.2 Halaman Status Pembayaran Material
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan status pembayaran biaya material yang telah dilakukan Customer, seperti menunggu pembayaran, berhasil, atau gagal. Setelah pembayaran berhasil dikonfirmasi oleh payment gateway, sistem akan memberikan informasi kepada Provider bahwa biaya material telah dibayarkan dan pembelian dapat dilanjutkan.
+
+**Tujuan:** Memberikan informasi yang jelas mengenai status pembayaran material serta memastikan Provider hanya melakukan pembelian setelah pembayaran berhasil dikonfirmasi oleh sistem.
+
+### 20.3 Halaman Pembayaran Biaya Jasa
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan rincian biaya jasa setelah Provider menyelesaikan pekerjaan dan Customer memberikan konfirmasi penyelesaian. Informasi yang ditampilkan meliputi biaya jasa, biaya material yang telah dibayarkan sebelumnya, serta total keseluruhan transaksi. Customer dapat melakukan pembayaran biaya jasa melalui payment gateway menggunakan metode pembayaran yang tersedia.
+
+**Tujuan:** Memudahkan Customer menyelesaikan pembayaran biaya jasa setelah pekerjaan selesai serta memberikan transparansi mengenai keseluruhan biaya yang telah dikeluarkan.
+
+### 21. Halaman Status Pembayaran
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan informasi status pembayaran Customer, baik pembayaran biaya material maupun biaya jasa. Status yang ditampilkan meliputi menunggu pembayaran, berhasil, gagal, atau dikembalikan. Halaman ini juga menampilkan rincian transaksi, metode pembayaran, waktu pembayaran, dan nomor referensi transaksi dari payment gateway apabila tersedia.
+
+**Tujuan:** Memudahkan Customer memantau seluruh aktivitas pembayaran pesanan serta memastikan setiap transaksi tercatat dan dapat diperiksa kembali melalui aplikasi Jasa Kita.
+
+### 21.1 Halaman Pengajuan Refund
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini memungkinkan Customer mengajukan pengembalian dana apabila terjadi pembatalan pesanan atau kondisi tertentu yang memenuhi ketentuan refund. Customer dapat memilih pesanan yang ingin diajukan refund, mengisi alasan pengajuan, mencantumkan keterangan tambahan, serta mengunggah bukti pendukung apabila diperlukan. Pengajuan tersebut akan dikirimkan kepada Admin untuk diperiksa dan diputuskan.
+
+**Tujuan:** Memudahkan Customer mengajukan pengembalian dana melalui sistem Jasa Kita serta memberikan informasi dan bukti yang diperlukan Admin untuk melakukan pemeriksaan.
+
+### 21.2 Halaman Status Pengajuan Refund
+
+![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
+
+**Deskripsi:** Halaman ini menampilkan perkembangan pengajuan refund yang telah dikirimkan Customer kepada Admin. Informasi yang ditampilkan meliputi nomor pengajuan, ID pesanan, nominal refund yang diajukan, alasan pengajuan, tanggal pengajuan, serta status pemeriksaan. Status dapat berupa menunggu pemeriksaan, disetujui, ditolak, sedang diproses, berhasil, atau gagal. Apabila pengajuan ditolak, Customer dapat melihat alasan atau catatan dari Admin.
+
+**Tujuan:** Memudahkan Customer memantau perkembangan pengajuan refund serta mengetahui hasil keputusan dan proses pengembalian dana melalui aplikasi Jasa Kita.
+
+### 22. Fitur Melihat Riwayat Pemesanan
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/19.jpg?raw=true)
 
@@ -243,17 +268,12 @@ sedang di kerjakan
 daftar pemesanan yang pernah dilakukan sebelumnya 
 melalui aplikasi Jasa Kita.
 
-**Tujuan:** Memudahkan Customer mengetahui dan 
-memeriksa kembali riwayat penggunaan layanan jasa.
+**Tujuan:** Memudahkan Customer mengetahui dan memeriksa kembali riwayat penggunaan layanan jasa, termasuk status pesanan dan pembayaran.
 
-### 20. Tampilan halaman Penilaian/Rating
+### 23. Halaman Penilaian dan Rating
 
 ![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/20.jpg?raw=true)
 
-**Deskripsi:** Fitur ini memungkinkan Customer memberikan 
-penilaian berupa rating dan ulasan terhadap layanan yang 
-telah diterima.
+**Deskripsi:** Fitur ini memungkinkan Customer memberikan penilaian berupa rating dan ulasan terhadap layanan yang telah diselesaikan dan pembayarannya telah dikonfirmasi berhasil.
 
-**Tujuan:** Memberikan evaluasi terhadap kualitas layanan 
-serta membantu calon pelanggan lain mempertimbangkan 
-penyedia jasa.
+**Tujuan:** Memberikan evaluasi terhadap kualitas layanan serta membantu calon Customer lain dalam mempertimbangkan penyedia jasa.
