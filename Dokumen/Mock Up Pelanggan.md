@@ -212,13 +212,13 @@ layanan yang telah dipesan.
 
 **Tujuan:** Memudahkan Customer melakukan pembayaran secara bertahap melalui metode pembayaran digital yang tersedia pada payment gateway, seperti QRIS, Virtual Account, dan e-wallet yang didukung.
 
-### 20.1 Halaman Pembayaran Biaya Material
+### 20.1 Halaman Persetujuan Biaya Tambahan Material
 
 ![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
 
-**Deskripsi:** Halaman ini menampilkan rincian pengajuan biaya tambahan material yang diajukan oleh Provider dan telah disetujui oleh Customer. Informasi yang ditampilkan meliputi nama material, jumlah, harga, alasan pembelian, serta total biaya yang harus dibayarkan. Customer dapat memilih metode pembayaran melalui payment gateway untuk menyelesaikan pembayaran biaya material.
+**Deskripsi:** Halaman ini menampilkan pengajuan biaya tambahan material yang dikirimkan oleh Provider kepada Customer. Informasi yang ditampilkan meliputi nama material, jumlah, harga satuan, total biaya, alasan pembelian, serta foto pendukung apabila tersedia. Customer dapat memeriksa rincian pengajuan tersebut dan memilih untuk menyetujui atau menolak biaya tambahan sebelum proses pembayaran dilakukan.
 
-**Tujuan:** Memberikan kemudahan kepada Customer untuk membayar biaya material sebelum Provider melakukan pembelian sehingga Provider tidak perlu menalangi biaya tersebut.
+**Tujuan:** Memberikan kendali kepada Customer untuk memeriksa dan menyetujui biaya tambahan material sebelum Provider melakukan pembelian, sehingga tidak terjadi pembelian material tanpa persetujuan Customer.
 
 ### 20.2 Halaman Status Pembayaran Material
 
@@ -244,13 +244,13 @@ layanan yang telah dipesan.
 
 **Tujuan:** Memudahkan Customer memantau seluruh aktivitas pembayaran pesanan serta memastikan setiap transaksi tercatat dan dapat diperiksa kembali melalui aplikasi Jasa Kita.
 
-### 21.1 Halaman Status Pengajuan Refund
+### 21.1 Halaman Pengajuan Refund
 
 ![alt text](GANTI_DENGAN_LINK_GAMBAR_MOCKUP)
 
-**Deskripsi:** Halaman ini memungkinkan Customer melihat perkembangan pengajuan pengembalian dana akibat pembatalan pesanan atau kondisi tertentu yang memenuhi ketentuan refund. Informasi yang ditampilkan meliputi nomor pengajuan, ID pesanan, nominal refund, alasan pengajuan, serta status pemeriksaan Admin. Status refund dapat berupa menunggu pemeriksaan, disetujui, ditolak, sedang diproses, berhasil, atau gagal.
+**Deskripsi:** Halaman ini memungkinkan Customer mengajukan pengembalian dana apabila terjadi pembatalan pesanan atau kondisi tertentu yang memenuhi ketentuan refund. Customer dapat memilih pesanan yang ingin diajukan refund, mengisi alasan pengajuan, mencantumkan keterangan tambahan, serta mengunggah bukti pendukung apabila diperlukan. Pengajuan tersebut akan dikirimkan kepada Admin untuk diperiksa dan diputuskan.
 
-**Tujuan:** Memberikan transparansi kepada Customer mengenai proses pengembalian dana serta memudahkan Customer mengetahui perkembangan pengajuan refund melalui aplikasi Jasa Kita.
+**Tujuan:** Memudahkan Customer mengajukan pengembalian dana melalui sistem Jasa Kita serta memberikan informasi dan bukti yang diperlukan Admin untuk melakukan pemeriksaan.
 
 ### 22. Fitur Melihat Riwayat Pemesanan
 
