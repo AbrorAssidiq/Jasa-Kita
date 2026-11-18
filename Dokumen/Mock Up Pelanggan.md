@@ -190,11 +190,15 @@ layanan yang telah dipesan.
 
 ### 18. Fitur Melihat Status Pekerjaan
 
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/18.jpg?raw=true)
+
 **Deskripsi:** Fitur ini memungkinkan Customer melihat informasi perkembangan pekerjaan yang sedang dilakukan oleh Provider sesuai dengan permintaan pemesanan.
 
 **Tujuan:** Memudahkan Customer memantau proses pengerjaan dan mengetahui status layanan yang sedang berlangsung.
 
 ### 19. Halaman Konfirmasi Penyelesaian Pekerjaan
+
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/Konfirmasi%20Pekerjaan.jpg?raw=true)
 
 **Deskripsi:** Halaman yang menampilkan informasi bahwa Provider telah menyelesaikan pekerjaan. Customer dapat memeriksa hasil pekerjaan dan memberikan konfirmasi apabila layanan telah selesai dilakukan.
 
@@ -202,11 +206,15 @@ layanan yang telah dipesan.
 
 ### 20. Halaman Pembayaran Pesanan
 
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/Pembayaran%20Pesanan.jpg?raw=true)
+
 **Deskripsi:** Halaman yang menampilkan rincian tagihan layanan setelah Customer mengonfirmasi bahwa pekerjaan telah selesai. Customer dapat melihat total biaya dan memilih metode pembayaran online yang tersedia.
 
 **Tujuan:** Memudahkan Customer menyelesaikan pembayaran layanan melalui aplikasi Jasa Kita secara praktis dan aman.
 
 ### 21. Halaman Status Pembayaran
+
+![alt text](https://github.com/AbrorAssidiq/Jasa-Kita/blob/main/Image%20Pelanggan/Status%20pembayaran.jpg?raw=true)
 
 **Deskripsi:** Halaman yang menampilkan informasi hasil pembayaran Customer, seperti pembayaran berhasil, menunggu konfirmasi, atau pembayaran gagal. Halaman ini juga menampilkan detail transaksi sebagai bukti pembayaran.
 
