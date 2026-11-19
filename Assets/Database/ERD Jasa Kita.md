@@ -948,54 +948,82 @@ flowchart TD
 
 ---
 
+
 ## 9. Alur Pembayaran Jasa dan Komisi
 
-Pembayaran jasa dilakukan setelah pengerjaan selesai dan Customer mengonfirmasi pekerjaan.
+Pembayaran pada platform Jasa Kita dilakukan dalam dua tahap, yaitu pembayaran material dan pembayaran jasa. Kedua pembayaran tersebut dilakukan secara terpisah melalui payment gateway agar proses pengadaan material dan penyelesaian pekerjaan dapat berjalan dengan jelas.
 
-Contoh:
+### A. Pembayaran Material
+
+Pembayaran material dilakukan sebelum Provider membeli atau menyediakan material yang dibutuhkan untuk pengerjaan pesanan.
+
+Alur pembayaran material:
+
+1. Provider mengajukan rincian kebutuhan material beserta nominal biayanya melalui sistem.
+2. Customer memeriksa rincian pengajuan material dari Provider.
+3. Jika Customer menyetujui pengajuan, sistem membuat tagihan pembayaran material.
+4. Customer melakukan pembayaran melalui payment gateway.
+5. Sistem menunggu konfirmasi pembayaran dari payment gateway.
+6. Jika pembayaran berhasil, status pembayaran material diperbarui menjadi `Success`.
+7. Setelah pembayaran terkonfirmasi, Provider dapat membeli atau menyediakan material yang dibutuhkan.
+8. Provider mengunggah bukti pembelian material sebagai dokumentasi transaksi.
+
+Jika Customer menolak pengajuan material, Provider perlu melakukan penyesuaian atau mengajukan kembali rincian material sesuai kesepakatan.
+
+### B. Pembayaran Jasa
+
+Pembayaran jasa dilakukan setelah Provider menyelesaikan pekerjaan dan Customer mengonfirmasi bahwa pekerjaan telah selesai.
+
+Alur pembayaran jasa:
+
+1. Provider menyelesaikan pekerjaan sesuai pesanan.
+2. Provider memperbarui status pesanan sebagai selesai.
+3. Customer memeriksa hasil pekerjaan.
+4. Jika Customer mengonfirmasi pekerjaan telah selesai, sistem membuat tagihan pembayaran jasa.
+5. Customer melakukan pembayaran melalui payment gateway.
+6. Sistem menunggu konfirmasi pembayaran dari payment gateway.
+7. Jika pembayaran berhasil, status pembayaran jasa diperbarui menjadi `Success`.
+8. Sistem mencatat komisi platform dan pendapatan bersih Provider.
+
+### C. Contoh Rincian Pembayaran
+
+Misalnya, Customer memesan layanan dengan rincian biaya berikut:
 
 | Komponen | Nominal |
 |---|---:|
+| Biaya material | Rp150.000 |
 | Biaya jasa | Rp300.000 |
-| Material | Rp150.000 |
-| Total pembayaran Customer | Rp450.000 |
+| **Total pembayaran** | **Rp450.000** |
 
-Dengan komisi platform 5%:
+Pembayaran dilakukan dalam dua tahap:
 
-| Komponen | Nominal |
+| Tahap Pembayaran | Nominal |
 |---|---:|
-| Total pembayaran | Rp450.000 |
-| Komisi platform 5% | Rp22.500 |
-| Pendapatan Provider | Rp427.500 |
+| Tahap 1 - Pembayaran material | Rp150.000 |
+| Tahap 2 - Pembayaran jasa | Rp300.000 |
+| **Total** | **Rp450.000** |
 
-Contoh di atas menggunakan kebijakan komisi yang dihitung dari total pembayaran Customer, termasuk material, sesuai konsep bisnis yang telah direncanakan.
+Dengan demikian, Customer membayar biaya material terlebih dahulu sebelum Provider melakukan pembelian material. Selanjutnya, Customer membayar biaya jasa setelah pekerjaan selesai dan dikonfirmasi.
 
-```mermaid
-flowchart TD
-    A["Pekerjaan selesai"] --> B["Customer konfirmasi"]
-    B --> C["Customer membayar jasa"]
-    C --> D["Payment Gateway"]
-    D --> E{"Pembayaran berhasil?"}
+### D. Perhitungan Komisi Platform
 
-    E -->|Tidak| F["Status pembayaran gagal atau pending"]
-    E -->|Ya| G["Payment terkonfirmasi"]
+Komisi platform dihitung dari setiap pembayaran yang dilakukan Customer, termasuk pembayaran material dan pembayaran jasa.
 
-    G --> H["Sistem menentukan komisi"]
-    H --> I["Menghitung pendapatan Provider"]
-    I --> J["Mencatat transaksi"]
-    J --> K["Menyiapkan pencairan"]
-```
+Contoh dengan persentase komisi 5%:
 
+| Jenis Pembayaran | Nominal | Komisi 5% | Pendapatan Provider |
+|---|---:|---:|---:|
+| Material | Rp150.000 | Rp7.500 | Rp142.500 |
+| Jasa | Rp300.000 | Rp15.000 | Rp285.000 |
+| **Total** | **Rp450.000** | **Rp22.500** | **Rp427.500** |
 
-### Perhitungan Komisi
+Rumus perhitungan:
 
-Rumus dasar:
+**Komisi Platform = Nominal Pembayaran × Persentase Komisi**
 
-**Komisi Platform = Total pembayaran × Persentase komisi**
+**Pendapatan Provider = Nominal Pembayaran − Komisi Platform**
 
-**Pendapatan Provider = Total pembayaran − Komisi Platform**
-
-### Mekanisme Penentuan Persentase Komisi
+### E. Mekanisme Penentuan Persentase Komisi
 
 Persentase komisi platform ditentukan berdasarkan pengaturan yang tersimpan pada tabel `commission_settings`.
 
@@ -1012,17 +1040,10 @@ Dengan mekanisme ini, persentase komisi untuk setiap pesanan akan tetap terkunci
 
 Pembayaran material dan pembayaran jasa dalam satu pesanan menggunakan persentase komisi yang sama, yaitu berdasarkan nilai `commission_rate_snapshot`.
 
-**Contoh perhitungan dengan komisi 5%:**
-
-| Jenis Pembayaran | Nominal | Komisi 5% | Pendapatan Provider |
-|---|---:|---:|---:|
-| Material | Rp150.000 | Rp7.500 | Rp142.500 |
-| Jasa | Rp300.000 | Rp15.000 | Rp285.000 |
-| **Total** | **Rp450.000** | **Rp22.500** | **Rp427.500** |
-
 Nilai komisi (`platform_fee`) dan pendapatan bersih Provider (`provider_net`) disimpan pada masing-masing transaksi di tabel `payments`.
 
-**Catatan:** Perhitungan komisi material dan jasa harus menggunakan persentase yang sama dari snapshot pesanan dan tidak boleh menyebabkan perhitungan komisi ganda. Nilai komisi dan pendapatan bersih Provider harus direkonsiliasi dengan kebijakan settlement gateway.
+**Catatan:** Perhitungan komisi material dan jasa menggunakan persentase yang sama berdasarkan snapshot pesanan. Komisi dihitung pada masing-masing transaksi pembayaran dan tidak boleh dihitung kembali atas total pembayaran pesanan sehingga menyebabkan komisi ganda. Nilai transaksi juga harus direkonsiliasi dengan kebijakan settlement payment gateway.
+
 
 ---
 
