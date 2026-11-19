@@ -248,7 +248,7 @@ erDiagram
         decimal refund_amount
         text reason
         varchar status
-        varchar gateway_reference
+        varchar gateway_reference UK
         datetime created_at
         datetime reviewed_at
         datetime refunded_at
@@ -270,6 +270,9 @@ erDiagram
         bigint id PK
         bigint provider_profile_id FK
         bigint bank_account_id FK
+        varchar bank_name_snapshot
+        varchar account_number_snapshot
+        varchar account_holder_snapshot
         decimal amount
         varchar status
         varchar gateway_reference UK
@@ -290,7 +293,7 @@ erDiagram
         bigint order_id FK
         bigint customer_id FK
         bigint provider_profile_id FK
-        int rating
+        int rating "Nilai 1 sampai 5"
         text comment
         datetime created_at
         datetime updated_at
@@ -652,7 +655,9 @@ Data meliputi:
 
 Payout dilakukan melalui mekanisme settlement atau disbursement yang didukung oleh payment gateway.
 
-**Fungsi:** Mencatat proses pencairan pendapatan Provider.
+Data rekening tujuan juga disimpan sebagai snapshot (`bank_name_snapshot`, `account_number_snapshot`, dan `account_holder_snapshot`). Dengan demikian, riwayat payout tetap menunjukkan rekening yang digunakan saat pencairan dibuat, meskipun Provider mengubah data rekening utamanya di kemudian hari.
+
+**Fungsi:** Mencatat proses pencairan pendapatan Provider beserta snapshot rekening tujuan.
 
 #### 16. `payout_items`
 
@@ -681,7 +686,7 @@ Data meliputi:
 - Komentar.
 - Waktu pemberian penilaian.
 
-Rating menggunakan skala 1 sampai 5.
+Rating menggunakan skala 1 sampai 5. Batas nilai 1–5 harus diterapkan melalui constraint database (jika DBMS mendukung CHECK) dan validasi pada aplikasi.
 
 Satu pesanan hanya dapat memiliki satu review, dan Customer hanya dapat memberikan review terhadap pesanan yang telah selesai.
 
@@ -1211,6 +1216,9 @@ Rancangan ERD ini merupakan dasar pengembangan database. Beberapa detail teknis 
 - Kombinasi user-role tidak boleh duplikat.
 - Kombinasi Provider-Service tidak boleh duplikat.
 - Satu order hanya memiliki satu review.
+- Nilai `reviews.rating` harus berada pada rentang 1–5 (misalnya `CHECK (rating BETWEEN 1 AND 5)`) dan tetap divalidasi pada aplikasi.
+- `refunds.gateway_reference` harus unik untuk mencegah referensi gateway refund duplikat (perhatikan nilai NULL jika gateway reference belum tersedia).
+- Snapshot rekening pada payout diisi dari rekening yang digunakan ketika payout dibuat.
 - Satu payment tidak boleh masuk lebih dari satu payout item jika menggunakan model pencairan tersebut.
 
 ### Keamanan
