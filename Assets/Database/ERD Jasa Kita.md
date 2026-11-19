@@ -93,9 +93,10 @@ flowchart TD
 
 ---
 
+
 ## 4. Entity Relationship Diagram (ERD)
 
-ERD berikut menggambarkan struktur database Jasa Kita beserta relasi antarentitas.
+ERD berikut menggambarkan struktur database Jasa Kita beserta hubungan antarentitas. Diagram mencakup pengelolaan akun, Provider, layanan, pesanan, pembayaran, refund, komisi, pencairan pendapatan, dan review.
 
 ```mermaid
 erDiagram
@@ -189,6 +190,7 @@ erDiagram
         bigint provider_service_id FK
         varchar service_name_snapshot
         decimal service_price_snapshot
+        decimal commission_rate_snapshot
         text order_address
         text description
         datetime scheduled_at
@@ -300,11 +302,10 @@ erDiagram
     }
 
     COMMISSION_SETTINGS {
-        bigint id PK
+        int id PK
         decimal commission_rate
-        datetime effective_start
-        datetime effective_end
-        boolean is_active
+        datetime effective_from
+        datetime effective_until
         datetime created_at
         datetime updated_at
     }
@@ -356,9 +357,16 @@ erDiagram
 - Relasi `1:1` menunjukkan satu data memiliki maksimal satu data yang terhubung.
 - Relasi `1:0..1` menunjukkan data boleh memiliki atau tidak memiliki pasangan data.
 
-Diagram ini merupakan rancangan hubungan database. Detail tipe data, constraint, dan aturan validasi akan ditentukan lebih lanjut ketika implementasi database dilakukan.
+**Catatan penting:**
 
----
+- `commission_rate_snapshot` menyimpan persentase komisi yang digunakan ketika pesanan dibuat.
+- `commission_settings` menyimpan pengaturan persentase komisi berdasarkan periode berlakunya.
+- Nilai komisi pada pesanan tidak berubah meskipun pengaturan komisi diperbarui.
+- Kolom snapshot rekening pada `payouts` menyimpan informasi rekening yang digunakan ketika pencairan dibuat.
+- `platform_fee` dan `provider_net` pada `payments` menyimpan rincian komisi platform dan pendapatan bersih Provider untuk setiap transaksi pembayaran.
+
+Diagram ini merupakan representasi hubungan database. Detail constraint dan aturan validasi tetap mengikuti implementasi DBML serta aturan aplikasi.
+
 
 ## 5. Penjelasan Struktur Database
 
@@ -538,15 +546,22 @@ Data yang disimpan meliputi:
 - Layanan dan Provider yang dipilih.
 - Snapshot nama layanan saat pemesanan.
 - Snapshot harga layanan saat pemesanan.
+- Snapshot persentase komisi (`commission_rate_snapshot`).
 - Alamat pengerjaan.
 - Deskripsi masalah atau kebutuhan.
 - Jadwal pengerjaan.
 - Status pesanan.
 - Informasi penyelesaian atau pembatalan.
 
-Snapshot harga dan nama layanan digunakan agar perubahan harga atau nama layanan di kemudian hari tidak mengubah catatan transaksi lama.
+Snapshot nama dan harga layanan digunakan agar perubahan data layanan di kemudian hari tidak mengubah catatan transaksi lama.
 
-**Fungsi:** Mencatat dan mengelola seluruh transaksi pemesanan jasa.
+Selain itu, `commission_rate_snapshot` digunakan untuk menyimpan persentase komisi yang berlaku ketika pesanan dibuat.
+
+Dengan mekanisme ini, persentase komisi untuk suatu pesanan tetap sama meskipun Admin mengubah pengaturan komisi untuk pesanan baru.
+
+**Fungsi:** Mencatat dan mengelola seluruh transaksi pemesanan jasa beserta snapshot informasi harga dan komisi.
+
+---
 
 #### 11. `order_status_histories`
 
@@ -604,18 +619,22 @@ Data meliputi:
 - Order terkait.
 - Material request jika pembayaran berkaitan dengan material.
 - Jenis pembayaran.
-- Nominal.
-- Biaya atau komisi platform.
-- Pendapatan bersih Provider.
+- Nominal pembayaran.
+- Biaya atau komisi platform (`platform_fee`).
+- Pendapatan bersih Provider (`provider_net`).
 - Referensi payment gateway.
 - Status transaksi.
 - Waktu pembayaran.
 
 Pembayaran dilakukan melalui payment gateway yang akan digunakan oleh Jasa Kita.
 
-Status pembayaran harus mengikuti hasil konfirmasi gateway, bukan hanya berdasarkan pengguna menekan tombol bayar.
+Nilai `platform_fee` dan `provider_net` dihitung berdasarkan persentase komisi yang tersimpan pada pesanan.
 
-**Fungsi:** Mencatat pembayaran dan status transaksi Customer.
+Pembayaran material dan pembayaran jasa menggunakan persentase komisi yang sama sesuai `commission_rate_snapshot` pada tabel `orders`.
+
+**Fungsi:** Mencatat pembayaran, komisi platform, pendapatan bersih Provider, dan status transaksi Customer.
+
+---
 
 #### 14. `refunds`
 
@@ -686,7 +705,9 @@ Data meliputi:
 - Komentar.
 - Waktu pemberian penilaian.
 
-Rating menggunakan skala 1 sampai 5. Batas nilai 1–5 harus diterapkan melalui constraint database (jika DBMS mendukung CHECK) dan validasi pada aplikasi.
+Rating menggunakan skala 1 sampai 5.
+
+Nilai rating harus divalidasi pada aplikasi agar hanya menerima angka 1 sampai 5.
 
 Satu pesanan hanya dapat memiliki satu review, dan Customer hanya dapat memberikan review terhadap pesanan yang telah selesai.
 
@@ -698,26 +719,33 @@ Satu pesanan hanya dapat memiliki satu review, dan Customer hanya dapat memberik
 
 #### 18. `commission_settings`
 
-Tabel `commission_settings` menyimpan pengaturan komisi platform.
+Tabel `commission_settings` menyimpan pengaturan persentase komisi platform berdasarkan periode berlakunya.
 
 Data meliputi:
 
-- Persentase komisi.
-- Tanggal mulai berlaku.
-- Tanggal berakhir.
-- Status aktif.
-- Waktu pembuatan dan perubahan.
+- Persentase komisi (`commission_rate`).
+- Tanggal mulai berlaku (`effective_from`).
+- Tanggal berakhir (`effective_until`).
+- Waktu pembuatan dan perubahan data.
 
-Contoh pengaturan:
+Contoh pengaturan komisi:
 
-| Komisi | Periode |
+| Persentase Komisi | Periode |
 |---|---|
-| 3% | 3 bulan pertama setelah peluncuran resmi |
-| 5% | Bulan ke-4 dan seterusnya |
+| 3% | Tiga bulan pertama setelah peluncuran resmi |
+| 5% | Mulai bulan keempat dan seterusnya |
 
-Pengaturan komisi dibuat berdasarkan periode agar sistem dapat menentukan komisi yang berlaku pada waktu transaksi.
+Ketika Customer membuat pesanan, sistem mengambil persentase komisi yang berlaku dari tabel `commission_settings`.
 
-**Fungsi:** Mengelola kebijakan komisi tanpa mengubah kode aplikasi.
+Persentase tersebut kemudian disimpan ke dalam kolom `commission_rate_snapshot` pada tabel `orders`.
+
+Dengan demikian, perubahan persentase komisi hanya berlaku untuk pesanan baru dan tidak mengubah perhitungan komisi pada pesanan yang sudah dibuat sebelumnya.
+
+Periode berlaku setiap pengaturan komisi tidak boleh saling tumpang tindih.
+
+**Fungsi:** Mengelola persentase komisi platform berdasarkan periode berlakunya.
+
+---
 
 ---
 
@@ -958,6 +986,7 @@ flowchart TD
     J --> K["Menyiapkan pencairan"]
 ```
 
+
 ### Perhitungan Komisi
 
 Rumus dasar:
@@ -966,9 +995,34 @@ Rumus dasar:
 
 **Pendapatan Provider = Total pembayaran − Komisi Platform**
 
-Persentase komisi ditentukan berdasarkan pengaturan komisi yang berlaku pada saat transaksi.
+### Mekanisme Penentuan Persentase Komisi
 
-Catatan: Implementasi keuangan final harus memastikan pembayaran material dan pembayaran jasa tidak menyebabkan perhitungan komisi ganda. Nilai komisi dan net Provider harus direkonsiliasi dengan kebijakan settlement gateway.
+Persentase komisi platform ditentukan berdasarkan pengaturan yang tersimpan pada tabel `commission_settings`.
+
+Ketentuan persentase komisi Jasa Kita:
+
+| Periode | Persentase Komisi |
+|---|---:|
+| Tiga bulan pertama setelah peluncuran resmi | 3% |
+| Mulai bulan keempat dan seterusnya | 5% |
+
+Ketika Customer membuat pesanan, sistem mengambil persentase komisi yang sedang berlaku berdasarkan tanggal pembuatan pesanan. Persentase tersebut kemudian disimpan ke dalam kolom `commission_rate_snapshot` pada tabel `orders`.
+
+Dengan mekanisme ini, persentase komisi untuk setiap pesanan akan tetap terkunci sejak pesanan dibuat. Apabila Admin mengubah persentase komisi, perubahan tersebut hanya berlaku untuk pesanan baru dan tidak memengaruhi pesanan yang sudah ada.
+
+Pembayaran material dan pembayaran jasa dalam satu pesanan menggunakan persentase komisi yang sama, yaitu berdasarkan nilai `commission_rate_snapshot`.
+
+**Contoh perhitungan dengan komisi 5%:**
+
+| Jenis Pembayaran | Nominal | Komisi 5% | Pendapatan Provider |
+|---|---:|---:|---:|
+| Material | Rp150.000 | Rp7.500 | Rp142.500 |
+| Jasa | Rp300.000 | Rp15.000 | Rp285.000 |
+| **Total** | **Rp450.000** | **Rp22.500** | **Rp427.500** |
+
+Nilai komisi (`platform_fee`) dan pendapatan bersih Provider (`provider_net`) disimpan pada masing-masing transaksi di tabel `payments`.
+
+**Catatan:** Perhitungan komisi material dan jasa harus menggunakan persentase yang sama dari snapshot pesanan dan tidak boleh menyebabkan perhitungan komisi ganda. Nilai komisi dan pendapatan bersih Provider harus direkonsiliasi dengan kebijakan settlement gateway.
 
 ---
 
