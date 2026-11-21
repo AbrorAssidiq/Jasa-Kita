@@ -1,238 +1,225 @@
-# USER STORY ADMIN – JASA KITA
+# USER STORY – JASA KITA
 
-## Provider (Penyedia Jasa)
+## Admin
 
-### US-PRO-01 – Registrasi Akun Provider
-Sebagai Provider, saya ingin mendaftarkan akun pada aplikasi Jasa Kita, sehingga saya dapat bergabung sebagai penyedia jasa.
-
-**Acceptance Criteria:**
-- Provider dapat mengisi nama, email, nomor telepon, dan password.
-- Sistem memvalidasi data yang dimasukkan.
-- Email atau nomor telepon tidak boleh digunakan oleh akun lain.
-- Provider berhasil membuat akun dan dapat melanjutkan proses pengisian profil.
-
----
-
-### US-PRO-02 – Login Provider
-Sebagai Provider, saya ingin login ke akun saya, sehingga dapat mengakses fitur penyedia jasa.
+### US-ADM-01 – Login Admin
+Sebagai Admin, saya ingin login ke sistem, sehingga dapat mengakses fitur pengelolaan aplikasi Jasa Kita.
 
 **Acceptance Criteria:**
-- Provider dapat login menggunakan email/nomor telepon dan password.
+- Admin dapat login menggunakan email dan password.
 - Sistem memvalidasi kredensial login.
-- Provider diarahkan ke halaman dashboard setelah berhasil login.
-- Provider tidak dapat mengakses fitur apabila belum login.
+- Admin diarahkan ke halaman dashboard setelah berhasil login.
+- Admin yang belum login tidak dapat mengakses halaman pengelolaan.
+- Sistem membatasi akses berdasarkan role Admin.
 
 ---
 
-### US-PRO-03 – Melengkapi Profil Provider
-Sebagai Provider, saya ingin melengkapi profil penyedia jasa, sehingga Customer dapat mengenal saya dan layanan yang saya tawarkan.
+### US-ADM-02 – Melihat Dashboard Admin
+Sebagai Admin, saya ingin melihat dashboard, sehingga dapat mengetahui ringkasan aktivitas aplikasi Jasa Kita.
 
 **Acceptance Criteria:**
-- Provider dapat mengisi foto profil, nama, deskripsi, alamat, dan informasi lainnya.
-- Provider dapat mengubah informasi profil.
-- Informasi profil dapat ditampilkan kepada Customer.
-- Sistem menyimpan perubahan profil.
+- Admin dapat melihat jumlah Customer.
+- Admin dapat melihat jumlah Provider.
+- Admin dapat melihat jumlah pesanan.
+- Admin dapat melihat ringkasan transaksi.
+- Admin dapat melihat ringkasan pendapatan komisi platform.
+- Data dashboard ditampilkan berdasarkan data yang tersimpan di sistem.
 
 ---
 
-### US-PRO-04 – Mengunggah Dokumen Verifikasi
-Sebagai Provider, saya ingin mengunggah dokumen persyaratan, sehingga akun saya dapat diverifikasi oleh Admin.
+### US-ADM-03 – Mengelola Data Pengguna
+Sebagai Admin, saya ingin mengelola data pengguna, sehingga dapat menjaga keamanan dan ketertiban pengguna aplikasi.
 
 **Acceptance Criteria:**
-- Provider dapat mengunggah dokumen identitas yang dipersyaratkan.
-- Provider dapat melihat status verifikasi dokumen.
-- Provider dapat memperbarui dokumen apabila diperlukan.
-- Dokumen yang diunggah dapat diperiksa oleh Admin.
+- Admin dapat melihat daftar pengguna.
+- Admin dapat melihat detail pengguna.
+- Admin dapat mencari pengguna berdasarkan nama atau informasi tertentu.
+- Admin dapat mengubah status akun pengguna.
+- Admin dapat mengaktifkan atau menonaktifkan akun pengguna.
 
 ---
 
-### US-PRO-05 – Melihat Status Verifikasi Akun
-Sebagai Provider, saya ingin melihat status verifikasi akun, sehingga mengetahui apakah akun saya sudah dapat digunakan untuk menawarkan jasa.
+### US-ADM-04 – Melihat dan Memverifikasi Provider
+Sebagai Admin, saya ingin memeriksa dan memverifikasi data Provider, sehingga hanya Provider yang memenuhi persyaratan dapat menawarkan jasa.
 
 **Acceptance Criteria:**
-- Provider dapat melihat status verifikasi.
-- Status meliputi menunggu verifikasi, disetujui, atau ditolak.
-- Jika ditolak, Provider dapat melihat alasan penolakan apabila diberikan oleh Admin.
-- Provider dapat memperbaiki data atau dokumen yang diperlukan.
+- Admin dapat melihat daftar Provider yang menunggu verifikasi.
+- Admin dapat melihat detail profil Provider.
+- Admin dapat melihat dokumen yang diunggah Provider.
+- Admin dapat menyetujui verifikasi Provider.
+- Admin dapat menolak verifikasi Provider.
+- Admin dapat memberikan alasan penolakan.
+- Sistem menyimpan status verifikasi Provider.
 
 ---
 
-### US-PRO-06 – Mengelola Layanan Jasa
-Sebagai Provider, saya ingin mengelola layanan jasa yang saya tawarkan, sehingga Customer dapat mengetahui jasa yang tersedia.
+### US-ADM-05 – Mengelola Kategori Jasa
+Sebagai Admin, saya ingin mengelola kategori jasa, sehingga layanan yang tersedia di aplikasi dapat dikategorikan dengan baik.
 
 **Acceptance Criteria:**
-- Provider dapat menambahkan layanan jasa.
-- Provider dapat memilih kategori jasa.
-- Provider dapat mengisi nama layanan, deskripsi, dan harga jasa.
-- Provider dapat mengubah informasi layanan.
-- Provider dapat mengaktifkan atau menonaktifkan layanan.
+- Admin dapat menambahkan kategori jasa.
+- Admin dapat mengubah kategori jasa.
+- Admin dapat mengaktifkan atau menonaktifkan kategori jasa.
+- Admin dapat melihat daftar kategori jasa.
+- Kategori yang digunakan pada layanan tidak dapat dihapus sembarangan.
 
 ---
 
-### US-PRO-07 – Mengelola Ketersediaan Layanan
-Sebagai Provider, saya ingin mengatur ketersediaan layanan, sehingga Customer mengetahui apakah saya dapat menerima pesanan.
+### US-ADM-06 – Mengelola Data Layanan
+Sebagai Admin, saya ingin mengelola data layanan yang tersedia, sehingga layanan pada aplikasi sesuai dengan ketentuan platform.
 
 **Acceptance Criteria:**
-- Provider dapat mengatur status ketersediaan.
-- Provider dapat menonaktifkan layanan sementara.
-- Layanan yang tidak tersedia tidak dapat dipesan oleh Customer.
+- Admin dapat melihat daftar layanan Provider.
+- Admin dapat melihat detail layanan.
+- Admin dapat mengubah status layanan.
+- Admin dapat menonaktifkan layanan yang tidak sesuai ketentuan.
+- Layanan yang dinonaktifkan tidak dapat dipesan oleh Customer.
 
 ---
 
-### US-PRO-08 – Melihat Pesanan Masuk
-Sebagai Provider, saya ingin melihat pesanan yang masuk, sehingga dapat mengetahui permintaan pekerjaan dari Customer.
+### US-ADM-07 – Memantau Pesanan
+Sebagai Admin, saya ingin memantau seluruh pesanan, sehingga dapat mengawasi aktivitas transaksi dan pengerjaan jasa.
 
 **Acceptance Criteria:**
-- Provider dapat melihat daftar pesanan masuk.
-- Provider dapat melihat informasi Customer dan detail pekerjaan.
-- Provider dapat melihat lokasi pekerjaan.
-- Provider dapat melihat tanggal dan waktu pesanan.
-- Provider dapat melihat status masing-masing pesanan.
+- Admin dapat melihat seluruh daftar pesanan.
+- Admin dapat melihat detail pesanan.
+- Admin dapat melihat informasi Customer dan Provider.
+- Admin dapat melihat status pesanan.
+- Admin dapat mencari atau memfilter pesanan berdasarkan status, tanggal, atau informasi tertentu.
 
 ---
 
-### US-PRO-09 – Menerima Pesanan
-Sebagai Provider, saya ingin menerima pesanan dari Customer, sehingga dapat memulai proses pengerjaan jasa.
+### US-ADM-08 – Memantau Riwayat Status Pesanan
+Sebagai Admin, saya ingin melihat riwayat perubahan status pesanan, sehingga dapat mengetahui alur dan perkembangan suatu pesanan.
 
 **Acceptance Criteria:**
-- Provider dapat menerima pesanan yang masih menunggu respons.
-- Sistem mengubah status pesanan setelah Provider menerima pesanan.
-- Customer dapat mengetahui bahwa pesanan telah diterima.
-- Pesanan yang sudah diterima tidak dapat diterima oleh Provider lain.
+- Admin dapat melihat riwayat status pesanan.
+- Sistem menampilkan status sebelumnya dan status terbaru.
+- Sistem menyimpan waktu perubahan status.
+- Admin dapat melihat riwayat status pada detail pesanan.
 
 ---
 
-### US-PRO-10 – Menolak Pesanan
-Sebagai Provider, saya ingin menolak pesanan yang tidak dapat saya kerjakan, sehingga Customer dapat mencari penyedia jasa lainnya.
+### US-ADM-09 – Memantau Transaksi Pembayaran
+Sebagai Admin, saya ingin memantau transaksi pembayaran, sehingga dapat memastikan transaksi Customer tercatat dengan baik.
 
 **Acceptance Criteria:**
-- Provider dapat menolak pesanan yang masih menunggu respons.
-- Provider dapat memberikan alasan penolakan.
-- Sistem mengubah status pesanan menjadi ditolak.
-- Customer mendapatkan informasi bahwa pesanan ditolak.
+- Admin dapat melihat daftar transaksi pembayaran.
+- Admin dapat melihat detail transaksi.
+- Admin dapat melihat jenis pembayaran, seperti pembayaran material atau pembayaran jasa.
+- Admin dapat melihat nominal pembayaran.
+- Admin dapat melihat status pembayaran.
+- Admin dapat melihat informasi transaksi dari payment gateway.
 
 ---
 
-### US-PRO-11 – Melihat Detail Pesanan
-Sebagai Provider, saya ingin melihat detail pesanan, sehingga memahami pekerjaan yang harus dilakukan.
+### US-ADM-10 – Mengelola Pengajuan Refund
+Sebagai Admin, saya ingin memeriksa dan mengelola pengajuan refund, sehingga pengembalian dana dapat dilakukan sesuai ketentuan.
 
 **Acceptance Criteria:**
-- Provider dapat melihat deskripsi pekerjaan.
-- Provider dapat melihat alamat atau lokasi pekerjaan.
-- Provider dapat melihat informasi Customer.
-- Provider dapat melihat kategori dan layanan yang dipesan.
-- Provider dapat melihat status pesanan.
+- Admin dapat melihat daftar pengajuan refund.
+- Admin dapat melihat detail pengajuan refund.
+- Admin dapat melihat alasan pengajuan refund.
+- Admin dapat menyetujui atau menolak pengajuan refund.
+- Admin dapat menentukan nominal refund sesuai hasil pemeriksaan.
+- Sistem menyimpan status dan informasi refund.
 
 ---
 
-### US-PRO-12 – Mengajukan Rincian Biaya Material
-Sebagai Provider, saya ingin mengajukan rincian biaya material kepada Customer, sehingga biaya bahan yang dibutuhkan dapat disetujui sebelum pembelian.
+### US-ADM-11 – Memantau Proses Refund
+Sebagai Admin, saya ingin memantau proses refund, sehingga dapat memastikan pengembalian dana telah diproses.
 
 **Acceptance Criteria:**
-- Provider dapat menambahkan nama material.
-- Provider dapat mengisi jumlah, harga satuan, dan total harga material.
-- Provider dapat menambahkan beberapa item material.
-- Sistem menghitung total biaya material.
-- Provider dapat mengirim pengajuan biaya material kepada Customer.
+- Admin dapat melihat status refund.
+- Status refund meliputi menunggu, diproses, berhasil, atau gagal.
+- Admin dapat melihat nominal refund.
+- Admin dapat melihat informasi transaksi refund dari payment gateway.
+- Status refund diperbarui berdasarkan hasil proses pengembalian dana.
 
 ---
 
-### US-PRO-13 – Melihat Status Persetujuan Material
-Sebagai Provider, saya ingin melihat status persetujuan biaya material, sehingga mengetahui apakah Customer menyetujui biaya yang diajukan.
+### US-ADM-12 – Mengelola Data Rekening Provider
+Sebagai Admin, saya ingin melihat informasi rekening Provider, sehingga dapat memastikan data rekening yang digunakan untuk pencairan dana.
 
 **Acceptance Criteria:**
-- Provider dapat melihat status pengajuan material.
-- Status meliputi menunggu persetujuan, disetujui, atau ditolak.
-- Provider dapat mengetahui apabila Customer menolak pengajuan material.
-- Provider dapat melakukan penyesuaian pengajuan apabila diperlukan.
+- Admin dapat melihat daftar rekening Provider.
+- Admin dapat melihat detail rekening Provider.
+- Admin dapat melihat nama pemilik rekening dan informasi bank.
+- Admin dapat memeriksa rekening yang digunakan untuk pencairan dana.
 
 ---
 
-### US-PRO-14 – Membeli Material dan Mengunggah Bukti Pembelian
-Sebagai Provider, saya ingin mengunggah bukti pembelian material, sehingga Customer dapat mengetahui bahwa material telah dibeli.
+### US-ADM-13 – Mengelola Pencairan Dana Provider
+Sebagai Admin, saya ingin mengelola proses pencairan dana Provider, sehingga pendapatan Provider dapat disalurkan dengan benar.
 
 **Acceptance Criteria:**
-- Provider dapat mengunggah bukti pembelian material.
-- Bukti pembelian dapat berupa foto atau dokumen.
-- Provider dapat melihat bukti pembelian yang telah diunggah.
-- Bukti pembelian dapat dilihat oleh Customer pada detail pesanan.
+- Admin dapat melihat daftar pencairan dana.
+- Admin dapat melihat detail pencairan dana.
+- Admin dapat melihat nominal pencairan.
+- Admin dapat melihat rekening tujuan pencairan.
+- Admin dapat memproses pencairan dana melalui layanan disbursement.
+- Sistem menyimpan status pencairan dana.
+- Admin dapat melihat status pencairan berhasil atau gagal.
 
 ---
 
-### US-PRO-15 – Memperbarui Progres Pekerjaan
-Sebagai Provider, saya ingin memperbarui progres pekerjaan, sehingga Customer dapat mengetahui perkembangan pengerjaan jasa.
+### US-ADM-14 – Melihat Detail Payout
+Sebagai Admin, saya ingin melihat detail payout, sehingga dapat mengetahui transaksi pembayaran yang termasuk dalam pencairan dana Provider.
 
 **Acceptance Criteria:**
-- Provider dapat memperbarui status pekerjaan.
-- Status pekerjaan dapat menunjukkan bahwa pekerjaan sedang berlangsung.
-- Sistem menyimpan riwayat perubahan status.
-- Customer dapat melihat progres pekerjaan.
+- Admin dapat melihat detail payout.
+- Admin dapat melihat daftar pembayaran yang termasuk dalam payout.
+- Sistem menampilkan total nominal payout.
+- Sistem menampilkan nominal bersih Provider.
+- Sistem memastikan pembayaran tidak dimasukkan ke payout lebih dari satu kali.
 
 ---
 
-### US-PRO-16 – Menandai Pekerjaan Selesai
-Sebagai Provider, saya ingin menandai pekerjaan telah selesai, sehingga Customer dapat melakukan konfirmasi penyelesaian pekerjaan.
+### US-ADM-15 – Mengelola Komisi Platform
+Sebagai Admin, saya ingin mengatur persentase komisi platform, sehingga sistem dapat menghitung komisi sesuai kebijakan yang berlaku.
 
 **Acceptance Criteria:**
-- Provider dapat menandai pekerjaan selesai.
-- Sistem mengubah status pesanan menjadi menunggu konfirmasi Customer.
-- Customer mendapatkan informasi bahwa pekerjaan telah selesai.
-- Provider dapat melihat status konfirmasi pekerjaan.
+- Admin dapat melihat persentase komisi yang berlaku.
+- Admin dapat mengubah persentase komisi.
+- Sistem menyimpan perubahan komisi.
+- Sistem menggunakan persentase komisi terbaru untuk pesanan baru.
+- Pesanan yang telah dibuat tetap menggunakan persentase komisi yang tersimpan pada pesanan tersebut.
+- Perubahan komisi tidak mengubah perhitungan komisi pada pesanan sebelumnya.
 
 ---
 
-### US-PRO-17 – Melihat Riwayat Pesanan
-Sebagai Provider, saya ingin melihat riwayat pesanan, sehingga dapat mengetahui pekerjaan yang pernah saya terima.
+### US-ADM-16 – Melihat Laporan Transaksi
+Sebagai Admin, saya ingin melihat laporan transaksi, sehingga dapat memantau aktivitas keuangan aplikasi.
 
 **Acceptance Criteria:**
-- Provider dapat melihat daftar pesanan sebelumnya.
-- Provider dapat melihat detail pesanan pada riwayat.
-- Riwayat menampilkan status pesanan.
-- Provider dapat mencari atau memfilter riwayat pesanan.
+- Admin dapat melihat ringkasan transaksi.
+- Admin dapat melihat total pembayaran.
+- Admin dapat melihat total komisi platform.
+- Admin dapat melihat total pendapatan Provider.
+- Admin dapat melihat transaksi berdasarkan periode tertentu.
+- Admin dapat melihat rincian transaksi.
 
 ---
 
-### US-PRO-18 – Melihat Pendapatan
-Sebagai Provider, saya ingin melihat pendapatan dari pekerjaan yang telah selesai, sehingga dapat mengetahui jumlah penghasilan yang saya peroleh.
+### US-ADM-17 – Melihat Laporan Pesanan
+Sebagai Admin, saya ingin melihat laporan pesanan, sehingga dapat mengetahui aktivitas pemesanan jasa pada aplikasi.
 
 **Acceptance Criteria:**
-- Provider dapat melihat daftar transaksi pendapatan.
-- Provider dapat melihat nominal pembayaran jasa.
-- Provider dapat melihat potongan komisi platform.
-- Provider dapat melihat nominal bersih yang diterima.
-- Provider dapat melihat status pembayaran dan pencairan dana.
+- Admin dapat melihat jumlah pesanan.
+- Admin dapat melihat pesanan berdasarkan status.
+- Admin dapat melihat pesanan berdasarkan periode tertentu.
+- Admin dapat melihat detail pesanan pada laporan.
+- Admin dapat memfilter data laporan.
 
 ---
 
-### US-PRO-19 – Mengelola Rekening Bank
-Sebagai Provider, saya ingin mengelola rekening bank, sehingga dana pendapatan dapat dicairkan ke rekening saya.
+### US-ADM-18 – Melihat Laporan Provider
+Sebagai Admin, saya ingin melihat laporan aktivitas Provider, sehingga dapat mengetahui kinerja penyedia jasa pada aplikasi.
 
 **Acceptance Criteria:**
-- Provider dapat menambahkan rekening bank.
-- Provider dapat mengubah informasi rekening.
-- Provider dapat melihat informasi rekening yang tersimpan.
-- Sistem memvalidasi informasi rekening yang dimasukkan.
-
----
-
-### US-PRO-20 – Mengajukan Pencairan Dana
-Sebagai Provider, saya ingin mengajukan pencairan dana dari pendapatan yang tersedia, sehingga dapat menerima penghasilan ke rekening bank saya.
-
-**Acceptance Criteria:**
-- Provider dapat melihat jumlah pendapatan yang dapat dicairkan.
-- Provider dapat mengajukan pencairan dana.
-- Provider dapat memilih rekening tujuan pencairan.
-- Sistem memvalidasi jumlah dana yang diajukan.
-- Provider dapat melihat status pengajuan pencairan.
-
----
-
-### US-PRO-21 – Melihat Riwayat Pencairan Dana
-Sebagai Provider, saya ingin melihat riwayat pencairan dana, sehingga dapat mengetahui transaksi pencairan yang telah dilakukan.
-
-**Acceptance Criteria:**
-- Provider dapat melihat daftar pencairan dana.
-- Provider dapat melihat nominal pencairan.
-- Provider dapat melihat tanggal pengajuan.
-- Provider dapat melihat rekening tujuan.
-- Provider dapat melihat status pencairan, seperti menunggu, berhasil, atau gagal.
+- Admin dapat melihat daftar Provider.
+- Admin dapat melihat jumlah pesanan yang diterima Provider.
+- Admin dapat melihat jumlah pekerjaan yang selesai.
+- Admin dapat melihat total pendapatan Provider.
+- Admin dapat melihat rating Provider.
+- Admin dapat memfilter laporan berdasarkan Provider atau periode tertentu.
