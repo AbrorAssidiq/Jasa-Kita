@@ -1,0 +1,316 @@
+/* 1. Warna dan pengaturan dasar */
+:root {
+    --blue: #1266d6;
+    --blue-dark: #073577;
+    --blue-light: #eaf4ff;
+    --orange: #ff9418;
+    --text: #102e63;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: linear-gradient(135deg, #eaf5ff, #ffffff 55%, #dceeff);
+    min-height: 100vh;
+}
+
+/* 2. Navbar */
+.navbar {
+    width: min(94%, 1400px);
+    margin: 20px auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 60px;
+    box-shadow: 0 8px 25px rgba(25, 91, 170, 0.12);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--blue-dark);
+    text-decoration: none;
+}
+
+.brand-icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--blue-dark);
+    color: white;
+    font-weight: bold;
+    border: 3px solid var(--orange);
+}
+
+.brand-text strong {
+    display: block;
+    font-size: 22px;
+}
+
+.brand-text small {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a,
+.nav-login {
+    color: var(--blue-dark);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-login {
+    background: var(--blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+/* 3. Layout dua kolom */
+.register-layout {
+    width: min(94%, 1400px);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 36px;
+}
+
+.hero {
+    min-width: 0;
+}
+
+.hero-copy {
+    padding: 10px 20px 0;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 4vw, 58px);
+    line-height: 1.08;
+    margin: 14px 0;
+    color: var(--blue-dark);
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero-description {
+    max-width: 460px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.mechanic-image {
+    display: block;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 24px;
+}
+
+/* 4. Kartu formulir */
+.register-card {
+    background: white;
+    padding: 32px;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(27, 90, 170, 0.14);
+}
+
+.card-heading {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.user-icon {
+    margin: 0 auto 12px;
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--blue-light);
+    color: var(--blue);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.card-heading h2 {
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+
+.card-heading p {
+    margin: 0;
+    font-size: 14px;
+    color: #526b91;
+}
+
+form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #cbdcf2;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+}
+
+form input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(18, 102, 214, 0.12);
+}
+
+.register-button,
+.google-button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-button {
+    border: none;
+    background: var(--blue);
+    color: white;
+}
+
+.register-button:hover {
+    background: var(--blue-dark);
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0 0;
+    color: #60799b;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #cbdcf2;
+}
+
+.google-button {
+    border: 1px solid var(--blue);
+    background: white;
+    color: var(--blue-dark);
+    margin-top: 14px;
+}
+
+.login-prompt {
+    text-align: center;
+    font-size: 14px;
+    margin: 22px 0 0;
+}
+
+.login-prompt a {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+/* 5. Tampilan HP / layar kecil */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .register-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hero-copy {
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mechanic-image {
+        max-width: 520px;
+    }
+
+    .register-card {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .navbar {
+        padding: 10px 14px;
+        margin-top: 10px;
+    }
+
+    .brand-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-text strong {
+        font-size: 18px;
+    }
+
+    .nav-login {
+        padding: 10px 16px;
+    }
+
+    .register-layout {
+        margin-top: 16px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .register-card {
+        padding: 22px 18px;
+        border-radius: 20px;
+    }
+}
