@@ -1,9 +1,17 @@
-/* ===== HALAMAN SPLASH ===== */
-.splash{background:linear-gradient(180deg,#0B5FE3 0%,#1478F5 60%,#0A56D0 100%);color:#fff;align-items:center;justify-content:center;text-align:center;flex:1;position:relative;display:flex;flex-direction:column}
-.splash h1{font-size:34px;font-weight:800;margin-top:12px}
-.splash p{font-size:12px;opacity:.9;width:150px;line-height:1.35;margin-top:6px}
-.splash .city{position:absolute;bottom:50px;left:0;right:0;opacity:.25}
-.splash .prog{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:140px;height:4px;border-radius:4px;background:rgba(255,255,255,.3);overflow:hidden}
-.splash .prog b{display:block;height:100%;width:0;background:#fff;border-radius:4px;animation:progress 2.4s linear forwards}
-@keyframes progress{to{width:100%}}
-@media(prefers-reduced-motion:reduce){.splash .prog b{animation-duration:.01s}}
+/* ===== SPLASH: latar biru bergerak, riak, logo muncul memantul ===== */
+body.sp{background:#0A3FB0}
+body.sp #scr{animation:none;position:relative;overflow:hidden;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(160deg,#0A3FB0 0%,#1769E0 55%,#3A9BFF 100%)}
+body.sp.leaving #scr{animation:zoomOut .45s ease-in forwards}
+.blob{position:absolute;border-radius:50%;filter:blur(30px);opacity:.5}
+.b1{width:260px;height:260px;background:#5FB0FF;top:-70px;left:-80px;animation:drift 9s ease-in-out infinite}
+.b2{width:300px;height:300px;background:#0A3FB0;bottom:-90px;right:-90px;animation:drift 11s ease-in-out infinite reverse}
+.rip{position:absolute;left:50%;top:44%;width:260px;height:260px;margin:-130px 0 0 -130px;border:2px solid rgba(255,255,255,.45);border-radius:50%;opacity:0;animation:ripple 3.2s ease-out infinite}
+.rip.r2{animation-delay:1s}.rip.r3{animation-delay:2s}
+.lw{position:relative;width:236px;height:236px;margin-top:-30px;animation:pop .9s .15s cubic-bezier(.2,.9,.3,1.2) backwards}
+.lw::before{content:'';position:absolute;inset:7%;border-radius:50%;background:#fff;box-shadow:0 0 60px rgba(255,255,255,.55)}
+.lw img{position:relative;width:100%;height:100%;object-fit:contain;animation:float 4s 1s ease-in-out infinite}
+.spl-tag{position:relative;margin-top:26px;font-size:13px;font-weight:600;animation:rise .7s 1s cubic-bezier(.2,.8,.2,1) backwards}
+.city{position:absolute;left:0;right:0;bottom:46px;opacity:.22;animation:rise 1s .5s backwards}
+.prog{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);width:140px;height:4px;border-radius:4px;background:rgba(255,255,255,.3);overflow:hidden}
+.prog b{display:block;height:100%;width:0;background:#fff;border-radius:4px;animation:fill 2.7s linear forwards}
+@keyframes fill{to{width:100%}}

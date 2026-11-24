@@ -2,37 +2,34 @@
 <html lang="id">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jasa Kita – Detail Penyedia</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/animations.css">
 <link rel="stylesheet" href="../css/components.css">
 <link rel="stylesheet" href="../css/pages/provider-detail.css">
 </head>
-<body>
-<div id="phone">
-    <div class="sb"><span>9:41</span><i>▂▄▆ ◔ ▮</i></div>
+<body class="">
+  <div class="sb"><span>9:41</span><i>▂▄▆ ◔ ▮</i></div>
   <div id="scr">
-    <div style="flex:1;overflow:auto">
-      <div class="hdr"><button class="ib" onclick="history.back()" aria-label="Kembali">←</button>🧑‍🔧</div>
-      <div class="sheet">
-        <div class="prow">
-          <div class="plogo"><img src="../assets/images/logo-blue.svg" width="30" height="30" alt=""></div>
-          <div class="t"><b>Jaya Teknik</b><small><b>★ 4.8</b> (1.2k ulasan)</small></div>
-          <a class="fol" href="login.html">Ikuti</a>
-        </div>
-        <h5>Informasi Mitra</h5>
-        <p>Melayani servis AC, instalasi AC, dan perawatan rutin.</p>
-        <div class="info"><i>📍</i><div><small>Lokasi</small><b>Jl. Melati No. 10, Metro</b></div></div>
-        <div class="info"><i>🕗</i><div><small>Jam Operasional</small><b>08.00 - 21.00 WIB</b></div></div>
-        <h5>Layanan Kami</h5>
-        <div class="tags"><span>Servis AC</span><span>Instalasi AC</span><span>Perawatan</span></div>
+    <div class="hdr"><button class="ib" onclick="goBack()" aria-label="Kembali">←</button>🧑‍🔧</div>
+    <div class="sheet rise d1">
+      <div class="prow">
+        <div class="plogo"><img src="../assets/images/logo-sm.png" width="44" height="44" alt=""></div>
+        <div class="t"><b>Jaya Teknik</b><small><b>★ 4.8</b> (1.2k ulasan)</small></div>
+        <a class="fol" href="login.html">Ikuti</a>
       </div>
+      <h5>Informasi Mitra</h5>
+      <p>Melayani servis AC, instalasi AC, dan perawatan rutin.</p>
+      <div class="info"><i>📍</i><div><small>Lokasi</small><b>Jl. Melati No. 10, Metro</b></div></div>
+      <div class="info"><i>🕗</i><div><small>Jam Operasional</small><b>08.00 - 21.00 WIB</b></div></div>
+      <h5>Layanan Kami</h5>
+      <div class="tags stagger"><span>Servis AC</span><span>Instalasi AC</span><span>Perawatan</span></div>
     </div>
-    <div class="cta"><a class="btn bp" href="login.html">Pesan Sekarang</a></div>
   </div>
+  <div class="cta"><a class="btn bp glow" href="login.html">Pesan Sekarang</a></div>
   <div id="toast"></div>
-</div>
 <script src="../js/common.js"></script>
 </body>
 </html>

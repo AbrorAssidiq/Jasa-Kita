@@ -1,0 +1,37 @@
+/* ===== ANIMASI: semua gerakan ada di sini. Ubah durasi/jenis gerakan sesuka Anda. ===== */
+@keyframes slideIn{from{opacity:0;transform:translateX(34px)}to{opacity:1;transform:none}}
+@keyframes slideOut{to{opacity:0;transform:translateX(-34px)}}
+@keyframes slideOutR{to{opacity:0;transform:translateX(34px)}}
+@keyframes pop{0%{opacity:0;transform:scale(.6) translateY(10px)}65%{transform:scale(1.07)}100%{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes glow{0%,100%{box-shadow:0 6px 16px rgba(23,105,224,.28)}50%{box-shadow:0 6px 30px rgba(23,105,224,.62)}}
+@keyframes shine{0%{left:-60%}55%,100%{left:140%}}
+@keyframes ring{0%,50%,100%{transform:rotate(0)}10%{transform:rotate(16deg)}20%{transform:rotate(-14deg)}30%{transform:rotate(10deg)}40%{transform:rotate(-6deg)}}
+@keyframes hop{0%{transform:translateY(8px) scale(.8)}60%{transform:translateY(-4px) scale(1.15)}100%{transform:none}}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,30px)}}
+@keyframes ripple{0%{transform:scale(.5);opacity:.7}100%{transform:scale(2.4);opacity:0}}
+@keyframes zoomOut{to{opacity:0;transform:scale(1.14)}}
+
+/* Perpindahan halaman */
+#scr{animation:slideIn .45s cubic-bezier(.2,.8,.2,1) backwards}
+body.leaving #scr{animation:slideOut .2s ease-in forwards}
+body.leaving.back #scr{animation:slideOutR .2s ease-in forwards}
+
+/* Muncul bertahap: .rise (naik) dan .stagger (anak-anaknya muncul satu per satu) */
+.rise{animation:rise .6s cubic-bezier(.2,.8,.2,1) backwards}
+.d1{animation-delay:.08s}.d2{animation-delay:.16s}.d3{animation-delay:.24s}.d4{animation-delay:.32s}
+.stagger>*{animation:pop .55s cubic-bezier(.2,.9,.3,1.15) backwards;animation-delay:.6s}
+.stagger>*:nth-child(1){animation-delay:.12s}.stagger>*:nth-child(2){animation-delay:.18s}
+.stagger>*:nth-child(3){animation-delay:.24s}.stagger>*:nth-child(4){animation-delay:.30s}
+.stagger>*:nth-child(5){animation-delay:.36s}.stagger>*:nth-child(6){animation-delay:.42s}
+.stagger>*:nth-child(7){animation-delay:.48s}.stagger>*:nth-child(8){animation-delay:.54s}
+
+/* Tombol utama berdenyut, dan efek tekan */
+.glow{animation:glow 2.4s ease-in-out infinite}
+.btn,.pv,.cat,.gc,.mi,.sug,.chip,.fol,.lnk,.nav a{transition:transform .15s ease,background .2s}
+.btn:active,.pv:active,.cat:active,.gc:active,.mi:active,.sug:active,.chip:active,.fol:active,.nav a:active{transform:scale(.95)}
+.nav a.on span{animation:hop .55s .3s backwards}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

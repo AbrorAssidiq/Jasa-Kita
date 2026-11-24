@@ -1,8 +1,12 @@
-/* ===== HALAMAN LOGIN ===== */
-.lf{padding:0 26px;flex:1;background:linear-gradient(#fff,#EDF3FF)}
-.lf .head{text-align:center;margin-top:6px}
-.lf .head h2{font-size:20px;font-weight:800;margin-top:30px}
-.lf .head p{font-size:12px;color:var(--mu);margin:6px 0 22px}
-.lf .inp{display:flex;align-items:center;gap:10px;border:1px solid var(--bar);border-radius:10px;background:#fff;padding:12px;margin-bottom:12px;font-size:13px}
+/* ===== LOGIN ===== */
+body.lg #scr{position:relative;overflow:hidden;background:radial-gradient(circle at 90% 4%,rgba(23,105,224,.2),transparent 42%),radial-gradient(circle at 0% 100%,rgba(23,105,224,.16),transparent 40%)}
+body.lg .orb{background:rgba(23,105,224,.1)}
+.lf{position:relative;padding:0 26px;flex:1}
+.lf .head{text-align:center}
+.lf .head .lg{width:128px;height:128px;object-fit:contain;animation:pop .8s cubic-bezier(.2,.9,.3,1.2) backwards}
+.lf .head h2{font-size:20px;font-weight:800;margin-top:6px}
+.lf .head p{font-size:12px;color:var(--mu);margin:6px 0 20px}
+.lf .inp{display:flex;align-items:center;gap:10px;border:1px solid var(--bar);border-radius:12px;background:#fff;padding:12px;margin-bottom:12px;font-size:13px;transition:border-color .2s,box-shadow .2s}
+.lf .inp:focus-within{border-color:var(--bl);box-shadow:0 0 0 4px rgba(23,105,224,.16)}
 .lf .inp input{border:0;outline:0;flex:1;font:inherit;background:none;color:var(--tx);min-width:0}
 .lf .or{text-align:center;font-size:11px;color:var(--mu);margin:12px 0}

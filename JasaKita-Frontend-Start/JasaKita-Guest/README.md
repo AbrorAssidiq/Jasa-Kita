@@ -1,30 +1,35 @@
-# Jasa Kita – Halaman Guest
+# Jasa Kita – Halaman Guest (v2)
 
-Buka `index.html` (klik dua kali) – otomatis masuk ke Splash. Tidak perlu server.
+Buka `index.html` (klik dua kali). Tidak perlu server.
+
+- **Tampilan web (layar lebar)**: latar biru bergerak, ilustrasi mekanik, dan aplikasi di dalam bingkai ponsel.
+- **Tampilan HP (layar ≤ 960px)**: ilustrasi disembunyikan, aplikasi memenuhi layar.
 
 ## Struktur
 ```
-index.html            ← pintu masuk (langsung ke pages/splash.html)
-pages/                ← SATU FILE HTML PER HALAMAN
-  splash.html  access.html  home.html  categories.html  search.html
-  providers.html  provider-detail.html  profile.html  login.html
+index.html              ← cangkang web (latar biru + ilustrasi + bingkai ponsel)
+pages/                  ← SATU FILE HTML PER HALAMAN (isi layar aplikasi)
+  splash  access  home  categories  search  providers  provider-detail  profile  login
 css/
-  base.css            ← warna (variabel :root), font, frame ponsel, tombol
-  components.css      ← top bar, search bar, nav bawah, chip
-  pages/*.css         ← CSS tiap halaman (nama sama dengan file HTML-nya)
+  shell.css             ← tampilan web: latar, ilustrasi, bingkai ponsel
+  base.css              ← warna (:root), font, tombol
+  animations.css        ← SEMUA animasi (durasi & jenis gerakan)
+  components.css        ← top bar, search bar, nav bawah, chip
+  pages/*.css           ← gaya tiap halaman
 js/
-  common.js           ← toast, chip filter, tombol mata password
-  splash.js           ← pindah otomatis dari splash
-  search.js           ← filter saran pencarian
-assets/images/        ← logo-blue.svg, logo-white.svg, city.svg (ganti dengan aset asli)
+  common.js             ← toast, perpindahan halaman beranimasi, chip, password
+  splash.js  search.js  ← logika splash & pencarian
+  shell.js              ← ilustrasi bergeser mengikuti kursor
+assets/images/
+  logo.png  logo-sm.png          ← logo Jasa Kita (latar sudah transparan)
+  ilustrasi-mekanik.png          ← hanya dipakai di tampilan web (index.html)
+  city.svg
 ```
 
 ## Cara mengubah
-- Isi/teks/data halaman → edit file di `pages/`
-- Tampilan halaman → edit CSS dengan nama yang sama di `css/pages/`
-- Warna utama → ubah `--bl` di `css/base.css`
-- Logo → ganti `assets/images/logo-blue.svg` dan `logo-white.svg`
-- Pindah halaman → `<a href="nama-halaman.html">`
-
-## Menambah halaman baru
-Salin salah satu file di `pages/`, ganti isinya, buat `css/pages/nama.css`, lalu tautkan dengan `<a href>`.
+- Teks/data halaman → edit file di `pages/`
+- Tampilan halaman → CSS dengan nama sama di `css/pages/`
+- Warna utama → `--bl` di `css/base.css`; latar biru web → `body` di `css/shell.css`
+- Animasi → `css/animations.css` (atau `.splash` dll. di CSS halaman)
+- Logo / ilustrasi → ganti file di `assets/images/` (nama file tetap)
+- Pindah halaman → `<a href="nama.html">`

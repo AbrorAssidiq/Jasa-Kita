@@ -2,20 +2,20 @@
 <html lang="id">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jasa Kita – Profil</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/animations.css">
 <link rel="stylesheet" href="../css/components.css">
 <link rel="stylesheet" href="../css/pages/profile.css">
 </head>
-<body>
-<div id="phone">
-    <div class="sb"><span>9:41</span><i>▂▄▆ ◔ ▮</i></div>
+<body class="">
+  <div class="sb"><span>9:41</span><i>▂▄▆ ◔ ▮</i></div>
   <div id="scr">
-    <div class="top"><h3>Profil</h3></div>
-    <div class="prof"><div class="pa">👤</div><b>Pengguna</b></div>
-    <div class="menu">
+    <div class="top rise"><h3>Profil</h3></div>
+    <div class="prof rise d1"><div class="pa">👤</div><b>Pengguna</b></div>
+    <div class="menu stagger">
       <a class="mi" href="login.html"><span>➜</span>Masuk</a>
       <a class="mi" href="login.html"><span>👤</span>Daftar Akun</a>
       <a class="mi hl" href="login.html"><span>🪪</span>Daftar Menjadi Mitra (Provider)</a>
@@ -23,16 +23,14 @@
       <button class="mi" onclick="toast('Bantuan akan hadir di tahap berikutnya')"><span>🕘</span>Bantuan</button>
       <button class="mi" onclick="toast('Pengaturan akan hadir di tahap berikutnya')"><span>⚙</span>Pengaturan</button>
     </div>
-    <div style="flex:1"></div>
-    <div class="nav">
-      <a href="home.html"><span>🏠</span>Beranda</a>
-      <a href="categories.html"><span>▦</span>Kategori</a>
-      <a href="search.html"><span>🔍</span>Cari</a>
-      <a href="profile.html" class="on"><span>👤</span>Profil</a>
-    </div>
+  </div>
+  <div class="nav">
+    <a href="home.html"><span>🏠</span>Beranda</a>
+    <a href="categories.html"><span>▦</span>Kategori</a>
+    <a href="search.html"><span>🔍</span>Cari</a>
+    <a href="profile.html" class="on"><span>👤</span>Profil</a>
   </div>
   <div id="toast"></div>
-</div>
 <script src="../js/common.js"></script>
 </body>
 </html>

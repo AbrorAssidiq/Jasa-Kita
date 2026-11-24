@@ -1,5 +1,10 @@
-/* ===== HALAMAN AKSES TANPA AKUN ===== */
-.center{align-items:center;text-align:center;justify-content:center;padding:0 34px;flex:1;display:flex;flex-direction:column}
-.center h2{font-size:22px;font-weight:800;line-height:1.2;margin-top:34px}
+/* ===== AKSES TANPA AKUN ===== */
+body.ac #scr{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 6%,rgba(23,105,224,.2),transparent 45%),radial-gradient(circle at 4% 96%,rgba(23,105,224,.18),transparent 42%)}
+.orb{position:absolute;border-radius:50%;background:rgba(23,105,224,.12);animation:drift 10s ease-in-out infinite}
+.o1{width:150px;height:150px;top:70px;right:-50px}
+.o2{width:110px;height:110px;bottom:120px;left:-40px;animation-direction:reverse}
+.center{position:relative;align-items:center;text-align:center;justify-content:center;padding:0 34px;flex:1;display:flex;flex-direction:column}
+.center .lg{width:200px;height:200px;object-fit:contain;animation:pop .8s cubic-bezier(.2,.9,.3,1.2) backwards,float 4.5s 1s ease-in-out infinite}
+.center h2{font-size:22px;font-weight:800;line-height:1.2;margin-top:20px}
 .center p{font-size:13px;color:var(--mu);margin-top:10px;line-height:1.5}
 .center .actions{width:100%;margin-top:26px}
