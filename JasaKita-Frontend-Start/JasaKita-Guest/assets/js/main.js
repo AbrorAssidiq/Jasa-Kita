@@ -164,7 +164,7 @@ function kartuPenyedia(p) {
   return `
     <a class="prov-card" href="detail-penyedia.html?id=${p.id}">
       <div class="prov-top">
-        <span class="avatar" style="background:${p.warna}">${inisial(p.nama)}</span>
+        <span class="avatar" role="img" aria-label="Ilustrasi profil ${esc(p.nama)}" style="background:${p.warna}">${inisial(p.nama)}</span>
         <div>
           <h3>${esc(p.nama)}</h3>
           <span class="cat">${esc(kat.nama)}</span>
