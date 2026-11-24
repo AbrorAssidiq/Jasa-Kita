@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Jasa Kita</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/shell.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasa Kita</title>
+  <meta name="theme-color" content="#0f47c2">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-  <!-- Gir latar (dekorasi) -->
-  <svg style="display:none"><symbol id="gear" viewBox="0 0 100 100" fill="none" stroke="currentColor"><circle cx="50" cy="50" r="38" stroke-width="10" stroke-dasharray="9.95 9.95"/><circle cx="50" cy="50" r="31" stroke-width="9"/><circle cx="50" cy="50" r="12" stroke-width="6"/></symbol></svg>
-  <svg class="gear g1"><use href="#gear"/></svg>
-  <svg class="gear g2"><use href="#gear"/></svg>
-  <svg class="gear g3"><use href="#gear"/></svg>
-  <svg class="gear g4"><use href="#gear"/></svg>
-
-  <main class="stage">
-    <!-- Bagian ini HANYA tampil di layar lebar (web). Di HP otomatis disembunyikan. -->
-    <section class="intro">
-      <h1>Cari, pesan, dan gunakan jasa dengan mudah.</h1>
-      <p>Servis AC, bengkel, teknisi listrik, hingga tukang bangunan. Lihat penyedia jasa terpercaya di sekitar Anda tanpa perlu membuat akun dulu.</p>
-      <div class="art">
-        <div class="art-move">
-          <div class="dash"></div><div class="disc"></div>
-          <img src="assets/images/ilustrasi-mekanik.png" alt="Mekanik Jasa Kita">
-          <span class="tag t1">❄️ Servis AC</span>
-          <span class="tag t2">🚗 Bengkel</span>
-          <span class="tag t3">💡 Teknisi Listrik</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Aplikasi (tampilan HP) -->
-    <div class="phone">
-      <iframe src="pages/splash.html" title="Aplikasi Jasa Kita"></iframe>
-    </div>
+<body data-page="splash">
+  <!-- Halaman 1: Splash Screen -->
+  <main class="splash">
+    <img src="assets/img/logo.png" alt="Logo Jasa Kita">
+    <p>Temukan jasa kendaraan dan rumah terpercaya</p>
+    <div class="splash-bar" aria-hidden="true"><i></i></div>
   </main>
-  <script src="js/shell.js"></script>
+
+  <noscript><p style="text-align:center"><a href="akses.html">Lanjutkan</a></p></noscript>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

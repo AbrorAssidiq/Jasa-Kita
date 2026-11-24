@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Penyedia Jasa — Jasa Kita</title>
+  <meta name="theme-color" content="#0f47c2">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="penyedia">
+  <div id="app-header"></div>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Jejak halaman"><a href="beranda.html">Beranda</a><span>/</span><span>Penyedia Jasa</span></nav>
+        <h1>Penyedia Jasa</h1>
+        <p>Mitra Jasa Kita yang siap membantu kebutuhan kendaraan dan rumah Anda.</p>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top:28px">
+      <div class="chips" id="chips" role="group" aria-label="Filter kategori"></div>
+      <div class="result-bar">
+        <p><b id="jumlah">0</b> penyedia tersedia</p>
+        <a class="link-more" href="pencarian.html">Pencarian lanjutan
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="prov-grid" id="prov-grid"></div>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

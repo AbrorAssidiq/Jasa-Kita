@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar — Jasa Kita</title>
+  <meta name="theme-color" content="#0f47c2">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="daftar">
+  <div class="auth">
+    <aside class="auth-side">
+      <a class="brand" href="beranda.html"><img src="assets/img/logo.png" alt="" width="42" height="42"><span>Jasa <b>Kita</b></span></a>
+      <img class="art" src="assets/img/hero.png" alt="Mekanik Jasa Kita">
+      <div>
+        <h2>Bergabung dengan Jasa Kita.</h2>
+        <p>Pesan jasa dengan tenang sebagai Customer, atau jangkau lebih banyak pelanggan sebagai Provider.</p>
+      </div>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-box">
+        <a class="back" href="akses.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Kembali
+        </a>
+        <h1>Buat akun baru</h1>
+        <p>Pilih jenis akun, lalu lengkapi data di bawah ini.</p>
+
+        <form class="form" id="form-daftar" novalidate>
+          <div class="segment" role="group" aria-label="Jenis akun">
+            <button type="button" data-peran="customer">Customer</button>
+            <button type="button" data-peran="provider">Provider</button>
+          </div>
+
+          <div class="field">
+            <label for="nama">Nama lengkap</label>
+            <input class="input" id="nama" type="text" autocomplete="name" placeholder="Nama sesuai identitas">
+            <span class="field-error" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input class="input" id="email" type="email" autocomplete="email" placeholder="nama@email.com">
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="hp">Nomor HP</label>
+              <input class="input" id="hp" type="tel" autocomplete="tel" placeholder="081234567890">
+              <span class="field-error" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Muncul hanya untuk Provider -->
+          <div class="provider-only">
+            <div class="field">
+              <label for="usaha">Nama usaha</label>
+              <input class="input" id="usaha" type="text" placeholder="Contoh: Bengkel Maju Motor">
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="kategori">Kategori jasa</label>
+              <select class="select" id="kategori"></select>
+              <span class="field-error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="password">Password</label>
+              <div class="input-icon plain">
+                <input class="input" id="password" type="password" autocomplete="new-password" placeholder="Minimal 6 karakter">
+                <button class="toggle-pass" type="button" aria-label="Tampilkan password"></button>
+              </div>
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="password2">Konfirmasi password</label>
+              <div class="input-icon plain">
+                <input class="input" id="password2" type="password" autocomplete="new-password" placeholder="Ulangi password">
+                <button class="toggle-pass" type="button" aria-label="Tampilkan password"></button>
+              </div>
+              <span class="field-error" role="alert"></span>
+            </div>
+          </div>
+
+          <label class="check"><input type="checkbox" id="setuju"> <span>Saya menyetujui syarat dan ketentuan serta kebijakan privasi Jasa Kita.</span></label>
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Daftar</button>
+        </form>
+
+        <p class="form-foot">Sudah punya akun? <a href="login.html">Masuk</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

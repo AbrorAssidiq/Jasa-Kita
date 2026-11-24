@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasa Kita — Temukan Jasa Terpercaya di Sekitar Anda</title>
+  <meta name="description" content="Jasa Kita mempertemukan Anda dengan penyedia jasa servis AC, bengkel, teknisi listrik, tukang bangunan, dan perbaikan rumah.">
+  <meta name="theme-color" content="#0f47c2">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="beranda">
+  <div id="app-header"></div>
+
+  <main>
+    <!-- Hero (ilustrasi hanya tampil di layar lebar / website) -->
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="badge">Mode Pengunjung</span>
+          <h1>Butuh jasa? <em>Temukan yang terpercaya</em> di sekitar Anda.</h1>
+          <p class="lead">Dari servis AC, bengkel kendaraan, hingga perbaikan rumah. Bandingkan penyedia, lihat rating, lalu pesan dengan mudah.</p>
+
+          <form class="hero-search" id="hero-form" role="search">
+            <div class="input-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+              <label class="sr-only" for="hero-q">Cari jasa</label>
+              <input class="input" id="hero-q" type="search" placeholder="Cari jasa atau nama penyedia" autocomplete="off">
+            </div>
+            <button class="btn btn-primary" type="submit">Cari</button>
+          </form>
+
+          <div class="hero-tags">
+            <span>Populer:</span>
+            <a href="pencarian.html?kategori=servis-ac">Servis AC</a>
+            <a href="pencarian.html?kategori=bengkel-motor">Bengkel Motor</a>
+            <a href="pencarian.html?kategori=teknisi-listrik">Teknisi Listrik</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/img/hero.png" alt="Mekanik Jasa Kita di depan bengkel bersama mobil dan motor" width="1200" height="800">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="stats">
+        <div class="stat"><b id="stat-penyedia">0</b><span>Penyedia jasa</span></div>
+        <div class="stat"><b id="stat-kategori">0</b><span>Kategori layanan</span></div>
+        <div class="stat"><b>4,7</b><span>Rata-rata rating</span></div>
+        <div class="stat"><b>5</b><span>Area layanan</span></div>
+      </div>
+    </div>
+
+    <!-- Kategori -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Kategori</span>
+            <h2>Layanan yang tersedia</h2>
+            <p>Pilih kategori sesuai kebutuhan Anda untuk melihat penyedia jasa terkait.</p>
+          </div>
+          <a class="link-more" href="kategori.html">Semua kategori
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="cat-grid" id="cat-grid"></div>
+      </div>
+    </section>
+
+    <!-- Penyedia pilihan -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Penyedia pilihan</span>
+            <h2>Rating tertinggi minggu ini</h2>
+            <p>Penyedia dengan penilaian terbaik dari pelanggan lain.</p>
+          </div>
+          <a class="link-more" href="penyedia.html">Lihat semua penyedia
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="prov-grid" id="prov-grid"></div>
+      </div>
+    </section>
+
+    <!-- Cara kerja -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Cara kerja</span>
+            <h2>Tiga langkah mudah</h2>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Cari jasa</h3>
+            <p>Telusuri kategori atau ketik kebutuhan Anda, lalu persempit dengan filter lokasi dan rating.</p>
+          </div>
+          <div class="step">
+            <h3>Pilih penyedia</h3>
+            <p>Lihat profil, layanan, estimasi harga, dan ulasan pelanggan sebelum memutuskan.</p>
+          </div>
+          <div class="step">
+            <h3>Masuk dan pesan</h3>
+            <p>Buat akun atau masuk, lalu pesan jasa dan pantau prosesnya langsung dari aplikasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ajakan daftar -->
+    <section class="container">
+      <div class="cta">
+        <div>
+          <h2>Siap memakai Jasa Kita?</h2>
+          <p>Daftar sebagai Customer untuk memesan jasa, atau sebagai Provider untuk menawarkan layanan Anda.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-accent btn-lg" href="daftar.html?peran=customer">Daftar Customer</a>
+          <a class="btn btn-outline btn-lg" href="daftar.html?peran=provider">Daftar Provider</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

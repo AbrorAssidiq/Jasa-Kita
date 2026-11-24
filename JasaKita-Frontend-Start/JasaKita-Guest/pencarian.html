@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pencarian Jasa — Jasa Kita</title>
+  <meta name="theme-color" content="#0f47c2">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="pencarian">
+  <div id="app-header"></div>
+
+  <main>
+    <div class="page-head" style="padding-bottom:56px">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Jejak halaman"><a href="beranda.html">Beranda</a><span>/</span><span>Pencarian</span></nav>
+        <h1>Cari penyedia jasa</h1>
+        <p>Cari berdasarkan nama atau jenis layanan, lalu saring menurut kategori, lokasi, dan rating.</p>
+
+        <form class="search-bar" id="search-form" role="search">
+          <div class="input-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+            <label class="sr-only" for="q">Kata kunci</label>
+            <input class="input" id="q" type="search" placeholder="Contoh: servis AC, ganti oli, cat tembok" autocomplete="off">
+          </div>
+          <button class="btn btn-primary" type="submit">Cari</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="filters">
+        <div class="field">
+          <label for="f-kategori">Kategori</label>
+          <select class="select" id="f-kategori"></select>
+        </div>
+        <div class="field">
+          <label for="f-lokasi">Lokasi</label>
+          <select class="select" id="f-lokasi"></select>
+        </div>
+        <div class="field">
+          <label for="f-rating">Rating minimum</label>
+          <select class="select" id="f-rating">
+            <option value="">Semua rating</option>
+            <option value="4.5">4,5 ke atas</option>
+            <option value="4.0">4,0 ke atas</option>
+            <option value="3.5">3,5 ke atas</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-urut">Urutkan</label>
+          <select class="select" id="f-urut">
+            <option value="">Paling relevan</option>
+            <option value="rating">Rating tertinggi</option>
+            <option value="ulasan">Ulasan terbanyak</option>
+            <option value="murah">Harga terendah</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="result-bar">
+        <p><b id="jumlah">0</b> penyedia ditemukan</p>
+        <button class="btn btn-ghost" id="reset" type="button">Atur ulang filter</button>
+      </div>
+
+      <div class="prov-grid" id="hasil"></div>
+    </div>
+  </main>
+
+  <div id="app-footer" style="display:block;margin-top:72px"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

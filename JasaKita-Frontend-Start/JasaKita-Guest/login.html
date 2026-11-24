@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masuk — Jasa Kita</title>
+  <meta name="theme-color" content="#0f47c2">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="login">
+  <div class="auth">
+    <!-- Panel samping: hanya tampil di layar lebar (website) -->
+    <aside class="auth-side">
+      <a class="brand" href="beranda.html"><img src="assets/img/logo.png" alt="" width="42" height="42"><span>Jasa <b>Kita</b></span></a>
+      <img class="art" src="assets/img/hero.png" alt="Mekanik Jasa Kita">
+      <div>
+        <h2>Jasa terpercaya, tinggal pesan.</h2>
+        <p>Masuk untuk memesan jasa, memantau pesanan, dan menghubungi penyedia langsung dari Jasa Kita.</p>
+      </div>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-box">
+        <a class="back" href="akses.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Kembali
+        </a>
+        <h1>Masuk ke akun</h1>
+        <p>Selamat datang kembali. Silakan masukkan data akun Anda.</p>
+
+        <form class="form" id="form-login" novalidate>
+          <div class="field">
+            <label for="id">Email atau nomor HP</label>
+            <input class="input" id="id" type="text" autocomplete="username" placeholder="nama@email.com">
+            <span class="field-error" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="input-icon plain">
+              <input class="input" id="password" type="password" autocomplete="current-password" placeholder="Masukkan password">
+              <button class="toggle-pass" type="button" aria-label="Tampilkan password"></button>
+            </div>
+            <span class="field-error" role="alert"></span>
+          </div>
+          <div class="row-between">
+            <label class="check"><input type="checkbox"> Ingat saya</label>
+            <a href="#" onclick="toast('Fitur lupa password akan tersedia setelah backend siap.');return false;">Lupa password?</a>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Masuk</button>
+          <div class="divider">atau</div>
+          <a class="btn btn-outline btn-block" href="beranda.html">Lanjut sebagai pengunjung</a>
+        </form>
+
+        <p class="form-foot">Belum punya akun? <a href="daftar.html">Daftar sekarang</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

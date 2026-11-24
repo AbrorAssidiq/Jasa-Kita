@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil — Jasa Kita</title>
+  <meta name="theme-color" content="#0f47c2">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="profil">
+  <div id="app-header"></div>
+
+  <main class="container profile-wrap">
+    <section class="card profile-card">
+      <div class="profile-avatar">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      </div>
+      <h1>Pengunjung</h1>
+      <span class="badge orange">Belum masuk</span>
+      <p>Masuk atau buat akun untuk memesan jasa, menyimpan riwayat pesanan, dan menghubungi penyedia.</p>
+
+      <div class="profile-actions">
+        <a class="btn btn-primary btn-lg" href="login.html">Masuk</a>
+        <a class="btn btn-outline btn-lg" href="daftar.html?peran=customer">Daftar sebagai Customer</a>
+        <a class="btn btn-outline btn-lg" href="daftar.html?peran=provider">Daftar sebagai Provider</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Yang bisa Anda lakukan dengan akun</h2>
+      <ul class="perk-list">
+        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>Customer</b> memesan jasa, melihat kontak penyedia, dan memberi ulasan.</span></li>
+        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>Provider</b> menampilkan layanan, menerima pesanan, dan membangun reputasi lewat rating.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,9 +1,0 @@
-/* ===== HALAMAN PROFIL GUEST ===== */
-.prof{display:flex;flex-direction:column;align-items:center;margin:10px 0 14px}
-.pa{width:76px;height:76px;border-radius:50%;background:linear-gradient(135deg,#3B8BFF,#1769E0);display:grid;place-items:center;font-size:36px;color:#fff}
-.prof b{margin-top:10px;font-size:15px}
-.menu{margin:0 18px 12px;background:#fff;border-radius:14px;border:1px solid var(--bar);overflow:hidden}
-.mi{display:flex;gap:14px;align-items:center;padding:13px 16px;font:500 13px inherit;font-family:inherit;color:var(--tx);cursor:pointer;background:none;border:0;width:100%;text-align:left;border-bottom:1px solid #F0F4FA}
-.mi:last-child{border:0}
-.mi.hl{background:#E8F0FF;font-weight:600}
-.mi span{color:var(--bl);width:20px;text-align:center}
