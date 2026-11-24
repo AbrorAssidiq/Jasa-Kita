@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jasa Kita – Login</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/pages/login.css">
+</head>
+<body>
+<div id="phone">
+    <div class="sb"><span>9:41</span><i>▂▄▆ ◔ ▮</i></div>
+  <div id="scr">
+    <div class="top"><button class="ib" onclick="history.back()" aria-label="Kembali">←</button></div>
+    <div class="lf">
+      <div class="head">
+        <img src="../assets/images/logo-blue.svg" width="56" height="56" alt="Logo Jasa Kita">
+        <div class="logo-t">Jasa Kita</div>
+        <h2>Selamat Datang!</h2>
+        <p>Masuk untuk melanjutkan ke aplikasi</p>
+      </div>
+      <div class="inp">👤<input placeholder="Email atau No. HP"></div>
+      <div class="inp">🔒<input id="pw" type="password" placeholder="Password"><span style="cursor:pointer" onclick="togglePassword()">👁</span></div>
+      <button class="btn bp" onclick="toast('Login belum dihubungkan ke server')">Masuk</button>
+      <div class="or">atau</div>
+      <button class="btn bo" onclick="toast('Pendaftaran akan dibuat di tahap berikutnya')">Daftar Akun</button>
+      <div style="text-align:center"><button class="lnk" style="font-size:12px;margin-top:8px" onclick="toast('Fitur lupa password akan hadir nanti')">Lupa Password?</button></div>
+    </div>
+  </div>
+  <div id="toast"></div>
+</div>
+<script src="../js/common.js"></script>
+</body>
+</html>

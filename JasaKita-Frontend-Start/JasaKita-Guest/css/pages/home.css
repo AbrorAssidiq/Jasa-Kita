@@ -1,0 +1,8 @@
+/* ===== HALAMAN BERANDA ===== */
+.hero{margin:14px 18px 0;border-radius:14px;background:linear-gradient(100deg,#0B4FC4,#2C8CFF);color:#fff;padding:18px;height:130px;position:relative;overflow:hidden}
+.hero h4{font-size:20px;font-weight:800;line-height:1.15;width:150px}
+.hero small{display:block;font-size:10px;margin-top:10px;background:rgba(255,255,255,.2);padding:4px 8px;border-radius:6px;width:fit-content}
+.hero .w{position:absolute;right:14px;bottom:0;font-size:84px;line-height:1}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:0 14px}
+.cat{background:none;border:0;font:600 11px inherit;font-family:inherit;color:var(--tx);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.home-head{display:flex;gap:6px;align-items:center;font-weight:800;color:var(--bl);font-size:15px}

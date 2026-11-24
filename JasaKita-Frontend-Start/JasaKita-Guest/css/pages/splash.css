@@ -1,0 +1,9 @@
+/* ===== HALAMAN SPLASH ===== */
+.splash{background:linear-gradient(180deg,#0B5FE3 0%,#1478F5 60%,#0A56D0 100%);color:#fff;align-items:center;justify-content:center;text-align:center;flex:1;position:relative;display:flex;flex-direction:column}
+.splash h1{font-size:34px;font-weight:800;margin-top:12px}
+.splash p{font-size:12px;opacity:.9;width:150px;line-height:1.35;margin-top:6px}
+.splash .city{position:absolute;bottom:50px;left:0;right:0;opacity:.25}
+.splash .prog{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:140px;height:4px;border-radius:4px;background:rgba(255,255,255,.3);overflow:hidden}
+.splash .prog b{display:block;height:100%;width:0;background:#fff;border-radius:4px;animation:progress 2.4s linear forwards}
+@keyframes progress{to{width:100%}}
+@media(prefers-reduced-motion:reduce){.splash .prog b{animation-duration:.01s}}

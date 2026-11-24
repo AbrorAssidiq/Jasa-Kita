@@ -1,0 +1,5 @@
+/* ===== HALAMAN PENCARIAN ===== */
+.sug{display:flex;gap:14px;align-items:center;padding:13px 20px;font-size:14px;cursor:pointer;background:none;border:0;width:100%;text-align:left;font-family:inherit;color:var(--tx)}
+.sug span{color:var(--mu)}
+.empty{color:var(--mu);font-size:13px;text-align:center;padding:30px}
+.sug.first{font-weight:700}
